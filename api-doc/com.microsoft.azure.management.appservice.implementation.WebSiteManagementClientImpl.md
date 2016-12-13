@@ -1,5 +1,5 @@
 ---
-uid: com.microsoft.azure.management.appservice.implementation.WebSiteManagementClientImpl
+uid: com.microsoft.azure.management.appservice.implementation._web_site_management_client_impl
 remarks: *content
 ---
 
