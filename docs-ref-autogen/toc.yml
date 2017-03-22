@@ -1395,6 +1395,12 @@
   - uid: com.microsoft.azure.eventhubs._receive_pump._i_partition_receiver
     name: ReceivePump.IPartitionReceiver
     href: com.microsoft.azure.eventhubs._receive_pump._i_partition_receiver.yml
+  - uid: com.microsoft.azure.eventhubs._receiver_options
+    name: ReceiverOptions
+    href: com.microsoft.azure.eventhubs._receiver_options.yml
+  - uid: com.microsoft.azure.eventhubs._receiver_runtime_information
+    name: ReceiverRuntimeInformation
+    href: com.microsoft.azure.eventhubs._receiver_runtime_information.yml
 - uid: com.microsoft.azure.eventhubs.extensions.appender
   name: com.microsoft.azure.eventhubs.extensions.appender
   href: com.microsoft.azure.eventhubs.extensions.appender.yml
@@ -2191,6 +2197,9 @@
   - uid: com.microsoft.azure.management.appservice._connection_string_type
     name: ConnectionStringType
     href: com.microsoft.azure.management.appservice._connection_string_type.yml
+  - uid: com.microsoft.azure.management.appservice._conn_string_info
+    name: ConnStringInfo
+    href: com.microsoft.azure.management.appservice._conn_string_info.yml
   - uid: com.microsoft.azure.management.appservice._conn_string_value_type_pair
     name: ConnStringValueTypePair
     href: com.microsoft.azure.management.appservice._conn_string_value_type_pair.yml
@@ -2452,6 +2461,9 @@
   - uid: com.microsoft.azure.management.appservice._host_name_type
     name: HostNameType
     href: com.microsoft.azure.management.appservice._host_name_type.yml
+  - uid: com.microsoft.azure.management.appservice._host_type
+    name: HostType
+    href: com.microsoft.azure.management.appservice._host_type.yml
   - uid: com.microsoft.azure.management.appservice._http_logs_config
     name: HttpLogsConfig
     href: com.microsoft.azure.management.appservice._http_logs_config.yml
@@ -2554,6 +2566,9 @@
   - uid: com.microsoft.azure.management.appservice._route_type
     name: RouteType
     href: com.microsoft.azure.management.appservice._route_type.yml
+  - uid: com.microsoft.azure.management.appservice._scm_type
+    name: ScmType
+    href: com.microsoft.azure.management.appservice._scm_type.yml
   - uid: com.microsoft.azure.management.appservice._site_availability_state
     name: SiteAvailabilityState
     href: com.microsoft.azure.management.appservice._site_availability_state.yml
@@ -2855,9 +2870,6 @@
   - uid: com.microsoft.azure.management.appservice.implementation._capability_inner
     name: CapabilityInner
     href: com.microsoft.azure.management.appservice.implementation._capability_inner.yml
-  - uid: com.microsoft.azure.management.appservice.implementation._certificate_details_inner
-    name: CertificateDetailsInner
-    href: com.microsoft.azure.management.appservice.implementation._certificate_details_inner.yml
   - uid: com.microsoft.azure.management.appservice.implementation._certificate_email_inner
     name: CertificateEmailInner
     href: com.microsoft.azure.management.appservice.implementation._certificate_email_inner.yml
@@ -2960,6 +2972,9 @@
   - uid: com.microsoft.azure.management.appservice.implementation._page_impl
     name: PageImpl
     href: com.microsoft.azure.management.appservice.implementation._page_impl.yml
+  - uid: com.microsoft.azure.management.appservice.implementation._page_impl1
+    name: PageImpl1
+    href: com.microsoft.azure.management.appservice.implementation._page_impl1.yml
   - uid: com.microsoft.azure.management.appservice.implementation._perf_mon_response_inner
     name: PerfMonResponseInner
     href: com.microsoft.azure.management.appservice.implementation._perf_mon_response_inner.yml
@@ -3017,6 +3032,9 @@
   - uid: com.microsoft.azure.management.appservice.implementation._site_config_inner
     name: SiteConfigInner
     href: com.microsoft.azure.management.appservice.implementation._site_config_inner.yml
+  - uid: com.microsoft.azure.management.appservice.implementation._site_configuration_snapshot_info_inner
+    name: SiteConfigurationSnapshotInfoInner
+    href: com.microsoft.azure.management.appservice.implementation._site_configuration_snapshot_info_inner.yml
   - uid: com.microsoft.azure.management.appservice.implementation._site_inner
     name: SiteInner
     href: com.microsoft.azure.management.appservice.implementation._site_inner.yml
@@ -3029,6 +3047,12 @@
   - uid: com.microsoft.azure.management.appservice.implementation._site_php_error_log_flag_inner
     name: SitePhpErrorLogFlagInner
     href: com.microsoft.azure.management.appservice.implementation._site_php_error_log_flag_inner.yml
+  - uid: com.microsoft.azure.management.appservice.implementation._site_seal_inner
+    name: SiteSealInner
+    href: com.microsoft.azure.management.appservice.implementation._site_seal_inner.yml
+  - uid: com.microsoft.azure.management.appservice.implementation._site_seal_request_inner
+    name: SiteSealRequestInner
+    href: com.microsoft.azure.management.appservice.implementation._site_seal_request_inner.yml
   - uid: com.microsoft.azure.management.appservice.implementation._site_source_control_inner
     name: SiteSourceControlInner
     href: com.microsoft.azure.management.appservice.implementation._site_source_control_inner.yml
@@ -3416,6 +3440,9 @@
   - uid: com.microsoft.azure.management.cdn._custom_domain_validation_result
     name: CustomDomainValidationResult
     href: com.microsoft.azure.management.cdn._custom_domain_validation_result.yml
+  - uid: com.microsoft.azure.management.cdn._custom_https_provisioning_state
+    name: CustomHttpsProvisioningState
+    href: com.microsoft.azure.management.cdn._custom_https_provisioning_state.yml
   - uid: com.microsoft.azure.management.cdn._deep_created_origin
     name: DeepCreatedOrigin
     href: com.microsoft.azure.management.cdn._deep_created_origin.yml
@@ -3874,6 +3901,9 @@
   - uid: com.microsoft.azure.management.compute._purchase_plan
     name: PurchasePlan
     href: com.microsoft.azure.management.compute._purchase_plan.yml
+  - uid: com.microsoft.azure.management.compute._resource_identity_type
+    name: ResourceIdentityType
+    href: com.microsoft.azure.management.compute._resource_identity_type.yml
   - uid: com.microsoft.azure.management.compute._resource_update
     name: ResourceUpdate
     href: com.microsoft.azure.management.compute._resource_update.yml
@@ -4333,6 +4363,9 @@
   - uid: com.microsoft.azure.management.compute._virtual_machine_extension_instance_view
     name: VirtualMachineExtensionInstanceView
     href: com.microsoft.azure.management.compute._virtual_machine_extension_instance_view.yml
+  - uid: com.microsoft.azure.management.compute._virtual_machine_identity
+    name: VirtualMachineIdentity
+    href: com.microsoft.azure.management.compute._virtual_machine_identity.yml
   - uid: com.microsoft.azure.management.compute._virtual_machine_image
     name: VirtualMachineImage
     href: com.microsoft.azure.management.compute._virtual_machine_image.yml
@@ -4639,6 +4672,9 @@
   - uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_extension_profile
     name: VirtualMachineScaleSetExtensionProfile
     href: com.microsoft.azure.management.compute._virtual_machine_scale_set_extension_profile.yml
+  - uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_identity
+    name: VirtualMachineScaleSetIdentity
+    href: com.microsoft.azure.management.compute._virtual_machine_scale_set_identity.yml
   - uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_instance_view_statuses_summary
     name: VirtualMachineScaleSetInstanceViewStatusesSummary
     href: com.microsoft.azure.management.compute._virtual_machine_scale_set_instance_view_statuses_summary.yml
@@ -5688,9 +5724,6 @@
   - uid: com.microsoft.azure.management.dns._soa_record_set
     name: SoaRecordSet
     href: com.microsoft.azure.management.dns._soa_record_set.yml
-  - uid: com.microsoft.azure.management.dns._soa_record_sets
-    name: SoaRecordSets
-    href: com.microsoft.azure.management.dns._soa_record_sets.yml
   - uid: com.microsoft.azure.management.dns._srv_record
     name: SrvRecord
     href: com.microsoft.azure.management.dns._srv_record.yml
@@ -9093,6 +9126,9 @@
   - uid: com.microsoft.azure.management.redis.implementation._redis_create_parameters_inner
     name: RedisCreateParametersInner
     href: com.microsoft.azure.management.redis.implementation._redis_create_parameters_inner.yml
+  - uid: com.microsoft.azure.management.redis.implementation._redis_force_reboot_response_inner
+    name: RedisForceRebootResponseInner
+    href: com.microsoft.azure.management.redis.implementation._redis_force_reboot_response_inner.yml
   - uid: com.microsoft.azure.management.redis.implementation._redis_inner
     name: RedisInner
     href: com.microsoft.azure.management.redis.implementation._redis_inner.yml
@@ -10004,12 +10040,18 @@
   - uid: com.microsoft.azure.management.servicebus._access_rights
     name: AccessRights
     href: com.microsoft.azure.management.servicebus._access_rights.yml
+  - uid: com.microsoft.azure.management.servicebus._check_name_availability
+    name: CheckNameAvailability
+    href: com.microsoft.azure.management.servicebus._check_name_availability.yml
   - uid: com.microsoft.azure.management.servicebus._entity_status
     name: EntityStatus
     href: com.microsoft.azure.management.servicebus._entity_status.yml
   - uid: com.microsoft.azure.management.servicebus._message_count_details
     name: MessageCountDetails
     href: com.microsoft.azure.management.servicebus._message_count_details.yml
+  - uid: com.microsoft.azure.management.servicebus._operation_display
+    name: OperationDisplay
+    href: com.microsoft.azure.management.servicebus._operation_display.yml
   - uid: com.microsoft.azure.management.servicebus._policykey
     name: Policykey
     href: com.microsoft.azure.management.servicebus._policykey.yml
@@ -10028,22 +10070,37 @@
   - uid: com.microsoft.azure.management.servicebus._time_span_tests
     name: TimeSpanTests
     href: com.microsoft.azure.management.servicebus._time_span_tests.yml
+  - uid: com.microsoft.azure.management.servicebus._unavailable_reason
+    name: UnavailableReason
+    href: com.microsoft.azure.management.servicebus._unavailable_reason.yml
 - uid: com.microsoft.azure.management.servicebus.implementation
   name: com.microsoft.azure.management.servicebus.implementation
   href: com.microsoft.azure.management.servicebus.implementation.yml
   items:
-  - uid: com.microsoft.azure.management.servicebus.implementation._namespace_resource_inner
-    name: NamespaceResourceInner
-    href: com.microsoft.azure.management.servicebus.implementation._namespace_resource_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._check_name_availability_result_inner
+    name: CheckNameAvailabilityResultInner
+    href: com.microsoft.azure.management.servicebus.implementation._check_name_availability_result_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._namespace_inner
+    name: NamespaceInner
+    href: com.microsoft.azure.management.servicebus.implementation._namespace_inner.yml
   - uid: com.microsoft.azure.management.servicebus.implementation._namespaces_inner
     name: NamespacesInner
     href: com.microsoft.azure.management.servicebus.implementation._namespaces_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._namespace_update_parameters_inner
+    name: NamespaceUpdateParametersInner
+    href: com.microsoft.azure.management.servicebus.implementation._namespace_update_parameters_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._operation_inner
+    name: OperationInner
+    href: com.microsoft.azure.management.servicebus.implementation._operation_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._operations_inner
+    name: OperationsInner
+    href: com.microsoft.azure.management.servicebus.implementation._operations_inner.yml
   - uid: com.microsoft.azure.management.servicebus.implementation._page_impl
     name: PageImpl
     href: com.microsoft.azure.management.servicebus.implementation._page_impl.yml
-  - uid: com.microsoft.azure.management.servicebus.implementation._queue_resource_inner
-    name: QueueResourceInner
-    href: com.microsoft.azure.management.servicebus.implementation._queue_resource_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._queue_inner
+    name: QueueInner
+    href: com.microsoft.azure.management.servicebus.implementation._queue_inner.yml
   - uid: com.microsoft.azure.management.servicebus.implementation._queues_inner
     name: QueuesInner
     href: com.microsoft.azure.management.servicebus.implementation._queues_inner.yml
@@ -10056,21 +10113,24 @@
   - uid: com.microsoft.azure.management.servicebus.implementation._shared_access_authorization_rule_inner
     name: SharedAccessAuthorizationRuleInner
     href: com.microsoft.azure.management.servicebus.implementation._shared_access_authorization_rule_inner.yml
-  - uid: com.microsoft.azure.management.servicebus.implementation._subscription_resource_inner
-    name: SubscriptionResourceInner
-    href: com.microsoft.azure.management.servicebus.implementation._subscription_resource_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._subscription_inner
+    name: SubscriptionInner
+    href: com.microsoft.azure.management.servicebus.implementation._subscription_inner.yml
   - uid: com.microsoft.azure.management.servicebus.implementation._subscriptions_inner
     name: SubscriptionsInner
     href: com.microsoft.azure.management.servicebus.implementation._subscriptions_inner.yml
   - uid: com.microsoft.azure.management.servicebus.implementation._time_span
     name: TimeSpan
     href: com.microsoft.azure.management.servicebus.implementation._time_span.yml
-  - uid: com.microsoft.azure.management.servicebus.implementation._topic_resource_inner
-    name: TopicResourceInner
-    href: com.microsoft.azure.management.servicebus.implementation._topic_resource_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._topic_inner
+    name: TopicInner
+    href: com.microsoft.azure.management.servicebus.implementation._topic_inner.yml
   - uid: com.microsoft.azure.management.servicebus.implementation._topics_inner
     name: TopicsInner
     href: com.microsoft.azure.management.servicebus.implementation._topics_inner.yml
+  - uid: com.microsoft.azure.management.servicebus.implementation._tracked_resource_inner
+    name: TrackedResourceInner
+    href: com.microsoft.azure.management.servicebus.implementation._tracked_resource_inner.yml
 - uid: com.microsoft.azure.management.sql
   name: com.microsoft.azure.management.sql
   href: com.microsoft.azure.management.sql.yml
@@ -11426,6 +11486,12 @@
   name: com.microsoft.azure.sdk.iot.service.devicetwin
   href: com.microsoft.azure.sdk.iot.service.devicetwin.yml
   items:
+  - uid: com.microsoft.azure.sdk.iot.service.devicetwin._device_method
+    name: DeviceMethod
+    href: com.microsoft.azure.sdk.iot.service.devicetwin._device_method.yml
+  - uid: com.microsoft.azure.sdk.iot.service.devicetwin._device_operations
+    name: DeviceOperations
+    href: com.microsoft.azure.sdk.iot.service.devicetwin._device_operations.yml
   - uid: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin
     name: DeviceTwin
     href: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin.yml
@@ -11438,6 +11504,9 @@
   - uid: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_test
     name: DeviceTwinTest
     href: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_test.yml
+  - uid: com.microsoft.azure.sdk.iot.service.devicetwin._method_result
+    name: MethodResult
+    href: com.microsoft.azure.sdk.iot.service.devicetwin._method_result.yml
   - uid: com.microsoft.azure.sdk.iot.service.devicetwin._pair
     name: Pair
     href: com.microsoft.azure.sdk.iot.service.devicetwin._pair.yml
@@ -11448,6 +11517,9 @@
   - uid: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_bad_format_exception
     name: IotHubBadFormatException
     href: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_bad_format_exception.yml
+  - uid: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_bad_gateway_exception
+    name: IotHubBadGatewayException
+    href: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_bad_gateway_exception.yml
   - uid: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_device_maximum_queue_depth_exceeded_exception
     name: IotHubDeviceMaximumQueueDepthExceededException
     href: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_device_maximum_queue_depth_exceeded_exception.yml
@@ -11463,6 +11535,9 @@
   - uid: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_exception_manager_test
     name: IotHubExceptionManagerTest
     href: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_exception_manager_test.yml
+  - uid: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_gateway_timeout_exception
+    name: IotHubGatewayTimeoutException
+    href: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_gateway_timeout_exception.yml
   - uid: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_internal_server_error_exception
     name: IotHubInternalServerErrorException
     href: com.microsoft.azure.sdk.iot.service.exceptions._iot_hub_internal_server_error_exception.yml
@@ -11614,6 +11689,9 @@
   - uid: com.microsoft.azure.servicebus._operation_cancelled_exception
     name: OperationCancelledException
     href: com.microsoft.azure.servicebus._operation_cancelled_exception.yml
+  - uid: com.microsoft.azure.servicebus._pass_by_ref
+    name: PassByRef
+    href: com.microsoft.azure.servicebus._pass_by_ref.yml
   - uid: com.microsoft.azure.servicebus._payload_size_exceeded_exception
     name: PayloadSizeExceededException
     href: com.microsoft.azure.servicebus._payload_size_exceeded_exception.yml
@@ -13101,6 +13179,9 @@
   - uid: samples.com.microsoft.azure.sdk.iot.service._device_manager_sample
     name: DeviceManagerSample
     href: samples.com.microsoft.azure.sdk.iot.service._device_manager_sample.yml
+  - uid: samples.com.microsoft.azure.sdk.iot.service._device_method_sample
+    name: DeviceMethodSample
+    href: samples.com.microsoft.azure.sdk.iot.service._device_method_sample.yml
   - uid: samples.com.microsoft.azure.sdk.iot.service._device_twin_sample
     name: DeviceTwinSample
     href: samples.com.microsoft.azure.sdk.iot.service._device_twin_sample.yml
@@ -14922,6 +15003,15 @@
   name: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin
   href: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin.yml
   items:
+  - uid: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin._device_method_test
+    name: DeviceMethodTest
+    href: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin._device_method_test.yml
+  - uid: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin._device_operations_test
+    name: DeviceOperationsTest
+    href: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin._device_operations_test.yml
+  - uid: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin._method_result_test
+    name: MethodResultTest
+    href: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin._method_result_test.yml
   - uid: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin._pair_test
     name: PairTest
     href: tests.unit.com.microsoft.azure.sdk.iot.service.devicetwin._pair_test.yml
