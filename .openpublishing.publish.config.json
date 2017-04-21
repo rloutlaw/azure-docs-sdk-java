@@ -53,7 +53,7 @@
       "version": "latest"
     }
   ],
-  "toc_path_need_to_split": "docs-ref-from-xml/toc.yml",
+  "toc_path_need_to_split": "docs-ref-autogen/toc.yml",
   "JoinTOCPlugin": [
     {
       "TopLevelTOC": "docs-ref-mapping/reference.yml",
