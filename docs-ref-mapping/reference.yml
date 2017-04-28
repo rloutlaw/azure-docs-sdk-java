@@ -209,7 +209,7 @@
     landingPageType: Service
     name: "Service Bus"
   - children:
-    - *
+    - "*"
     landingPageType: Service
     name: "Others"
   landingPageType: Root
