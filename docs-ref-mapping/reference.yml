@@ -209,7 +209,7 @@
     landingPageType: Service
     name: '''Azure Management'''
   - children:
-    - 'com.microsoft.azure.*'
+    - '*'
     landingPageType: Service
     name: '''Others'''
   landingPageType: Root
