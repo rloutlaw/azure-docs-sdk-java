@@ -1,50 +1,40 @@
 - items:
   - children:
-    - com.microsoft.applicationinsights.web.extensibility.initializers
-    - com.microsoft.applicationinsights.web.extensibility.modules
-    - com.microsoft.applicationinsights.web.internal
-    - com.microsoft.applicationinsights.web.internal.cookies
-    - com.microsoft.applicationinsights.web.internal.perfcounter
-    - com.microsoft.applicationinsights.web.javaee
-    - com.microsoft.applicationinsights.web.spring
-    - com.microsoft.applicationinsights.web.spring.internal
-    - com.microsoft.applicationinsights.web.struts
-    landingPageType: Service
-    name: "AppInsights"
-  - children:
     - com.microsoft.azure.management.graphrbac
     - com.microsoft.azure.management.graphrbac.implementation
     landingPageType: Service
     name: "Azure AAD"
-  - children:
-    - com.microsoft.aad.adal4j
-    landingPageType: Service
-    name: "Azure Active Directory"
+    uid: landingpage.services.azure.aad
   - children:
     - com.microsoft.azure.management.appservice
     - com.microsoft.azure.management.appservice.implementation
     landingPageType: Service
     name: "Azure App Service"
+    uid: landingpage.services.azure.app.service
   - children:
     - com.microsoft.azure.management.batch
     - com.microsoft.azure.management.batch.implementation
     landingPageType: Service
     name: "Azure Batch"
+    uid: landingpage.services.azure.batch
   - children:
     - com.microsoft.azure.management.cdn
     - com.microsoft.azure.management.cdn.implementation
     landingPageType: Service
     name: "Azure CDN"
+    uid: landingpage.services.azure.cdn
   - children:
     - com.microsoft.azure.management.compute
     - com.microsoft.azure.management.compute.implementation
     landingPageType: Service
     name: "Azure Compute (virtual machines, virtual machine scale sets and"
+    uid: landingpage.services.azure.compute.(virtual.machines,.virtual.machine.scale.sets.and
   - children:
     - com.microsoft.azure.management.dns
     - com.microsoft.azure.management.dns.implementation
     landingPageType: Service
     name: "Azure DNS"
+    uid: landingpage.services.azure.dns
   - children:
     - com.microsoft.azure.management.datalake.analytics
     - com.microsoft.azure.management.datalake.analytics.implementation
@@ -54,26 +44,31 @@
     - com.microsoft.azure.management.datalake.store.models
     landingPageType: Service
     name: "Azure DataLake"
+    uid: landingpage.services.azure.datalake
   - children:
     - com.microsoft.azure.management.keyvault
     - com.microsoft.azure.management.keyvault.implementation
     landingPageType: Service
     name: "Azure Key Vault"
+    uid: landingpage.services.azure.key.vault
   - children:
     - com.microsoft.azure.management
     landingPageType: Service
     name: "Azure Management"
+    uid: landingpage.services.azure.management
   - children:
     - com.microsoft.azure.management.network
     - com.microsoft.azure.management.network.implementation
     - com.microsoft.azure.management.network.model
     landingPageType: Service
     name: "Azure Networking"
+    uid: landingpage.services.azure.networking
   - children:
     - com.microsoft.azure.management.redis
     - com.microsoft.azure.management.redis.implementation
     landingPageType: Service
     name: "Azure Redis"
+    uid: landingpage.services.azure.redis
   - children:
     - com.microsoft.azure.management.resources
     - com.microsoft.azure.management.resources.fluentcore.arm
@@ -90,26 +85,31 @@
     - com.microsoft.azure.management.resources.implementation
     landingPageType: Service
     name: "Azure Resource Manger"
+    uid: landingpage.services.azure.resource.manger
   - children:
     - com.microsoft.azure.management.sql
     - com.microsoft.azure.management.sql.implementation
     landingPageType: Service
     name: "Azure SQL Database"
+    uid: landingpage.services.azure.sql.database
   - children:
     - com.microsoft.azure.management.servicebus
     - com.microsoft.azure.management.servicebus.implementation
     landingPageType: Service
     name: "Azure Service Bus"
+    uid: landingpage.services.azure.service.bus
   - children:
     - com.microsoft.azure.management.storage
     - com.microsoft.azure.management.storage.implementation
     landingPageType: Service
     name: "Azure Storage"
+    uid: landingpage.services.azure.storage
   - children:
     - com.microsoft.azure.management.trafficmanager
     - com.microsoft.azure.management.trafficmanager.implementation
     landingPageType: Service
     name: "Azure Traffic Manager"
+    uid: landingpage.services.azure.traffic.manager
   - children:
     - com.microsoft.azure.batch
     - com.microsoft.azure.batch.auth
@@ -119,6 +119,7 @@
     - com.microsoft.azure.batch.protocol.models
     landingPageType: Service
     name: "Batch"
+    uid: landingpage.services.batch
   - children:
     - com.microsoft.azure.datalake.store
     - com.microsoft.azure.datalake.store.acl
@@ -126,23 +127,14 @@
     - com.microsoft.azure.datalake.store.retrypolicies
     landingPageType: Service
     name: "Data Lake Store"
-  - children:
-    - com.microsoft.azure.documentdb
-    - com.microsoft.azure.documentdb.internal
-    - com.microsoft.azure.documentdb.internal.directconnectivity
-    - com.microsoft.azure.documentdb.internal.query
-    - com.microsoft.azure.documentdb.internal.query.aggregation
-    - com.microsoft.azure.documentdb.internal.query.executioncomponent
-    - com.microsoft.azure.documentdb.internal.query.orderbyquery
-    - com.microsoft.azure.documentdb.internal.routing
-    landingPageType: Service
-    name: "DocumentDB"
+    uid: landingpage.services.data.lake.store
   - children:
     - com.microsoft.azure.eventhubs
     - com.microsoft.azure.servicebus
     - com.microsoft.azure.servicebus.amqp
     landingPageType: Service
     name: "Event Hub"
+    uid: landingpage.services.event.hub
   - children:
     - com.microsoft.azure.sdk.iot.device
     - com.microsoft.azure.sdk.iot.device.DeviceTwin
@@ -154,6 +146,7 @@
     - com.microsoft.azure.sdk.iot.device.transport.mqtt
     landingPageType: Service
     name: "IoT Device"
+    uid: landingpage.services.iot.device
   - children:
     - com.microsoft.azure.sdk.iot.service
     - com.microsoft.azure.sdk.iot.service.auth
@@ -164,6 +157,7 @@
     - com.microsoft.azure.sdk.iot.service.transport.http
     landingPageType: Service
     name: "IoT Service"
+    uid: landingpage.services.iot.service
   - children:
     - com.microsoft.azure.keyvault
     - com.microsoft.azure.keyvault.authentication
@@ -171,46 +165,12 @@
     - com.microsoft.azure.keyvault.requests
     landingPageType: Service
     name: "Key Vault"
+    uid: landingpage.services.key.vault
   - children:
-    - redis.clients.jedis
-    - redis.clients.jedis.exceptions
-    - redis.clients.jedis.params
-    - redis.clients.jedis.params.geo
-    - redis.clients.jedis.params.sortedset
-    - redis.clients.util
-    landingPageType: Service
-    name: "Redis Cache"
-  - children:
-    - com.microsoft.sqlserver.jdbc
-    - microsoft.sql
-    landingPageType: Service
-    name: "SQL Database"
-  - children:
-    - org.apache.qpid.jms
-    - org.apache.qpid.jms.exceptions
-    - org.apache.qpid.jms.jndi
-    - org.apache.qpid.jms.message
-    - org.apache.qpid.jms.message.facade
-    - org.apache.qpid.jms.meta
-    - org.apache.qpid.jms.policy
-    - org.apache.qpid.jms.provider
-    - org.apache.qpid.jms.provider.amqp
-    - org.apache.qpid.jms.provider.amqp.builders
-    - org.apache.qpid.jms.provider.amqp.filters
-    - org.apache.qpid.jms.provider.amqp.message
-    - org.apache.qpid.jms.provider.failover
-    - org.apache.qpid.jms.sasl
-    - org.apache.qpid.jms.selector
-    - org.apache.qpid.jms.selector.filter
-    - org.apache.qpid.jms.selector.parser
-    - org.apache.qpid.jms.transports
-    - org.apache.qpid.jms.transports.netty
-    - org.apache.qpid.jms.util
-    landingPageType: Service
-    name: "Service Bus"
-  - children:
-    - "*"
+    - '*'
     landingPageType: Service
     name: "Others"
+    uid: landingpage.services.others
   landingPageType: Root
   name: References
+  uid: landingpage.references
