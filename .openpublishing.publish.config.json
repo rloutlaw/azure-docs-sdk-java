@@ -60,7 +60,8 @@
       "ReferenceTOC": "docs-ref-autogen/toc.yml",
       "ConceptualTOC": "docs-ref-conceptual/toc.yml",
       "ReferenceTOCUrl": "/java/api/toc.json",
-      "ConceptualTOCUrl": "/java/azure/toc.json"
+      "ConceptualTOCUrl": "/java/azure/toc.json",
+      "HideEmptyNode": true
     }
   ],
   "need_generate_pdf_url_template": false
