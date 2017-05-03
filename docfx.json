@@ -10,18 +10,7 @@
         "dest": "api"
       }
     ],
-    "resource": [
-      {
-        "files": [
-          "**/*.png",
-     
-        "exclude": [
-          "**/obj/**",
-          "azure/sdk/java/**",
-          "**/includes/**"
-        ]
-      }
-    ],    "overwrite": "docs-ref-overwrite/*.md",
+    "overwrite": "docs-ref-overwrite/*.md",
     "externalReference": [],
     "globalMetadata": {
       "author": "erickson-doug",
