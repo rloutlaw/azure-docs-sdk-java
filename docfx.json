@@ -3,40 +3,18 @@
     "content": [
       {
         "files": [
-          "**/*.yml"
+          "landingpage.*.yml",
+		  "com.microsoft.azure.management.storage*.yml"
         ],
         "src": "docs-ref-autogen",
         "dest": "api"
-      },
-      {
-        "files": [
-          "index.md"
-        ],
-		"src": ".",
-        "dest": "api"
-      },
-      {
-        "files": [
-          "toc.yml"
-        ],
-        "src": "breadcrumb",
-        "dest": "breadcrumb"
-      },
-      {
-        "files": [
-          "**/*.md",
-		  "**/*.yml"
-        ],
-        "src": "docs-ref-conceptual",
-        "dest": "azure"
       }
     ],
     "resource": [
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
-        ],
+     
         "exclude": [
           "**/obj/**",
           "azure/sdk/java/**",
@@ -88,6 +66,7 @@
     "template": [
       "docs.html"
     ],
+	"exportRawModel": true,
     "dest": "azure/sdk/java"
   }
 }
