@@ -1,3 +1,6 @@
 - name: Azure Java SDK
+  href: /java/azure/
+  homepage: /java/azure/overview
+- name: References
   href: /java/api/
-  homepage: /java/api/index
+  homepage: /java/api/overview/azure/index
