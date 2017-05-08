@@ -62,15 +62,6 @@ items:
   syntax:
     content: package com.microsoft.azure.management.graphrbac
 references:
-- uid: com.microsoft.azure.management.graphrbac.implementation
-  href: com.microsoft.azure.management.graphrbac.implementation.yml
-  name: com.microsoft.azure.management.graphrbac.implementation
-  nameWithType: com.microsoft.azure.management.graphrbac.implementation
-  fullName: com.microsoft.azure.management.graphrbac.implementation
-  type: Namespace
-  summary: <p>This package contains the implementation classes for GraphRbacManagementClient. The Graph RBAC Management Client. </p>
-  syntax:
-    content: package com.microsoft.azure.management.graphrbac.implementation
 - uid: com.microsoft.azure.management.graphrbac._active_directory_group
   parent: com.microsoft.azure.management.graphrbac
   href: com.microsoft.azure.management.graphrbac._active_directory_group.yml
@@ -339,16 +330,6 @@ references:
   summary: <p>The template for a service principal update operation, containing all the settings that can be modified. </p>
   syntax:
     content: public interface Update
-- uid: com.microsoft.azure.management.graphrbac._user._update
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._user._update.yml
-  name: User.Update
-  nameWithType: User.Update
-  fullName: com.microsoft.azure.management.graphrbac.User.Update
-  type: Interface
-  summary: <p>The template for a user update operation, containing all the settings that can be modified. </p>
-  syntax:
-    content: public interface Update
 - uid: com.microsoft.azure.management.graphrbac._active_directory_group._update
   parent: com.microsoft.azure.management.graphrbac
   href: com.microsoft.azure.management.graphrbac._active_directory_group._update.yml
@@ -357,6 +338,16 @@ references:
   fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryGroup.Update
   type: Interface
   summary: <p>The template for a group update operation, containing all the settings that can be modified. </p>
+  syntax:
+    content: public interface Update
+- uid: com.microsoft.azure.management.graphrbac._user._update
+  parent: com.microsoft.azure.management.graphrbac
+  href: com.microsoft.azure.management.graphrbac._user._update.yml
+  name: User.Update
+  nameWithType: User.Update
+  fullName: com.microsoft.azure.management.graphrbac.User.Update
+  type: Interface
+  summary: <p>The template for a user update operation, containing all the settings that can be modified. </p>
   syntax:
     content: public interface Update
 - uid: com.microsoft.azure.management.graphrbac._user._update_stages
@@ -409,26 +400,6 @@ references:
   summary: <p>The stage of a user definition allowing specifying if the account is enabled. </p>
   syntax:
     content: public interface WithAccountEnabled
-- uid: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._with_create
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._with_create.yml
-  name: ActiveDirectoryGroup.DefinitionStages.WithCreate
-  nameWithType: ActiveDirectoryGroup.DefinitionStages.WithCreate
-  fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryGroup.DefinitionStages.WithCreate
-  type: Interface
-  summary: <p>An AD group definition with sufficient inputs to create a new group in the cloud, but exposing additional optional inputs to specify. </p>
-  syntax:
-    content: public interface WithCreate extends Creatable<ActiveDirectoryGroup>
-- uid: com.microsoft.azure.management.graphrbac._service_principal._definition_stages._with_create
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._service_principal._definition_stages._with_create.yml
-  name: ServicePrincipal.DefinitionStages.WithCreate
-  nameWithType: ServicePrincipal.DefinitionStages.WithCreate
-  fullName: com.microsoft.azure.management.graphrbac.ServicePrincipal.DefinitionStages.WithCreate
-  type: Interface
-  summary: <p>A service principal definition with sufficient inputs to create a new service principal in the cloud, but exposing additional optional inputs to specify. </p>
-  syntax:
-    content: public interface WithCreate extends Creatable<ServicePrincipal>,ServicePrincipal.DefinitionStages.WithAccountEnabled
 - uid: com.microsoft.azure.management.graphrbac._user._definition_stages._with_create
   parent: com.microsoft.azure.management.graphrbac
   href: com.microsoft.azure.management.graphrbac._user._definition_stages._with_create.yml
@@ -439,16 +410,26 @@ references:
   summary: <p>An AD user definition with sufficient inputs to create a new user in the cloud, but exposing additional optional inputs to specify. </p>
   syntax:
     content: public interface WithCreate extends Creatable<User>,User.DefinitionStages.WithAccountEnabled
-- uid: com.microsoft.azure.management.graphrbac._user._definition_stages._with_display_name
+- uid: com.microsoft.azure.management.graphrbac._service_principal._definition_stages._with_create
   parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._user._definition_stages._with_display_name.yml
-  name: User.DefinitionStages.WithDisplayName
-  nameWithType: User.DefinitionStages.WithDisplayName
-  fullName: com.microsoft.azure.management.graphrbac.User.DefinitionStages.WithDisplayName
+  href: com.microsoft.azure.management.graphrbac._service_principal._definition_stages._with_create.yml
+  name: ServicePrincipal.DefinitionStages.WithCreate
+  nameWithType: ServicePrincipal.DefinitionStages.WithCreate
+  fullName: com.microsoft.azure.management.graphrbac.ServicePrincipal.DefinitionStages.WithCreate
   type: Interface
-  summary: <p>The stage of a user definition allowing display name to be set. </p>
+  summary: <p>A service principal definition with sufficient inputs to create a new service principal in the cloud, but exposing additional optional inputs to specify. </p>
   syntax:
-    content: public interface WithDisplayName
+    content: public interface WithCreate extends Creatable<ServicePrincipal>,ServicePrincipal.DefinitionStages.WithAccountEnabled
+- uid: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._with_create
+  parent: com.microsoft.azure.management.graphrbac
+  href: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._with_create.yml
+  name: ActiveDirectoryGroup.DefinitionStages.WithCreate
+  nameWithType: ActiveDirectoryGroup.DefinitionStages.WithCreate
+  fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryGroup.DefinitionStages.WithCreate
+  type: Interface
+  summary: <p>An AD group definition with sufficient inputs to create a new group in the cloud, but exposing additional optional inputs to specify. </p>
+  syntax:
+    content: public interface WithCreate extends Creatable<ActiveDirectoryGroup>
 - uid: com.microsoft.azure.management.graphrbac._active_directory_group._defccfce8c0aae4b8ecccf1989a164ddd01
   parent: com.microsoft.azure.management.graphrbac
   href: com.microsoft.azure.management.graphrbac._active_directory_group._defccfce8c0aae4b8ecccf1989a164ddd01.yml
@@ -457,6 +438,16 @@ references:
   fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryGroup.DefinitionStages.WithDisplayName
   type: Interface
   summary: <p>The stage of group definition allowing display name to be specified. </p>
+  syntax:
+    content: public interface WithDisplayName
+- uid: com.microsoft.azure.management.graphrbac._user._definition_stages._with_display_name
+  parent: com.microsoft.azure.management.graphrbac
+  href: com.microsoft.azure.management.graphrbac._user._definition_stages._with_display_name.yml
+  name: User.DefinitionStages.WithDisplayName
+  nameWithType: User.DefinitionStages.WithDisplayName
+  fullName: com.microsoft.azure.management.graphrbac.User.DefinitionStages.WithDisplayName
+  type: Interface
+  summary: <p>The stage of a user definition allowing display name to be set. </p>
   syntax:
     content: public interface WithDisplayName
 - uid: com.microsoft.azure.management.graphrbac._active_directory_group._defbd6e139bb2979ccecc691006b36e6c6b
