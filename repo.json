@@ -2,6 +2,7 @@
 	"repo": [{
 		"url": "https://github.com/Azure/azure-sdk-for-java",
 		"branch": "master",
+		"tag": "v1.0.0",
 		"name": "azure-sdk-for-java"
 	},
 	{
