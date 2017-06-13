@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Deployment.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Deployment.java
-    startLine: 236
+    startLine: 241
   package: com.microsoft.azure.management.resources
   summary: <p>A deployment definition allowing the parameters to be specified. </p>
   syntax:
@@ -38,7 +38,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Deployment.java
-    startLine: 243
+    startLine: 248
   package: com.microsoft.azure.management.resources
   summary: >-
     <p>Specifies the parameters as a Java object.</p>
@@ -67,7 +67,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Deployment.java
-    startLine: 251
+    startLine: 256
   package: com.microsoft.azure.management.resources
   summary: <p>Specifies the parameters as a JSON string. </p>
   syntax:
@@ -96,7 +96,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Deployment.java
-    startLine: 260
+    startLine: 265
   package: com.microsoft.azure.management.resources
   summary: >-
     <p>Specifies the parameters as a URL.</p>

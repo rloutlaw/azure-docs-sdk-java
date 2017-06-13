@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 328
+    startLine: 333
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of the managed disk definition allowing to choose source data disk image. </p>
   syntax:
@@ -38,7 +38,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 336
+    startLine: 341
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies an image containing source data disk image.</p>
@@ -70,7 +70,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 354
+    startLine: 359
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies a custom image containing a source data disk image.</p>
@@ -102,7 +102,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 345
+    startLine: 350
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies an image containing a source data disk image.</p>

@@ -21,7 +21,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCachePremium.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCachePremium.java
     startLine: 16
@@ -31,7 +31,6 @@ items:
     content: public interface RedisCachePremium extends RedisCache
   inheritedMembers:
   - com.microsoft.azure.management.redis._redis_cache.asPremium()
-  - com.microsoft.azure.management.redis._redis_cache.getKeys()
   - com.microsoft.azure.management.redis._redis_cache.hostName()
   - com.microsoft.azure.management.resources.fluentcore.arm.models._has_id.id()
   - com.microsoft.azure.management.resources.fluentcore.model._has_inner.inner()
@@ -332,18 +331,6 @@ references:
     return:
       type: com.microsoft.azure.management.redis._redis_cache_premium
       description: <p>exposes features available only to Premium <xref href="com.microsoft.azure.management.redis._sku" data-throw-if-not-resolved="false"></xref> Redis Cache instances. </p>
-- uid: com.microsoft.azure.management.redis._redis_cache.getKeys()
-  parent: com.microsoft.azure.management.redis._redis_cache
-  href: com.microsoft.azure.management.redis._redis_cache.yml
-  name: getKeys()
-  nameWithType: RedisCache.getKeys()
-  fullName: RedisAccessKeys com.microsoft.azure.management.redis.RedisCache.getKeys()
-  type: Method
-  syntax:
-    content: public RedisAccessKeys getKeys()
-    return:
-      type: com.microsoft.azure.management.redis._redis_access_keys
-      description: <p>a Redis Cache's access keys. This operation requires write permission to the Cache resource. </p>
 - uid: com.microsoft.azure.management.redis._redis_cache.hostName()
   parent: com.microsoft.azure.management.redis._redis_cache
   href: com.microsoft.azure.management.redis._redis_cache.yml

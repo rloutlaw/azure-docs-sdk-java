@@ -19,10 +19,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 946
+    startLine: 957
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of a Windows virtual machine scale set definition which contains all the minimum required inputs for the resource to be created, but also allows for any other optional settings to be specified. </p>
   syntax: &o1
@@ -62,7 +62,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 966
+    startLine: 977
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Enables automatic updates.</p>
@@ -87,7 +87,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 973
+    startLine: 984
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Disables automatic updates.</p>
@@ -112,7 +112,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 959
+    startLine: 970
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Disables the VM agent.</p>
@@ -137,7 +137,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 981
+    startLine: 992
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the time zone for the virtual machines to use.</p>
@@ -166,7 +166,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 952
+    startLine: 963
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Enables the VM agent.</p>
@@ -191,7 +191,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 991
+    startLine: 1002
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the WinRM listener. </p>

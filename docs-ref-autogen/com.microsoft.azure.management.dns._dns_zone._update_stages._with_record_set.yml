@@ -37,10 +37,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 194
+    startLine: 193
   package: com.microsoft.azure.management.dns
   summary: <p>The stage of the DNS zone update allowing to specify record set. </p>
   syntax:
@@ -59,7 +59,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 209
+    startLine: 208
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Specifies definition of an AAAA record set to be attached to the DNS zone.</p>
@@ -88,7 +88,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 201
+    startLine: 200
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Specifies definition of an A record set to be attached to the DNS zone.</p>
@@ -117,7 +117,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 226
+    startLine: 225
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Specifies definition of a MX record set to be attached to the DNS zone.</p>
@@ -146,7 +146,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 234
+    startLine: 233
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Specifies definition of an NS record set to be attached to the DNS zone.</p>
@@ -175,7 +175,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 242
+    startLine: 241
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Specifies definition of a PTR record set to be attached to the DNS zone.</p>
@@ -204,7 +204,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 250
+    startLine: 249
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Specifies definition of a SRV record set to be attached to the DNS zone.</p>
@@ -233,7 +233,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 258
+    startLine: 257
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Specifies definition of a TXT record set to be attached to the DNS zone.</p>
@@ -262,7 +262,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 274
+    startLine: 273
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Begins the description of an update of an existing AAAA record set in this DNS zone.</p>
@@ -291,7 +291,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 266
+    startLine: 265
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Begins the description of an update of an existing A record set in this DNS zone.</p>
@@ -320,7 +320,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 282
+    startLine: 281
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Begins the description of an update of an existing MX record set in this DNS zone.</p>
@@ -349,7 +349,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 290
+    startLine: 289
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Begins the description of an update of an existing NS record set in this DNS zone.</p>
@@ -378,7 +378,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 298
+    startLine: 297
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Begins the description of an update of an existing PTR record set in this DNS zone.</p>
@@ -407,7 +407,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 322
+    startLine: 320
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Begins the description of an update of the SOA record in this DNS zone.</p>
@@ -432,7 +432,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 306
+    startLine: 305
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Begins the description of an update of an existing SRV record set in this DNS zone.</p>
@@ -461,7 +461,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 314
+    startLine: 313
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Begins the description of an update of an existing TXT record set in this DNS zone.</p>
@@ -490,7 +490,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 218
+    startLine: 217
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Specifies definition of a CNAME record set to be attached to the DNS zone.</p>
@@ -522,7 +522,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 338
+    startLine: 336
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Removes a AAAA record set in the DNS zone.</p>
@@ -551,7 +551,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 330
+    startLine: 328
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Removes a A record set in the DNS zone.</p>
@@ -580,7 +580,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 346
+    startLine: 344
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Removes a CNAME record set in the DNS zone.</p>
@@ -609,7 +609,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 354
+    startLine: 352
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Removes a MX record set in the DNS zone.</p>
@@ -638,7 +638,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 362
+    startLine: 360
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Removes a NS record set in the DNS zone.</p>
@@ -667,7 +667,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 370
+    startLine: 368
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Removes a PTR record set in the DNS zone.</p>
@@ -696,7 +696,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 378
+    startLine: 376
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Removes a SRV record set in the DNS zone.</p>
@@ -725,7 +725,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsZone.java
-    startLine: 386
+    startLine: 384
   package: com.microsoft.azure.management.dns
   summary: >-
     <p>Removes a TXT record set in the DNS zone.</p>

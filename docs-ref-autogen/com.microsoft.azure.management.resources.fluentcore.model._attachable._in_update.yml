@@ -14,7 +14,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Attachable.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Attachable.java
     startLine: 57
@@ -211,38 +211,6 @@ references:
     typeParameters:
     - type: 18a275b1
       description: <p>the return type of <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref></p>
-- uid: com.microsoft.azure.management.graphrbac._certificate_credential._upd19d8dbf76ea61c976e1481c7c38c01c3
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._certificate_credential._upd19d8dbf76ea61c976e1481c7c38c01c3.yml
-  name: CertificateCredential.UpdateDefinitionStages.WithAttach<ParentT>
-  nameWithType: CertificateCredential.UpdateDefinitionStages.WithAttach<ParentT>
-  fullName: com.microsoft.azure.management.graphrbac.CertificateCredential.UpdateDefinitionStages.WithAttach<ParentT>
-  type: Interface
-  summary: >-
-    <p>The final stage of the credential definition. </p>
-
-    <p>At this stage, more settings can be specified, or the credential definition can be attached to the parent application / service principal definition using <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public interface WithAttach<ParentT>
-    typeParameters:
-    - type: 18a275b1
-      description: <p>the return type of <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref></p>
-- uid: com.microsoft.azure.management.graphrbac._password_credential._update7560088925a96efb6003d04e81f1c6a5
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._password_credential._update7560088925a96efb6003d04e81f1c6a5.yml
-  name: PasswordCredential.UpdateDefinitionStages.WithAttach<ParentT>
-  nameWithType: PasswordCredential.UpdateDefinitionStages.WithAttach<ParentT>
-  fullName: com.microsoft.azure.management.graphrbac.PasswordCredential.UpdateDefinitionStages.WithAttach<ParentT>
-  type: Interface
-  summary: >-
-    <p>The final stage of the credential definition. </p>
-
-    <p>At this stage, more settings can be specified, or the credential definition can be attached to the parent application / service principal definition using <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public interface WithAttach<ParentT>
-    typeParameters:
-    - type: 18a275b1
-      description: <p>the return type of <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref></p>
 - uid: com.microsoft.azure.management.keyvault._access_policy._definition_stages._with_attach
   parent: com.microsoft.azure.management.keyvault
   href: com.microsoft.azure.management.keyvault._access_policy._definition_stages._with_attach.yml
@@ -269,7 +237,7 @@ references:
   summary: >-
     <p>The final stage of an application gateway backend definition. </p>
 
-    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition. </p>
+    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition using <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public interface WithAttach<ParentT>
     typeParameters:
@@ -301,12 +269,12 @@ references:
   summary: >-
     <p>The final stage of an application gateway IP configuration definition. </p>
 
-    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition. </p>
+    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition using <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public interface WithAttach<ParentT>
     typeParameters:
     - type: 18a275b1
-      description: <p>the stage of the parent application gateway definition to return to after attaching this definition </p>
+      description: <p>the return type of <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref></p>
 - uid: com.microsoft.azure.management.network._application_gateway_listener.61d9fc653944e92ded94e93b50deff38
   parent: com.microsoft.azure.management.network
   href: com.microsoft.azure.management.network._application_gateway_listener.61d9fc653944e92ded94e93b50deff38.yml
@@ -317,7 +285,7 @@ references:
   summary: >-
     <p>The final stage of an application gateway HTTP listener definition. </p>
 
-    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition. </p>
+    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition using <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public interface WithAttach<ParentT>
     typeParameters:
@@ -333,7 +301,7 @@ references:
   summary: >-
     <p>The final stage of an application gateway request routing rule definition. </p>
 
-    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition. </p>
+    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition using <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_update.attach()" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public interface WithAttach<ParentT>
     typeParameters:

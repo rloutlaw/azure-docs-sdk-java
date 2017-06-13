@@ -3,8 +3,9 @@ items:
   id: _service_principals_tests
   parent: com.microsoft.azure.management.graphrbac
   children:
-  - com.microsoft.azure.management.graphrbac._service_principals_tests.canCRUDServicePrincipal()
-  - com.microsoft.azure.management.graphrbac._service_principals_tests.canCRUDServicePrincipalWithRole()
+  - com.microsoft.azure.management.graphrbac._service_principals_tests.cleanup()
+  - com.microsoft.azure.management.graphrbac._service_principals_tests.getServicePrincipal()
+  - com.microsoft.azure.management.graphrbac._service_principals_tests.setup()
   href: com.microsoft.azure.management.graphrbac._service_principals_tests.yml
   langs:
   - java
@@ -15,123 +16,116 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-graph-rbac/src/test/java/com/microsoft/azure/management/graphrbac/ServicePrincipalsTests.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-graph-rbac/src/test/java/com/microsoft/azure/management/graphrbac/ServicePrincipalsTests.java
-    startLine: 22
+    startLine: 16
   package: com.microsoft.azure.management.graphrbac
   syntax:
-    content: public class ServicePrincipalsTests extends GraphRbacManagementTest
+    content: public class ServicePrincipalsTests extends GraphRbacManagementTestBase
   inheritance:
   - java.lang.Object
-  - TestBase
-  - com.microsoft.azure.management.graphrbac._graph_rbac_management_test
+  - com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base
   inheritedMembers:
-  - com.microsoft.azure.management.graphrbac._graph_rbac_management_test.cleanUpResources()
-  - com.microsoft.azure.management.graphrbac._graph_rbac_management_test.graphRbacManager()
-  - com.microsoft.azure.management.graphrbac._graph_rbac_management_test.initializeClients(RestClient,String,String)
-  - com.microsoft.azure.management.graphrbac._graph_rbac_management_test.resourceManager()
-- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.canCRUDServicePrincipal()
-  id: canCRUDServicePrincipal()
+  - com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base.createClients()
+  - com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base.graphRbacManager()
+- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.cleanup()
+  id: cleanup()
   parent: com.microsoft.azure.management.graphrbac._service_principals_tests
   href: com.microsoft.azure.management.graphrbac._service_principals_tests.yml
   langs:
   - java
-  name: canCRUDServicePrincipal()
-  nameWithType: ServicePrincipalsTests.canCRUDServicePrincipal()
-  fullName: void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.canCRUDServicePrincipal()
-  overload: com.microsoft.azure.management.graphrbac._service_principals_tests.canCRUDServicePrincipal*
+  name: cleanup()
+  nameWithType: ServicePrincipalsTests.cleanup()
+  fullName: static void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.cleanup()
+  overload: com.microsoft.azure.management.graphrbac._service_principals_tests.cleanup*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-graph-rbac/src/test/java/com/microsoft/azure/management/graphrbac/ServicePrincipalsTests.java
-    startLine: 25
+    startLine: 26
   package: com.microsoft.azure.management.graphrbac
   syntax:
-    content: public void canCRUDServicePrincipal()
-- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.canCRUDServicePrincipalWithRole()
-  id: canCRUDServicePrincipalWithRole()
+    content: public static void cleanup()
+- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.getServicePrincipal()
+  id: getServicePrincipal()
   parent: com.microsoft.azure.management.graphrbac._service_principals_tests
   href: com.microsoft.azure.management.graphrbac._service_principals_tests.yml
   langs:
   - java
-  name: canCRUDServicePrincipalWithRole()
-  nameWithType: ServicePrincipalsTests.canCRUDServicePrincipalWithRole()
-  fullName: void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.canCRUDServicePrincipalWithRole()
-  overload: com.microsoft.azure.management.graphrbac._service_principals_tests.canCRUDServicePrincipalWithRole*
+  name: getServicePrincipal()
+  nameWithType: ServicePrincipalsTests.getServicePrincipal()
+  fullName: void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.getServicePrincipal()
+  overload: com.microsoft.azure.management.graphrbac._service_principals_tests.getServicePrincipal*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-graph-rbac/src/test/java/com/microsoft/azure/management/graphrbac/ServicePrincipalsTests.java
-    startLine: 50
+    startLine: 31
   package: com.microsoft.azure.management.graphrbac
   syntax:
-    content: public void canCRUDServicePrincipalWithRole()
+    content: public void getServicePrincipal()
+- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.setup()
+  id: setup()
+  parent: com.microsoft.azure.management.graphrbac._service_principals_tests
+  href: com.microsoft.azure.management.graphrbac._service_principals_tests.yml
+  langs:
+  - java
+  name: setup()
+  nameWithType: ServicePrincipalsTests.setup()
+  fullName: static void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.setup()
+  overload: com.microsoft.azure.management.graphrbac._service_principals_tests.setup*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-mgmt-graph-rbac/src/test/java/com/microsoft/azure/management/graphrbac/ServicePrincipalsTests.java
+    startLine: 21
+  package: com.microsoft.azure.management.graphrbac
+  syntax:
+    content: public static void setup()
 references:
-- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.canCRUDServicePrincipal*
-  name: canCRUDServicePrincipal
-  nameWithType: ServicePrincipalsTests.canCRUDServicePrincipal
-  fullName: void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.canCRUDServicePrincipal
+- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.setup*
+  name: setup
+  nameWithType: ServicePrincipalsTests.setup
+  fullName: static void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.setup
   package: com.microsoft.azure.management.graphrbac
-- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.canCRUDServicePrincipalWithRole*
-  name: canCRUDServicePrincipalWithRole
-  nameWithType: ServicePrincipalsTests.canCRUDServicePrincipalWithRole
-  fullName: void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.canCRUDServicePrincipalWithRole
+- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.cleanup*
+  name: cleanup
+  nameWithType: ServicePrincipalsTests.cleanup
+  fullName: static void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.cleanup
   package: com.microsoft.azure.management.graphrbac
-- uid: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.cleanUpResources()
-  parent: com.microsoft.azure.management.graphrbac._graph_rbac_management_test
-  href: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.yml
-  name: cleanUpResources()
-  nameWithType: GraphRbacManagementTest.cleanUpResources()
-  fullName: void com.microsoft.azure.management.graphrbac.GraphRbacManagementTest.cleanUpResources()
+- uid: com.microsoft.azure.management.graphrbac._service_principals_tests.getServicePrincipal*
+  name: getServicePrincipal
+  nameWithType: ServicePrincipalsTests.getServicePrincipal
+  fullName: void com.microsoft.azure.management.graphrbac.ServicePrincipalsTests.getServicePrincipal
+  package: com.microsoft.azure.management.graphrbac
+- uid: com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base.createClients()
+  parent: com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base
+  href: com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base.yml
+  name: createClients()
+  nameWithType: GraphRbacManagementTestBase.createClients()
+  fullName: static void com.microsoft.azure.management.graphrbac.GraphRbacManagementTestBase.createClients()
   type: Method
   syntax:
-    content: protected void cleanUpResources()
-- uid: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.graphRbacManager()
-  parent: com.microsoft.azure.management.graphrbac._graph_rbac_management_test
-  href: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.yml
+    content: protected static void createClients()
+- uid: com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base.graphRbacManager()
+  parent: com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base
+  href: com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base.yml
   name: graphRbacManager
-  nameWithType: GraphRbacManagementTest.graphRbacManager
-  fullName: GraphRbacManager com.microsoft.azure.management.graphrbac.GraphRbacManagementTest.graphRbacManager
+  nameWithType: GraphRbacManagementTestBase.graphRbacManager
+  fullName: GraphRbacManager com.microsoft.azure.management.graphrbac.GraphRbacManagementTestBase.graphRbacManager
   type: Field
   syntax:
     content: protected static GraphRbacManager graphRbacManager
     return:
       type: 06643172
-- uid: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.initializeClients(RestClient,String,String)
-  parent: com.microsoft.azure.management.graphrbac._graph_rbac_management_test
-  href: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.yml
-  name: initializeClients(RestClient restClient, String defaultSubscription, String domain)
-  nameWithType: GraphRbacManagementTest.initializeClients(RestClient restClient, String defaultSubscription, String domain)
-  fullName: void com.microsoft.azure.management.graphrbac.GraphRbacManagementTest.initializeClients(RestClient restClient, String defaultSubscription, String domain)
-  type: Method
-  syntax:
-    content: protected void initializeClients(RestClient restClient, String defaultSubscription, String domain)
-    parameters:
-    - id: restClient
-      type: 9545a295
-    - id: defaultSubscription
-      type: "26831127"
-    - id: domain
-      type: "26831127"
-- uid: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.resourceManager()
-  parent: com.microsoft.azure.management.graphrbac._graph_rbac_management_test
-  href: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.yml
-  name: resourceManager
-  nameWithType: GraphRbacManagementTest.resourceManager
-  fullName: ResourceManager com.microsoft.azure.management.graphrbac.GraphRbacManagementTest.resourceManager
-  type: Field
-  syntax:
-    content: protected static ResourceManager resourceManager
-    return:
-      type: com.microsoft.azure.management.resources.implementation._resource_manager
-- uid: com.microsoft.azure.management.graphrbac._graph_rbac_management_test
+- uid: com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base
   parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._graph_rbac_management_test.yml
-  name: GraphRbacManagementTest
-  nameWithType: GraphRbacManagementTest
-  fullName: com.microsoft.azure.management.graphrbac.GraphRbacManagementTest
+  href: com.microsoft.azure.management.graphrbac._graph_rbac_management_test_base.yml
+  name: GraphRbacManagementTestBase
+  nameWithType: GraphRbacManagementTestBase
+  fullName: com.microsoft.azure.management.graphrbac.GraphRbacManagementTestBase
   type: Class
   summary: <p>The base for storage manager tests. </p>
   syntax:
-    content: public class GraphRbacManagementTest
+    content: public class GraphRbacManagementTestBase

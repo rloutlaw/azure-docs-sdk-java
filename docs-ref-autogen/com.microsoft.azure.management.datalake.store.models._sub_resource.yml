@@ -17,7 +17,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/SubResource.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/SubResource.java
     startLine: 15
@@ -173,7 +173,7 @@ references:
   nameWithType: TrustedIdProvider
   fullName: com.microsoft.azure.management.datalake.store.models.TrustedIdProvider
   type: Class
-  summary: <p>Data Lake Store Trusted Identity Provider information. </p>
+  summary: <p>Data Lake Store firewall rule information. </p>
   syntax:
     content: public class TrustedIdProvider
 - uid: com.microsoft.azure.management.datalake.store.models._sub_resource

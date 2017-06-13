@@ -4,8 +4,6 @@ items:
   parent: com.microsoft.azure.management.compute
   children:
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.equals(Object)
-  - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.fromSku(Sku)
-  - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.fromSkuNameAndTier(String,String)
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.hashCode()
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.sku()
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.STANDARD_A0()
@@ -67,7 +65,6 @@ items:
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.STANDARD_F8()
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.STANDARD_F8S()
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.toString()
-  - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.values()
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.VirtualMachineScaleSetSkuTypes(Sku)
   - com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.VirtualMachineScaleSetSkuTypes(String,String)
   href: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.yml
@@ -80,10 +77,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 19
+    startLine: 14
   package: com.microsoft.azure.management.compute
   summary: <p>Scale set virtual machine SKU types. </p>
   syntax: &o1
@@ -104,7 +101,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 298
+    startLine: 237
   package: com.microsoft.azure.management.compute
   syntax:
     content: public boolean equals(Object obj)
@@ -113,64 +110,6 @@ items:
       type: "79317049"
     return:
       type: 4fc6e284
-- uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.fromSku(Sku)
-  id: fromSku(Sku)
-  parent: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
-  href: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.yml
-  langs:
-  - java
-  name: fromSku(Sku sku)
-  nameWithType: VirtualMachineScaleSetSkuTypes.fromSku(Sku sku)
-  fullName: static VirtualMachineScaleSetSkuTypes com.microsoft.azure.management.compute.VirtualMachineScaleSetSkuTypes.fromSku(Sku sku)
-  overload: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.fromSku*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 249
-  package: com.microsoft.azure.management.compute
-  summary: >-
-    <p>Parses a SKU into a VMSS SKU type and creates a new VirtualMachineScaleSetSkuType instance if not found among the existing ones.</p>
-
-    <p></p>
-  syntax:
-    content: public static VirtualMachineScaleSetSkuTypes fromSku(Sku sku)
-    parameters:
-    - id: sku
-      type: com.microsoft.azure.management.compute._sku
-      description: <p>a VMSS SKU </p>
-    return:
-      type: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
-      description: <p>the parsed or created VMSS SKU type </p>
-- uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.fromSkuNameAndTier(String,String)
-  id: fromSkuNameAndTier(String,String)
-  parent: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
-  href: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.yml
-  langs:
-  - java
-  name: fromSkuNameAndTier(String skuName, String skuTier)
-  nameWithType: VirtualMachineScaleSetSkuTypes.fromSkuNameAndTier(String skuName, String skuTier)
-  fullName: static VirtualMachineScaleSetSkuTypes com.microsoft.azure.management.compute.VirtualMachineScaleSetSkuTypes.fromSkuNameAndTier(String skuName, String skuTier)
-  overload: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.fromSkuNameAndTier*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 273
-  package: com.microsoft.azure.management.compute
-  summary: <p>Parses into a VMSS SKU type and creates a new VMSS SKU type instance if not found among the existing ones. </p>
-  syntax:
-    content: public static VirtualMachineScaleSetSkuTypes fromSkuNameAndTier(String skuName, String skuTier)
-    parameters:
-    - id: skuName
-      type: "26831127"
-      description: <p>a SKU name </p>
-    - id: skuTier
-      type: "26831127"
-      description: <p>a SKU tier </p>
-    return:
-      type: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
-      description: <p>a VMSS SKU type </p>
 - uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.hashCode()
   id: hashCode()
   parent: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
@@ -185,7 +124,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 293
+    startLine: 232
   package: com.microsoft.azure.management.compute
   syntax:
     content: public int hashCode()
@@ -205,13 +144,13 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 280
+    startLine: 222
   package: com.microsoft.azure.management.compute
   syntax:
     content: public Sku sku()
     return:
       type: com.microsoft.azure.management.compute._sku
-      description: <p>the SKU </p>
+      description: <p>the sku </p>
 - uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.STANDARD_A0()
   id: STANDARD_A0()
   parent: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
@@ -225,7 +164,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 24
+    startLine: 16
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A0 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -245,7 +184,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 27
+    startLine: 19
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A1 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -265,7 +204,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 54
+    startLine: 46
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A10 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -285,7 +224,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 57
+    startLine: 49
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A11 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -305,7 +244,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 30
+    startLine: 22
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -325,7 +264,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 33
+    startLine: 25
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A3 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -345,7 +284,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 36
+    startLine: 28
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A4 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -365,7 +304,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 39
+    startLine: 31
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A5 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -385,7 +324,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 42
+    startLine: 34
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A6 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -405,7 +344,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 45
+    startLine: 37
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A7 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -425,7 +364,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 48
+    startLine: 40
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A8 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -445,7 +384,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 51
+    startLine: 43
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_A9 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -465,7 +404,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 60
+    startLine: 52
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D1 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -485,7 +424,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 84
+    startLine: 76
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D1_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -505,7 +444,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 72
+    startLine: 64
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D11 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -525,7 +464,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 99
+    startLine: 91
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D11_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -545,7 +484,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 75
+    startLine: 67
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D12 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -565,7 +504,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 102
+    startLine: 94
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D12_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -585,7 +524,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 78
+    startLine: 70
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D13 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -605,7 +544,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 105
+    startLine: 97
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D13_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -625,7 +564,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 81
+    startLine: 73
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D14 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -645,7 +584,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 108
+    startLine: 100
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D14_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -665,7 +604,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 111
+    startLine: 103
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D15_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -685,7 +624,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 63
+    startLine: 55
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -705,7 +644,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 87
+    startLine: 79
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D2_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -725,7 +664,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 66
+    startLine: 58
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D3 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -745,7 +684,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 90
+    startLine: 82
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D3_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -765,7 +704,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 69
+    startLine: 61
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D4 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -785,7 +724,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 93
+    startLine: 85
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D4_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -805,7 +744,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 96
+    startLine: 88
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_D5_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -825,7 +764,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 114
+    startLine: 106
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS1 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -845,7 +784,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 138
+    startLine: 130
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS1_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -865,7 +804,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 126
+    startLine: 118
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS11 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -885,7 +824,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 153
+    startLine: 145
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS11_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -905,7 +844,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 129
+    startLine: 121
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS12 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -925,7 +864,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 156
+    startLine: 148
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS12_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -945,7 +884,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 132
+    startLine: 124
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS13 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -965,7 +904,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 159
+    startLine: 151
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS13_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -985,7 +924,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 135
+    startLine: 127
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS14 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1005,7 +944,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 162
+    startLine: 154
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS14_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1025,7 +964,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 165
+    startLine: 157
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS15_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1045,7 +984,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 117
+    startLine: 109
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1065,7 +1004,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 141
+    startLine: 133
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS2_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1085,7 +1024,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 120
+    startLine: 112
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS3 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1105,7 +1044,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 144
+    startLine: 136
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS3_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1125,7 +1064,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 123
+    startLine: 115
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS4 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1145,7 +1084,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 147
+    startLine: 139
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS4_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1165,7 +1104,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 150
+    startLine: 142
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Standard_DS5_v2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1185,7 +1124,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 183
+    startLine: 175
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F1 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1205,7 +1144,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 195
+    startLine: 187
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F16 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1225,7 +1164,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 180
+    startLine: 172
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F16S for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1245,7 +1184,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 168
+    startLine: 160
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F1S for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1265,7 +1204,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 186
+    startLine: 178
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F2 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1285,7 +1224,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 171
+    startLine: 163
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F2S for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1305,7 +1244,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 189
+    startLine: 181
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F4 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1325,7 +1264,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 174
+    startLine: 166
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F4S for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1345,7 +1284,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 192
+    startLine: 184
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F8 for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1365,7 +1304,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 177
+    startLine: 169
   package: com.microsoft.azure.management.compute
   summary: <p>Static value STANDARD_F8S for <xref href="com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1386,33 +1325,12 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 288
+    startLine: 227
   package: com.microsoft.azure.management.compute
   syntax:
     content: public String toString()
     return:
       type: "26831127"
-- uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.values()
-  id: values()
-  parent: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
-  href: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.yml
-  langs:
-  - java
-  name: values()
-  nameWithType: VirtualMachineScaleSetSkuTypes.values()
-  fullName: static VirtualMachineScaleSetSkuTypes [] com.microsoft.azure.management.compute.VirtualMachineScaleSetSkuTypes.values()
-  overload: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.values*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 210
-  package: com.microsoft.azure.management.compute
-  syntax:
-    content: public static VirtualMachineScaleSetSkuTypes [] values()
-    return:
-      type: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_typese5b41c5f
-      description: <p>predefined virtual machine scale set SKU types </p>
 - uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.VirtualMachineScaleSetSkuTypes(Sku)
   id: VirtualMachineScaleSetSkuTypes(Sku)
   parent: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
@@ -1427,7 +1345,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 229
+    startLine: 211
   package: com.microsoft.azure.management.compute
   summary: <p>Creates a custom value for <xref href="com.microsoft.azure.management.compute._virtual_machine_size_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1450,7 +1368,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSetSkuTypes.java
-    startLine: 220
+    startLine: 203
   package: com.microsoft.azure.management.compute
   summary: <p>Creates a custom value for <xref href="com.microsoft.azure.management.compute._virtual_machine_size_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -1458,10 +1376,10 @@ items:
     parameters:
     - id: skuName
       type: "26831127"
-      description: <p>a SKU name </p>
+      description: <p>the SKU name </p>
     - id: skuTier
       type: "26831127"
-      description: <p>a SKU tier </p>
+      description: <p>thr SKU tier </p>
 references:
 - uid: 93de0ef9com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
   spec.java:
@@ -1471,33 +1389,10 @@ references:
     name: VirtualMachineScaleSetSkuTypes
     fullName: com.microsoft.azure.management.compute.VirtualMachineScaleSetSkuTypes
     href: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.yml
-- uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_typese5b41c5f
-  spec.java:
-  - uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types
-    name: VirtualMachineScaleSetSkuTypes
-    fullName: com.microsoft.azure.management.compute.VirtualMachineScaleSetSkuTypes
-    href: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.yml
-  - name: " []"
-    fullName: " []"
-- uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.values*
-  name: values
-  nameWithType: VirtualMachineScaleSetSkuTypes.values
-  fullName: static VirtualMachineScaleSetSkuTypes [] com.microsoft.azure.management.compute.VirtualMachineScaleSetSkuTypes.values
-  package: com.microsoft.azure.management.compute
-- uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.fromSku*
-  name: fromSku
-  nameWithType: VirtualMachineScaleSetSkuTypes.fromSku
-  fullName: static VirtualMachineScaleSetSkuTypes com.microsoft.azure.management.compute.VirtualMachineScaleSetSkuTypes.fromSku
-  package: com.microsoft.azure.management.compute
 - uid: "26831127"
   spec.java:
   - name: String
     fullName: String
-- uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.fromSkuNameAndTier*
-  name: fromSkuNameAndTier
-  nameWithType: VirtualMachineScaleSetSkuTypes.fromSkuNameAndTier
-  fullName: static VirtualMachineScaleSetSkuTypes com.microsoft.azure.management.compute.VirtualMachineScaleSetSkuTypes.fromSkuNameAndTier
-  package: com.microsoft.azure.management.compute
 - uid: com.microsoft.azure.management.compute._virtual_machine_scale_set_sku_types.VirtualMachineScaleSetSkuTypes*
   name: VirtualMachineScaleSetSkuTypes
   nameWithType: VirtualMachineScaleSetSkuTypes.VirtualMachineScaleSetSkuTypes

@@ -4,15 +4,11 @@ items:
   parent: com.microsoft.azure.management.datalake.store.models
   children:
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.defaultGroup()
-  - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.encryptionConfig()
-  - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.firewallAllowAzureIps()
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.firewallState()
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.newTier()
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.tags()
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.trustedIdProviderState()
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withDefaultGroup(String)
-  - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withEncryptionConfig(UpdateEncryptionConfig)
-  - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withFirewallAllowAzureIps(FirewallAllowAzureIpsState)
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withFirewallState(FirewallState)
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withNewTier(TierType)
   - com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withTags(Map<String, String>)
@@ -27,7 +23,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
     startLine: 18
@@ -51,7 +47,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 138
+    startLine: 123
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Get the defaultGroup value.</p>
@@ -62,56 +58,6 @@ items:
     return:
       type: "26831127"
       description: <p>the defaultGroup value </p>
-- uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.encryptionConfig()
-  id: encryptionConfig()
-  parent: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
-  href: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.yml
-  langs:
-  - java
-  name: encryptionConfig()
-  nameWithType: DataLakeStoreAccountUpdateParameters.encryptionConfig()
-  fullName: UpdateEncryptionConfig com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.encryptionConfig()
-  overload: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.encryptionConfig*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 198
-  package: com.microsoft.azure.management.datalake.store.models
-  summary: >-
-    <p>Get the encryptionConfig value.</p>
-
-    <p></p>
-  syntax:
-    content: public UpdateEncryptionConfig encryptionConfig()
-    return:
-      type: com.microsoft.azure.management.datalake.store.models._update_encryption_config
-      description: <p>the encryptionConfig value </p>
-- uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.firewallAllowAzureIps()
-  id: firewallAllowAzureIps()
-  parent: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
-  href: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.yml
-  langs:
-  - java
-  name: firewallAllowAzureIps()
-  nameWithType: DataLakeStoreAccountUpdateParameters.firewallAllowAzureIps()
-  fullName: FirewallAllowAzureIpsState com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.firewallAllowAzureIps()
-  overload: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.firewallAllowAzureIps*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 178
-  package: com.microsoft.azure.management.datalake.store.models
-  summary: >-
-    <p>Get the firewallAllowAzureIps value.</p>
-
-    <p></p>
-  syntax:
-    content: public FirewallAllowAzureIpsState firewallAllowAzureIps()
-    return:
-      type: com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state
-      description: <p>the firewallAllowAzureIps value </p>
 - uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.firewallState()
   id: firewallState()
   parent: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
@@ -126,7 +72,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 98
+    startLine: 83
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Get the firewallState value.</p>
@@ -151,7 +97,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 158
+    startLine: 143
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Get the newTier value.</p>
@@ -176,7 +122,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 78
+    startLine: 63
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Get the tags value.</p>
@@ -201,7 +147,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 118
+    startLine: 103
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Get the trustedIdProviderState value.</p>
@@ -226,7 +172,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 148
+    startLine: 133
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Set the defaultGroup value.</p>
@@ -238,64 +184,6 @@ items:
     - id: defaultGroup
       type: "26831127"
       description: <p>the defaultGroup value to set </p>
-    return:
-      type: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
-      description: <p>the <xref href="com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters" data-throw-if-not-resolved="false"></xref> object itself. </p>
-- uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withEncryptionConfig(UpdateEncryptionConfig)
-  id: withEncryptionConfig(UpdateEncryptionConfig)
-  parent: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
-  href: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.yml
-  langs:
-  - java
-  name: withEncryptionConfig(UpdateEncryptionConfig encryptionConfig)
-  nameWithType: DataLakeStoreAccountUpdateParameters.withEncryptionConfig(UpdateEncryptionConfig encryptionConfig)
-  fullName: DataLakeStoreAccountUpdateParameters com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.withEncryptionConfig(UpdateEncryptionConfig encryptionConfig)
-  overload: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withEncryptionConfig*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 208
-  package: com.microsoft.azure.management.datalake.store.models
-  summary: >-
-    <p>Set the encryptionConfig value.</p>
-
-    <p></p>
-  syntax:
-    content: public DataLakeStoreAccountUpdateParameters withEncryptionConfig(UpdateEncryptionConfig encryptionConfig)
-    parameters:
-    - id: encryptionConfig
-      type: com.microsoft.azure.management.datalake.store.models._update_encryption_config
-      description: <p>the encryptionConfig value to set </p>
-    return:
-      type: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
-      description: <p>the <xref href="com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters" data-throw-if-not-resolved="false"></xref> object itself. </p>
-- uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withFirewallAllowAzureIps(FirewallAllowAzureIpsState)
-  id: withFirewallAllowAzureIps(FirewallAllowAzureIpsState)
-  parent: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
-  href: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.yml
-  langs:
-  - java
-  name: withFirewallAllowAzureIps(FirewallAllowAzureIpsState firewallAllowAzureIps)
-  nameWithType: DataLakeStoreAccountUpdateParameters.withFirewallAllowAzureIps(FirewallAllowAzureIpsState firewallAllowAzureIps)
-  fullName: DataLakeStoreAccountUpdateParameters com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.withFirewallAllowAzureIps(FirewallAllowAzureIpsState firewallAllowAzureIps)
-  overload: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withFirewallAllowAzureIps*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 188
-  package: com.microsoft.azure.management.datalake.store.models
-  summary: >-
-    <p>Set the firewallAllowAzureIps value.</p>
-
-    <p></p>
-  syntax:
-    content: public DataLakeStoreAccountUpdateParameters withFirewallAllowAzureIps(FirewallAllowAzureIpsState firewallAllowAzureIps)
-    parameters:
-    - id: firewallAllowAzureIps
-      type: com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state
-      description: <p>the firewallAllowAzureIps value to set </p>
     return:
       type: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
       description: <p>the <xref href="com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters" data-throw-if-not-resolved="false"></xref> object itself. </p>
@@ -313,7 +201,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 108
+    startLine: 93
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Set the firewallState value.</p>
@@ -342,7 +230,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 168
+    startLine: 153
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Set the newTier value.</p>
@@ -371,7 +259,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 88
+    startLine: 73
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Set the tags value.</p>
@@ -400,7 +288,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccountUpdateParameters.java
-    startLine: 128
+    startLine: 113
   package: com.microsoft.azure.management.datalake.store.models
   summary: >-
     <p>Set the trustedIdProviderState value.</p>
@@ -474,26 +362,6 @@ references:
   nameWithType: DataLakeStoreAccountUpdateParameters.withNewTier
   fullName: DataLakeStoreAccountUpdateParameters com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.withNewTier
   package: com.microsoft.azure.management.datalake.store.models
-- uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.firewallAllowAzureIps*
-  name: firewallAllowAzureIps
-  nameWithType: DataLakeStoreAccountUpdateParameters.firewallAllowAzureIps
-  fullName: FirewallAllowAzureIpsState com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.firewallAllowAzureIps
-  package: com.microsoft.azure.management.datalake.store.models
-- uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withFirewallAllowAzureIps*
-  name: withFirewallAllowAzureIps
-  nameWithType: DataLakeStoreAccountUpdateParameters.withFirewallAllowAzureIps
-  fullName: DataLakeStoreAccountUpdateParameters com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.withFirewallAllowAzureIps
-  package: com.microsoft.azure.management.datalake.store.models
-- uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.encryptionConfig*
-  name: encryptionConfig
-  nameWithType: DataLakeStoreAccountUpdateParameters.encryptionConfig
-  fullName: UpdateEncryptionConfig com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.encryptionConfig
-  package: com.microsoft.azure.management.datalake.store.models
-- uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.withEncryptionConfig*
-  name: withEncryptionConfig
-  nameWithType: DataLakeStoreAccountUpdateParameters.withEncryptionConfig
-  fullName: DataLakeStoreAccountUpdateParameters com.microsoft.azure.management.datalake.store.models.DataLakeStoreAccountUpdateParameters.withEncryptionConfig
-  package: com.microsoft.azure.management.datalake.store.models
 - uid: com.microsoft.azure.management.datalake.store.models._firewall_state
   parent: com.microsoft.azure.management.datalake.store.models
   href: com.microsoft.azure.management.datalake.store.models._firewall_state.yml
@@ -524,36 +392,6 @@ references:
   summary: <p>Defines values for <xref href="com.microsoft.azure.management.datalake.store.models._tier_type" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public enum TierType
-- uid: com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state
-  parent: com.microsoft.azure.management.datalake.store.models
-  href: com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state.yml
-  name: FirewallAllowAzureIpsState
-  nameWithType: FirewallAllowAzureIpsState
-  fullName: com.microsoft.azure.management.datalake.store.models.FirewallAllowAzureIpsState
-  type: Enum
-  summary: <p>Defines values for <xref href="com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public enum FirewallAllowAzureIpsState
-- uid: com.microsoft.azure.management._azure
-  parent: com.microsoft.azure.management
-  href: com.microsoft.azure.management._azure.yml
-  name: Azure
-  nameWithType: Azure
-  fullName: com.microsoft.azure.management.Azure
-  type: Class
-  summary: <p>The entry point for accessing resource management APIs in <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public class Azure
-- uid: com.microsoft.azure.management.datalake.store.models._update_encryption_config
-  parent: com.microsoft.azure.management.datalake.store.models
-  href: com.microsoft.azure.management.datalake.store.models._update_encryption_config.yml
-  name: UpdateEncryptionConfig
-  nameWithType: UpdateEncryptionConfig
-  fullName: com.microsoft.azure.management.datalake.store.models.UpdateEncryptionConfig
-  type: Class
-  summary: <p>The encryption configuration used to update a user managed Key Vault key. </p>
-  syntax:
-    content: public class UpdateEncryptionConfig
 - uid: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters
   parent: com.microsoft.azure.management.datalake.store.models
   href: com.microsoft.azure.management.datalake.store.models._data_lake_store_account_update_parameters.yml

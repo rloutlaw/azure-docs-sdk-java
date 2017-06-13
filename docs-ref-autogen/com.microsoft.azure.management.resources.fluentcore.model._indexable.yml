@@ -14,7 +14,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Indexable.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Indexable.java
     startLine: 14
@@ -63,36 +63,6 @@ references:
   summary: <p>A web app authentication configuration in a web app. </p>
   syntax:
     content: public interface WebAppAuthentication
-- uid: com.microsoft.azure.management.graphrbac._active_directory_application
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._active_directory_application.yml
-  name: ActiveDirectoryApplication
-  nameWithType: ActiveDirectoryApplication
-  fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryApplication
-  type: Interface
-  summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> AD application. </p>
-  syntax:
-    content: public interface ActiveDirectoryApplication extends Indexable,HasInner<ApplicationInner>,HasId,HasName,HasManager<GraphRbacManager>,Updatable<ActiveDirectoryApplication.Update>
-- uid: com.microsoft.azure.management.graphrbac._credential
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._credential.yml
-  name: Credential
-  nameWithType: Credential
-  fullName: com.microsoft.azure.management.graphrbac.Credential
-  type: Interface
-  summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> AD credential. </p>
-  syntax:
-    content: public interface Credential extends Indexable,HasId,HasName
-- uid: com.microsoft.azure.management.graphrbac._role_assignment
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._role_assignment.yml
-  name: RoleAssignment
-  nameWithType: RoleAssignment
-  fullName: com.microsoft.azure.management.graphrbac.RoleAssignment
-  type: Interface
-  summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> AD role assignment. </p>
-  syntax:
-    content: public interface RoleAssignment
 - uid: com.microsoft.azure.management.graphrbac._service_principal
   parent: com.microsoft.azure.management.graphrbac
   href: com.microsoft.azure.management.graphrbac._service_principal.yml
@@ -103,6 +73,16 @@ references:
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> AD service principal. </p>
   syntax:
     content: public interface ServicePrincipal
+- uid: com.microsoft.azure.management.graphrbac._user
+  parent: com.microsoft.azure.management.graphrbac
+  href: com.microsoft.azure.management.graphrbac._user.yml
+  name: User
+  nameWithType: User
+  fullName: com.microsoft.azure.management.graphrbac.User
+  type: Interface
+  summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> AD user. </p>
+  syntax:
+    content: public interface User
 - uid: com.microsoft.azure.management.resources._deployment
   parent: com.microsoft.azure.management.resources
   href: com.microsoft.azure.management.resources._deployment.yml

@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1282
+    startLine: 1295
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of a virtual machine definition allowing to specify a storage account. </p>
   syntax:
@@ -38,7 +38,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1315
+    startLine: 1328
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies an existing storage account to put the VM's OS and data disk VHD in. </p>
@@ -69,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1304
+    startLine: 1317
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the definition of a not-yet-created storage account to put the VM's OS and data disk VHDs into. </p>
@@ -100,7 +100,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1292
+    startLine: 1305
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the name of a new storage account to put the VM's OS and data disk VHD into. </p>

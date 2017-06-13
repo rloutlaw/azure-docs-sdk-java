@@ -19,10 +19,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlWarehouse.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlWarehouse.java
-    startLine: 17
+    startLine: 18
   package: com.microsoft.azure.management.sql
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> SQL Warehouse. </p>
   syntax:
@@ -73,7 +73,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlWarehouse.java
-    startLine: 22
+    startLine: 23
   package: com.microsoft.azure.management.sql
   summary: <p>Pause an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> SQL Data Warehouse database. </p>
   syntax:
@@ -92,7 +92,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlWarehouse.java
-    startLine: 29
+    startLine: 31
   package: com.microsoft.azure.management.sql
   summary: >-
     <p>Pause an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> SQL Data Warehouse database asynchronously.</p>
@@ -117,7 +117,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlWarehouse.java
-    startLine: 37
+    startLine: 40
   package: com.microsoft.azure.management.sql
   summary: >-
     <p>Pause an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> SQL Data Warehouse database asynchronously.</p>
@@ -146,7 +146,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlWarehouse.java
-    startLine: 42
+    startLine: 45
   package: com.microsoft.azure.management.sql
   summary: <p>Resume an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> SQL Data Warehouse database. </p>
   syntax:
@@ -165,7 +165,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlWarehouse.java
-    startLine: 49
+    startLine: 53
   package: com.microsoft.azure.management.sql
   summary: >-
     <p>Resume an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> SQL Data Warehouse database asynchronously.</p>
@@ -190,7 +190,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlWarehouse.java
-    startLine: 57
+    startLine: 62
   package: com.microsoft.azure.management.sql
   summary: >-
     <p>Resume an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> SQL Data Warehouse database asynchronously.</p>

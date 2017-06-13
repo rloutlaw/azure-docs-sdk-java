@@ -19,7 +19,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/USqlAssemblyFileInfo.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/USqlAssemblyFileInfo.java
     startLine: 15
@@ -43,7 +43,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/USqlAssemblyFileInfo.java
-    startLine: 80
+    startLine: 79
   package: com.microsoft.azure.management.datalake.analytics.models
   summary: >-
     <p>Get the contentPath value.</p>
@@ -68,7 +68,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/USqlAssemblyFileInfo.java
-    startLine: 60
+    startLine: 59
   package: com.microsoft.azure.management.datalake.analytics.models
   summary: >-
     <p>Get the originalPath value.</p>
@@ -93,7 +93,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/USqlAssemblyFileInfo.java
-    startLine: 40
+    startLine: 39
   package: com.microsoft.azure.management.datalake.analytics.models
   summary: >-
     <p>Get the type value.</p>
@@ -118,7 +118,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/USqlAssemblyFileInfo.java
-    startLine: 90
+    startLine: 89
   package: com.microsoft.azure.management.datalake.analytics.models
   summary: >-
     <p>Set the contentPath value.</p>
@@ -147,7 +147,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/USqlAssemblyFileInfo.java
-    startLine: 70
+    startLine: 69
   package: com.microsoft.azure.management.datalake.analytics.models
   summary: >-
     <p>Set the originalPath value.</p>
@@ -176,7 +176,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/USqlAssemblyFileInfo.java
-    startLine: 50
+    startLine: 49
   package: com.microsoft.azure.management.datalake.analytics.models
   summary: >-
     <p>Set the type value.</p>
@@ -232,10 +232,10 @@ references:
   name: FileType
   nameWithType: FileType
   fullName: com.microsoft.azure.management.datalake.analytics.models.FileType
-  type: Class
+  type: Enum
   summary: <p>Defines values for <xref href="com.microsoft.azure.management.datalake.analytics.models._file_type" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public class FileType
+    content: public enum FileType
 - uid: com.microsoft.azure.management.datalake.analytics.models._u_sql_assembly_file_info
   parent: com.microsoft.azure.management.datalake.analytics.models
   href: com.microsoft.azure.management.datalake.analytics.models._u_sql_assembly_file_info.yml

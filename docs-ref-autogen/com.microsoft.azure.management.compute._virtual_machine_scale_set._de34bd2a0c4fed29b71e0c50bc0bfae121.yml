@@ -14,10 +14,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1257
+    startLine: 1268
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of a virtual machine scale set definition allowing to specify extensions. </p>
   syntax:
@@ -36,7 +36,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1264
+    startLine: 1275
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Begins the definition of an extension reference to be attached to the virtual machines in the scale set.</p>

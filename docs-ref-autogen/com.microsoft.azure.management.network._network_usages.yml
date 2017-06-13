@@ -12,7 +12,7 @@ items:
   source:
     remote:
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsages.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsages.java
     startLine: 15
@@ -82,7 +82,7 @@ references:
       description: <p>the selected <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> region </p>
     return:
       type: c4094ba1
-      description: <p>a representation of the deferred computation of this call, returning the requested resources </p>
+      description: <p>list of resources </p>
 - uid: com.microsoft.azure.management.resources.fluentcore.collection._supports_listing_by_region.listByRegionAsync(String)
   parent: com.microsoft.azure.management.resources.fluentcore.collection._supports_listing_by_region
   href: com.microsoft.azure.management.resources.fluentcore.collection._supports_listing_by_region.yml
@@ -99,7 +99,7 @@ references:
       description: <p>the name of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> region </p>
     return:
       type: c4094ba1
-      description: <p>a representation of the deferred computation of this call, returning the requested resources </p>
+      description: <p>list of resources </p>
 - uid: com.microsoft.azure.management.resources.fluentcore.collection._supports_listing_by_region
   parent: com.microsoft.azure.management.resources.fluentcore.collection
   href: com.microsoft.azure.management.resources.fluentcore.collection._supports_listing_by_region.yml

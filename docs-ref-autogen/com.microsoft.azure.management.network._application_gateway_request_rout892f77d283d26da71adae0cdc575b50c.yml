@@ -12,17 +12,17 @@ items:
   source:
     remote:
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-    startLine: 178
+    startLine: 183
   package: com.microsoft.azure.management.network
   summary: <p>The stage of an application gateway request routing rule allowing to specify an SSL certificate. </p>
   syntax:
     content: public interface WithSslCertificate<ParentT> extends HasSslCertificate<T>.DefinitionStages.WithSslCertificate<WithBackendHttpConfigurationOrSni<ParentT>>
     typeParameters:
     - type: 18a275b1
-      description: <p>the stage of the application gateway definition to return to after attaching this definition </p>
+      description: <p>the next stage of the definition </p>
   inheritedMembers:
   - com.microsoft.azure.management.network.model._has_ssl_certificate.ec8a49f3a3bc8f5341a28c8a53c736f7.withSslCertificate(String)
   - com.microsoft.azure.management.network.model._has_ssl_certificate.ec8a49f3a3bc8f5341a28c8a53c736f7.withSslCertificateFromPfxFile(File)

@@ -19,12 +19,12 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-    startLine: 28
+    startLine: 30
   package: com.microsoft.azure.management.network
-  summary: <p>A client-side representation of an application gateway request routing rule. </p>
+  summary: <p>An immutable client-side representation of an application gateway request routing rule. </p>
   syntax:
     content: public interface ApplicationGatewayRequestRoutingRule extends HasInner<ApplicationGatewayRequestRoutingRuleInner>,ChildResource<ApplicationGateway>,HasPublicIPAddress,HasSslCertificate<ApplicationGatewaySslCertificate>,HasFrontendPort,HasBackendPort,HasHostName,HasCookieBasedAffinity,HasServerNameIndication
   inheritedMembers:
@@ -54,7 +54,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-    startLine: 52
+    startLine: 54
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayBackend backend()
@@ -69,18 +69,18 @@ items:
   - java
   name: backendAddresses()
   nameWithType: ApplicationGatewayRequestRoutingRule.backendAddresses()
-  fullName: Collection<ApplicationGatewayBackendAddress> com.microsoft.azure.management.network.ApplicationGatewayRequestRoutingRule.backendAddresses()
+  fullName: List<ApplicationGatewayBackendAddress> com.microsoft.azure.management.network.ApplicationGatewayRequestRoutingRule.backendAddresses()
   overload: com.microsoft.azure.management.network._application_gateway_request_routing_rule.backendAddresses*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-    startLine: 67
+    startLine: 69
   package: com.microsoft.azure.management.network
   syntax:
-    content: public Collection<ApplicationGatewayBackendAddress> backendAddresses()
+    content: public List<ApplicationGatewayBackendAddress> backendAddresses()
     return:
-      type: 12ebb11acom.microsoft.azure.management.network._application_gateway_backend_addressa08ddfce
+      type: 5618da2dcom.microsoft.azure.management.network._application_gateway_backend_addressa08ddfce
       description: <p>the addresses assigned to the associated backend </p>
 - uid: com.microsoft.azure.management.network._application_gateway_request_routing_rule.backendHttpConfiguration()
   id: backendHttpConfiguration()
@@ -96,7 +96,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-    startLine: 57
+    startLine: 59
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayBackendHttpConfiguration backendHttpConfiguration()
@@ -117,7 +117,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-    startLine: 42
+    startLine: 44
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayProtocol frontendProtocol()
@@ -138,7 +138,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-    startLine: 62
+    startLine: 64
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayListener listener()
@@ -159,7 +159,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayRequestRoutingRule.java
-    startLine: 47
+    startLine: 49
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayRequestRoutingRuleType ruleType()
@@ -192,10 +192,10 @@ references:
   nameWithType: ApplicationGatewayRequestRoutingRule.listener
   fullName: ApplicationGatewayListener com.microsoft.azure.management.network.ApplicationGatewayRequestRoutingRule.listener
   package: com.microsoft.azure.management.network
-- uid: 12ebb11acom.microsoft.azure.management.network._application_gateway_backend_addressa08ddfce
+- uid: 5618da2dcom.microsoft.azure.management.network._application_gateway_backend_addressa08ddfce
   spec.java:
-  - name: Collection<
-    fullName: Collection<
+  - name: List<
+    fullName: List<
   - uid: com.microsoft.azure.management.network._application_gateway_backend_address
     name: ApplicationGatewayBackendAddress
     fullName: com.microsoft.azure.management.network.ApplicationGatewayBackendAddress
@@ -205,7 +205,7 @@ references:
 - uid: com.microsoft.azure.management.network._application_gateway_request_routing_rule.backendAddresses*
   name: backendAddresses
   nameWithType: ApplicationGatewayRequestRoutingRule.backendAddresses
-  fullName: Collection<ApplicationGatewayBackendAddress> com.microsoft.azure.management.network.ApplicationGatewayRequestRoutingRule.backendAddresses
+  fullName: List<ApplicationGatewayBackendAddress> com.microsoft.azure.management.network.ApplicationGatewayRequestRoutingRule.backendAddresses
   package: com.microsoft.azure.management.network
 - uid: com.microsoft.azure.management.network.model._has_backend_port.backendPort()
   parent: com.microsoft.azure.management.network.model._has_backend_port
@@ -480,7 +480,7 @@ references:
   nameWithType: ApplicationGatewayBackend
   fullName: com.microsoft.azure.management.network.ApplicationGatewayBackend
   type: Interface
-  summary: <p>A client-side representation of an application gateway backend. </p>
+  summary: <p>An immutable client-side representation of an application gateway backend. </p>
   syntax:
     content: public interface ApplicationGatewayBackend extends HasInner<ApplicationGatewayBackendAddressPoolInner>,ChildResource<ApplicationGateway>,HasBackendNics
 - uid: com.microsoft.azure.management.network._application_gateway_backend_http_configuration
@@ -490,7 +490,7 @@ references:
   nameWithType: ApplicationGatewayBackendHttpConfiguration
   fullName: com.microsoft.azure.management.network.ApplicationGatewayBackendHttpConfiguration
   type: Interface
-  summary: <p>A client-side representation of an application gateway's backend HTTP configuration. </p>
+  summary: <p>An immutable client-side representation of an application gateway's backend HTTP configuration. </p>
   syntax:
     content: public interface ApplicationGatewayBackendHttpConfiguration extends HasInner<ApplicationGatewayBackendHttpSettingsInner>,ChildResource<ApplicationGateway>,HasProtocol<ApplicationGatewayProtocol>,HasPort
 - uid: com.microsoft.azure.management.network._application_gateway_listener
@@ -500,7 +500,7 @@ references:
   nameWithType: ApplicationGatewayListener
   fullName: com.microsoft.azure.management.network.ApplicationGatewayListener
   type: Interface
-  summary: <p>A client-side representation of an application gateway's HTTP listener. </p>
+  summary: <p>An immutable client-side representation of an application gateway's HTTP listener. </p>
   syntax:
     content: public interface ApplicationGatewayListener extends HasInner<ApplicationGatewayHttpListenerInner>,ChildResource<ApplicationGateway>,HasSslCertificate<ApplicationGatewaySslCertificate>,HasPublicIPAddress,HasProtocol<ApplicationGatewayProtocol>,HasHostName,HasServerNameIndication,HasSubnet
 - uid: com.microsoft.azure.management.network._application_gateway_backend_address

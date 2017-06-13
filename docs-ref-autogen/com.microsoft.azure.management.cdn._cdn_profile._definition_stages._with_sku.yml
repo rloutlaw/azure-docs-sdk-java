@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 280
+    startLine: 296
   package: com.microsoft.azure.management.cdn
   summary: <p>A CDN profile definition allowing the SKU to be specified. </p>
   syntax:
@@ -38,7 +38,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 300
+    startLine: 316
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Selects the Premium Verizon SKU.</p>
@@ -63,7 +63,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 286
+    startLine: 302
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Selects the Standard Akamai SKU.</p>
@@ -88,7 +88,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 293
+    startLine: 309
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Selects the Standard Verizon SKU.</p>

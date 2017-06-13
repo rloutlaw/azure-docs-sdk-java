@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlServer.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlServer.java
-    startLine: 311
+    startLine: 313
   package: com.microsoft.azure.management.sql
   summary: <p>A SQL Server definition for specifying the firewall rule. </p>
   syntax:
@@ -38,7 +38,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlServer.java
-    startLine: 318
+    startLine: 320
   package: com.microsoft.azure.management.sql
   summary: >-
     <p>Creates new firewall rule in the SQL Server.</p>
@@ -67,7 +67,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlServer.java
-    startLine: 327
+    startLine: 329
   package: com.microsoft.azure.management.sql
   summary: >-
     <p>Creates new firewall rule in the SQL Server.</p>
@@ -99,7 +99,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-sql/src/main/java/com/microsoft/azure/management/sql/SqlServer.java
-    startLine: 337
+    startLine: 339
   package: com.microsoft.azure.management.sql
   summary: >-
     <p>Creates new firewall rule in the SQL Server.</p>

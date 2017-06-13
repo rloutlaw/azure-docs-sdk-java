@@ -9,7 +9,6 @@ items:
   - com.microsoft.azure.management.appservice._cloning_info.configureLoadBalancing()
   - com.microsoft.azure.management.appservice._cloning_info.correlationId()
   - com.microsoft.azure.management.appservice._cloning_info.hostingEnvironment()
-  - com.microsoft.azure.management.appservice._cloning_info.ignoreQuotas()
   - com.microsoft.azure.management.appservice._cloning_info.overwrite()
   - com.microsoft.azure.management.appservice._cloning_info.sourceWebAppId()
   - com.microsoft.azure.management.appservice._cloning_info.trafficManagerProfileId()
@@ -20,7 +19,6 @@ items:
   - com.microsoft.azure.management.appservice._cloning_info.withConfigureLoadBalancing(Boolean)
   - com.microsoft.azure.management.appservice._cloning_info.withCorrelationId(String)
   - com.microsoft.azure.management.appservice._cloning_info.withHostingEnvironment(String)
-  - com.microsoft.azure.management.appservice._cloning_info.withIgnoreQuotas(Boolean)
   - com.microsoft.azure.management.appservice._cloning_info.withOverwrite(Boolean)
   - com.microsoft.azure.management.appservice._cloning_info.withSourceWebAppId(String)
   - com.microsoft.azure.management.appservice._cloning_info.withTrafficManagerProfileId(String)
@@ -35,7 +33,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
     startLine: 16
@@ -59,7 +57,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 225
+    startLine: 218
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the appSettingsOverrides value.</p>
@@ -84,7 +82,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 145
+    startLine: 138
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the cloneCustomHostNames value.</p>
@@ -109,7 +107,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 165
+    startLine: 158
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the cloneSourceControl value.</p>
@@ -134,7 +132,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 245
+    startLine: 238
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the configureLoadBalancing value.</p>
@@ -159,7 +157,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 105
+    startLine: 98
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the correlationId value.</p>
@@ -184,7 +182,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 205
+    startLine: 198
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the hostingEnvironment value.</p>
@@ -195,31 +193,6 @@ items:
     return:
       type: "26831127"
       description: <p>the hostingEnvironment value </p>
-- uid: com.microsoft.azure.management.appservice._cloning_info.ignoreQuotas()
-  id: ignoreQuotas()
-  parent: com.microsoft.azure.management.appservice._cloning_info
-  href: com.microsoft.azure.management.appservice._cloning_info.yml
-  langs:
-  - java
-  name: ignoreQuotas()
-  nameWithType: CloningInfo.ignoreQuotas()
-  fullName: Boolean com.microsoft.azure.management.appservice.CloningInfo.ignoreQuotas()
-  overload: com.microsoft.azure.management.appservice._cloning_info.ignoreQuotas*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 305
-  package: com.microsoft.azure.management.appservice
-  summary: >-
-    <p>Get the ignoreQuotas value.</p>
-
-    <p></p>
-  syntax:
-    content: public Boolean ignoreQuotas()
-    return:
-      type: 866c2227
-      description: <p>the ignoreQuotas value </p>
 - uid: com.microsoft.azure.management.appservice._cloning_info.overwrite()
   id: overwrite()
   parent: com.microsoft.azure.management.appservice._cloning_info
@@ -234,7 +207,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 125
+    startLine: 118
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the overwrite value.</p>
@@ -259,7 +232,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 185
+    startLine: 178
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the sourceWebAppId value.</p>
@@ -284,7 +257,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 265
+    startLine: 258
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the trafficManagerProfileId value.</p>
@@ -309,7 +282,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 285
+    startLine: 278
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Get the trafficManagerProfileName value.</p>
@@ -334,7 +307,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 235
+    startLine: 228
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the appSettingsOverrides value.</p>
@@ -363,7 +336,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 155
+    startLine: 148
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the cloneCustomHostNames value.</p>
@@ -392,7 +365,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 175
+    startLine: 168
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the cloneSourceControl value.</p>
@@ -421,7 +394,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 255
+    startLine: 248
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the configureLoadBalancing value.</p>
@@ -450,7 +423,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 115
+    startLine: 108
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the correlationId value.</p>
@@ -479,7 +452,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 215
+    startLine: 208
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the hostingEnvironment value.</p>
@@ -491,35 +464,6 @@ items:
     - id: hostingEnvironment
       type: "26831127"
       description: <p>the hostingEnvironment value to set </p>
-    return:
-      type: com.microsoft.azure.management.appservice._cloning_info
-      description: <p>the <xref href="com.microsoft.azure.management.appservice._cloning_info" data-throw-if-not-resolved="false"></xref> object itself. </p>
-- uid: com.microsoft.azure.management.appservice._cloning_info.withIgnoreQuotas(Boolean)
-  id: withIgnoreQuotas(Boolean)
-  parent: com.microsoft.azure.management.appservice._cloning_info
-  href: com.microsoft.azure.management.appservice._cloning_info.yml
-  langs:
-  - java
-  name: withIgnoreQuotas(Boolean ignoreQuotas)
-  nameWithType: CloningInfo.withIgnoreQuotas(Boolean ignoreQuotas)
-  fullName: CloningInfo com.microsoft.azure.management.appservice.CloningInfo.withIgnoreQuotas(Boolean ignoreQuotas)
-  overload: com.microsoft.azure.management.appservice._cloning_info.withIgnoreQuotas*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 315
-  package: com.microsoft.azure.management.appservice
-  summary: >-
-    <p>Set the ignoreQuotas value.</p>
-
-    <p></p>
-  syntax:
-    content: public CloningInfo withIgnoreQuotas(Boolean ignoreQuotas)
-    parameters:
-    - id: ignoreQuotas
-      type: 866c2227
-      description: <p>the ignoreQuotas value to set </p>
     return:
       type: com.microsoft.azure.management.appservice._cloning_info
       description: <p>the <xref href="com.microsoft.azure.management.appservice._cloning_info" data-throw-if-not-resolved="false"></xref> object itself. </p>
@@ -537,7 +481,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 135
+    startLine: 128
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the overwrite value.</p>
@@ -566,7 +510,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 195
+    startLine: 188
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the sourceWebAppId value.</p>
@@ -595,7 +539,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 275
+    startLine: 268
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the trafficManagerProfileId value.</p>
@@ -624,7 +568,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/CloningInfo.java
-    startLine: 295
+    startLine: 288
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Set the trafficManagerProfileName value.</p>
@@ -751,16 +695,6 @@ references:
   name: withTrafficManagerProfileName
   nameWithType: CloningInfo.withTrafficManagerProfileName
   fullName: CloningInfo com.microsoft.azure.management.appservice.CloningInfo.withTrafficManagerProfileName
-  package: com.microsoft.azure.management.appservice
-- uid: com.microsoft.azure.management.appservice._cloning_info.ignoreQuotas*
-  name: ignoreQuotas
-  nameWithType: CloningInfo.ignoreQuotas
-  fullName: Boolean com.microsoft.azure.management.appservice.CloningInfo.ignoreQuotas
-  package: com.microsoft.azure.management.appservice
-- uid: com.microsoft.azure.management.appservice._cloning_info.withIgnoreQuotas*
-  name: withIgnoreQuotas
-  nameWithType: CloningInfo.withIgnoreQuotas
-  fullName: CloningInfo com.microsoft.azure.management.appservice.CloningInfo.withIgnoreQuotas
   package: com.microsoft.azure.management.appservice
 - uid: com.microsoft.azure.management.appservice._cloning_info
   parent: com.microsoft.azure.management.appservice

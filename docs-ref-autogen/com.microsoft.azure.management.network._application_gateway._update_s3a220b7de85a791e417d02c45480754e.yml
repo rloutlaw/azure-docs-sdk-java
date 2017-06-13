@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 832
+    startLine: 808
   package: com.microsoft.azure.management.network
   summary: <p>The stage of an application gateway update allowing to modify backend HTTP configurations. </p>
   syntax:
@@ -38,7 +38,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 838
+    startLine: 814
   package: com.microsoft.azure.management.network
   summary: <p>Begins the definition of a new application gateway backend HTTP configuration to be attached to the gateway. </p>
   syntax:
@@ -64,7 +64,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 854
+    startLine: 830
   package: com.microsoft.azure.management.network
   summary: <p>Begins the update of a backend HTTP configuration. </p>
   syntax:
@@ -90,7 +90,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 847
+    startLine: 823
   package: com.microsoft.azure.management.network
   summary: >-
     <p>Removes the specified backend HTTP configuration from this application gateway. </p>
@@ -146,6 +146,9 @@ references:
   nameWithType: ApplicationGateway.Update
   fullName: com.microsoft.azure.management.network.ApplicationGateway.Update
   type: Interface
-  summary: <p>The template for an application gateway update operation, containing all the settings that can be modified. </p>
+  summary: >-
+    <p>The template for an application gateway update operation, containing all the settings that can be modified. </p>
+
+    <p>Call<programlisting><codeline><highlight class="normal">apply()<sp></sp></highlight></codeline></programlisting> to apply the changes to the resource in <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public interface Update extends Appliable<ApplicationGateway>,Resource.UpdateWithTags<Update>,ApplicationGateway.UpdateStages.WithSize,ApplicationGateway.UpdateStages.WithInstanceCount,ApplicationGateway.UpdateStages.WithBackend,ApplicationGateway.UpdateStages.WithBackendHttpConfig,ApplicationGateway.UpdateStages.WithIPConfig,ApplicationGateway.UpdateStages.WithFrontend,ApplicationGateway.UpdateStages.WithPublicIPAddress,ApplicationGateway.UpdateStages.WithFrontendPort,ApplicationGateway.UpdateStages.WithSslCert,ApplicationGateway.UpdateStages.WithListener,ApplicationGateway.UpdateStages.WithRequestRoutingRule,ApplicationGateway.UpdateStages.WithExistingSubnet,ApplicationGateway.UpdateStages.WithProbe,ApplicationGateway.UpdateStages.WithDisabledSslProtocol
+    content: public interface Update extends Appliable<ApplicationGateway>,Resource.UpdateWithTags<Update>,ApplicationGateway.UpdateStages.WithSize,ApplicationGateway.UpdateStages.WithInstanceCount,ApplicationGateway.UpdateStages.WithBackend,ApplicationGateway.UpdateStages.WithBackendHttpConfig,ApplicationGateway.UpdateStages.WithIPConfig,ApplicationGateway.UpdateStages.WithFrontend,ApplicationGateway.UpdateStages.WithPublicIPAddress,ApplicationGateway.UpdateStages.WithFrontendPort,ApplicationGateway.UpdateStages.WithSslCert,ApplicationGateway.UpdateStages.WithListener,ApplicationGateway.UpdateStages.WithRequestRoutingRule,ApplicationGateway.UpdateStages.WithExistingSubnet,ApplicationGateway.UpdateStages.WithProbe

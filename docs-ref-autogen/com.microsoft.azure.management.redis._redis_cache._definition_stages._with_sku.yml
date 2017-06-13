@@ -19,10 +19,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-    startLine: 159
+    startLine: 153
   package: com.microsoft.azure.management.redis
   summary: <p>A Redis Cache definition allowing the sku to be set. </p>
   syntax:
@@ -41,7 +41,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-    startLine: 165
+    startLine: 159
   package: com.microsoft.azure.management.redis
   summary: >-
     <p>Specifies the Basic sku of the Redis Cache.</p>
@@ -66,7 +66,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-    startLine: 173
+    startLine: 167
   package: com.microsoft.azure.management.redis
   summary: >-
     <p>Specifies the Basic sku of the Redis Cache.</p>
@@ -95,7 +95,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-    startLine: 195
+    startLine: 189
   package: com.microsoft.azure.management.redis
   summary: >-
     <p>Specifies the Premium sku of the Redis Cache.</p>
@@ -120,7 +120,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-    startLine: 203
+    startLine: 197
   package: com.microsoft.azure.management.redis
   summary: >-
     <p>Specifies the Premium sku of the Redis Cache.</p>
@@ -149,7 +149,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-    startLine: 180
+    startLine: 174
   package: com.microsoft.azure.management.redis
   summary: >-
     <p>Specifies the Standard <xref href="com.microsoft.azure.management.redis._sku" data-throw-if-not-resolved="false"></xref> of the Redis Cache.</p>
@@ -174,7 +174,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-    startLine: 188
+    startLine: 182
   package: com.microsoft.azure.management.redis
   summary: >-
     <p>Specifies the Standard sku of the Redis Cache.</p>

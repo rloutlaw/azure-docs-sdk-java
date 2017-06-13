@@ -16,7 +16,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/arm/collection/SupportsGettingById.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/arm/collection/SupportsGettingById.java
     startLine: 23
@@ -253,16 +253,6 @@ references:
   summary: <p>Entry point to availability set management API. </p>
   syntax:
     content: public interface AvailabilitySets extends SupportsListingByResourceGroup<AvailabilitySet>,SupportsGettingByResourceGroup<AvailabilitySet>,SupportsGettingById<AvailabilitySet>,SupportsListing<AvailabilitySet>,SupportsCreating<AvailabilitySet.DefinitionStages.Blank>,SupportsDeletingById,SupportsDeletingByResourceGroup,SupportsBatchCreation<AvailabilitySet>,HasManager<ComputeManager>,HasInner<AvailabilitySetsInner>
-- uid: com.microsoft.azure.management.compute._container_services
-  parent: com.microsoft.azure.management.compute
-  href: com.microsoft.azure.management.compute._container_services.yml
-  name: ContainerServices
-  nameWithType: ContainerServices
-  fullName: com.microsoft.azure.management.compute.ContainerServices
-  type: Interface
-  summary: <p>Entry point to container service management API. </p>
-  syntax:
-    content: public interface ContainerServices extends SupportsCreating<ContainerService.DefinitionStages.Blank>,HasManager<ComputeManager>,HasInner<ContainerServicesInner>,SupportsBatchCreation<ContainerService>,SupportsListing<ContainerService>,SupportsGettingById<ContainerService>,SupportsDeletingById,SupportsDeletingByResourceGroup,SupportsListingByResourceGroup<ContainerService>,SupportsGettingByResourceGroup<ContainerService>
 - uid: com.microsoft.azure.management.compute._disks
   parent: com.microsoft.azure.management.compute
   href: com.microsoft.azure.management.compute._disks.yml
@@ -323,66 +313,6 @@ references:
   summary: <p>Entry point to DNS zone management API in <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public interface DnsZones extends SupportsCreating<DnsZone.DefinitionStages.Blank>,SupportsListing<DnsZone>,SupportsListingByResourceGroup<DnsZone>,SupportsGettingByResourceGroup<DnsZone>,SupportsGettingById<DnsZone>,SupportsDeletingById,SupportsDeletingByResourceGroup,SupportsBatchCreation<DnsZone>,SupportsBatchDeletion,HasManager<DnsZoneManager>,HasInner<ZonesInner>
-- uid: com.microsoft.azure.management.graphrbac._active_directory_applications
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._active_directory_applications.yml
-  name: ActiveDirectoryApplications
-  nameWithType: ActiveDirectoryApplications
-  fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryApplications
-  type: Interface
-  summary: <p>Entry point to application management API. </p>
-  syntax:
-    content: public interface ActiveDirectoryApplications extends SupportsListing<ActiveDirectoryApplication>,SupportsGettingById<ActiveDirectoryApplication>,SupportsGettingByNameAsync<ActiveDirectoryApplication>,SupportsCreating<ActiveDirectoryApplication.DefinitionStages.Blank>,SupportsBatchCreation<ActiveDirectoryApplication>,SupportsDeletingById,HasManager<GraphRbacManager>,HasInner<ApplicationsInner>
-- uid: com.microsoft.azure.management.graphrbac._active_directory_groups
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._active_directory_groups.yml
-  name: ActiveDirectoryGroups
-  nameWithType: ActiveDirectoryGroups
-  fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryGroups
-  type: Interface
-  summary: <p>Entry point to AD group management API. </p>
-  syntax:
-    content: public interface ActiveDirectoryGroups extends SupportsListing<ActiveDirectoryGroup>,SupportsGettingById<ActiveDirectoryGroup>,SupportsGettingByNameAsync<ActiveDirectoryGroup>,HasManager<GraphRbacManager>,HasInner<GroupsInner>
-- uid: com.microsoft.azure.management.graphrbac._active_directory_users
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._active_directory_users.yml
-  name: ActiveDirectoryUsers
-  nameWithType: ActiveDirectoryUsers
-  fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryUsers
-  type: Interface
-  summary: <p>Entry point to AD user management API. </p>
-  syntax:
-    content: public interface ActiveDirectoryUsers extends SupportsGettingById<ActiveDirectoryUser>,SupportsGettingByNameAsync<ActiveDirectoryUser>,SupportsListing<ActiveDirectoryUser>,HasManager<GraphRbacManager>,HasInner<UsersInner>
-- uid: com.microsoft.azure.management.graphrbac._role_assignments
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._role_assignments.yml
-  name: RoleAssignments
-  nameWithType: RoleAssignments
-  fullName: com.microsoft.azure.management.graphrbac.RoleAssignments
-  type: Interface
-  summary: <p>Entry point to role assignment management API. </p>
-  syntax:
-    content: public interface RoleAssignments extends SupportsGettingById<RoleAssignment>,SupportsCreating<RoleAssignment.DefinitionStages.Blank>,SupportsBatchCreation<RoleAssignment>,SupportsDeletingById,HasManager<GraphRbacManager>,HasInner<RoleAssignmentsInner>
-- uid: com.microsoft.azure.management.graphrbac._role_definitions
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._role_definitions.yml
-  name: RoleDefinitions
-  nameWithType: RoleDefinitions
-  fullName: com.microsoft.azure.management.graphrbac.RoleDefinitions
-  type: Interface
-  summary: <p>Entry point to role definition management API. </p>
-  syntax:
-    content: public interface RoleDefinitions extends SupportsGettingById<RoleDefinition>,HasManager<GraphRbacManager>,HasInner<RoleDefinitionsInner>
-- uid: com.microsoft.azure.management.graphrbac._service_principals
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._service_principals.yml
-  name: ServicePrincipals
-  nameWithType: ServicePrincipals
-  fullName: com.microsoft.azure.management.graphrbac.ServicePrincipals
-  type: Interface
-  summary: <p>Entry point to service principal management API. </p>
-  syntax:
-    content: public interface ServicePrincipals extends SupportsListing<ServicePrincipal>,SupportsGettingById<ServicePrincipal>,SupportsGettingByNameAsync<ServicePrincipal>,SupportsCreating<ServicePrincipal.DefinitionStages.Blank>,SupportsDeletingById,HasManager<GraphRbacManager>,HasInner<ServicePrincipalsInner>
 - uid: com.microsoft.azure.management.keyvault._vaults
   parent: com.microsoft.azure.management.keyvault
   href: com.microsoft.azure.management.keyvault._vaults.yml

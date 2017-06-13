@@ -15,10 +15,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-batch/src/main/java/com/microsoft/azure/management/batch/Application.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-batch/src/main/java/com/microsoft/azure/management/batch/Application.java
-    startLine: 154
+    startLine: 153
   package: com.microsoft.azure.management.batch
   summary: >-
     <p>The final stage of a Batch application definition. </p>
@@ -46,7 +46,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-batch/src/main/java/com/microsoft/azure/management/batch/Application.java
-    startLine: 164
+    startLine: 163
   package: com.microsoft.azure.management.batch
   summary: >-
     <p>Allows automatic application updates.</p>
@@ -75,7 +75,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-batch/src/main/java/com/microsoft/azure/management/batch/Application.java
-    startLine: 172
+    startLine: 171
   package: com.microsoft.azure.management.batch
   summary: >-
     <p>Specifies the display name for the Batch application.</p>

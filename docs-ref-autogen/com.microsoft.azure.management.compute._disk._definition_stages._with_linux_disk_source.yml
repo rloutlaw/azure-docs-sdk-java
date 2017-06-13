@@ -18,10 +18,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Disk.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Disk.java
-    startLine: 203
+    startLine: 208
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of the managed disk definition allowing to choose Linux OS source. </p>
   syntax:
@@ -40,7 +40,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Disk.java
-    startLine: 218
+    startLine: 223
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source Linux OS managed disk.</p>
@@ -69,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Disk.java
-    startLine: 210
+    startLine: 215
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source Linux OS managed disk.</p>
@@ -98,7 +98,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Disk.java
-    startLine: 234
+    startLine: 239
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source Linux OS managed snapshot.</p>
@@ -127,7 +127,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Disk.java
-    startLine: 226
+    startLine: 231
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source Linux OS managed snapshot.</p>
@@ -156,7 +156,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Disk.java
-    startLine: 242
+    startLine: 247
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source specialized or generalized Linux OS VHD.</p>

@@ -18,10 +18,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 145
+    startLine: 150
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of the managed snapshot definition allowing to choose Windows OS source. </p>
   syntax:
@@ -40,7 +40,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 160
+    startLine: 165
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source Windows OS managed disk.</p>
@@ -69,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 152
+    startLine: 157
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source Windows OS managed disk.</p>
@@ -98,7 +98,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 176
+    startLine: 181
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source Windows OS managed snapshot.</p>
@@ -127,7 +127,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 168
+    startLine: 173
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source Windows OS managed snapshot.</p>
@@ -156,7 +156,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/Snapshot.java
-    startLine: 184
+    startLine: 189
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the source specialized or generalized Windows OS VHD.</p>

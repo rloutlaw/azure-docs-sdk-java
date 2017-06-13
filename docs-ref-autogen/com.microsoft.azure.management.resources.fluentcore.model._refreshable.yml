@@ -15,7 +15,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Refreshable.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Refreshable.java
     startLine: 18
@@ -201,16 +201,6 @@ references:
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> availability set. </p>
   syntax:
     content: public interface AvailabilitySet extends GroupableResource<ComputeManager, AvailabilitySetInner>,Refreshable<AvailabilitySet>,Updatable<AvailabilitySet.Update>
-- uid: com.microsoft.azure.management.compute._container_service
-  parent: com.microsoft.azure.management.compute
-  href: com.microsoft.azure.management.compute._container_service.yml
-  name: ContainerService
-  nameWithType: ContainerService
-  fullName: com.microsoft.azure.management.compute.ContainerService
-  type: Interface
-  summary: <p>An client-side representation for a container service. </p>
-  syntax:
-    content: public interface ContainerService extends GroupableResource<ComputeManager, ContainerServiceInner>,Refreshable<ContainerService>,Updatable<ContainerService.Update>
 - uid: com.microsoft.azure.management.compute._disk
   parent: com.microsoft.azure.management.compute
   href: com.microsoft.azure.management.compute._disk.yml
@@ -511,16 +501,16 @@ references:
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Service Bus namespace. </p>
   syntax:
     content: public interface ServiceBusNamespace
-- uid: com.microsoft.azure.management.servicebus._service_bus_subscription
+- uid: com.microsoft.azure.management.servicebus._subscription
   parent: com.microsoft.azure.management.servicebus
-  href: com.microsoft.azure.management.servicebus._service_bus_subscription.yml
-  name: ServiceBusSubscription
-  nameWithType: ServiceBusSubscription
-  fullName: com.microsoft.azure.management.servicebus.ServiceBusSubscription
+  href: com.microsoft.azure.management.servicebus._subscription.yml
+  name: Subscription
+  nameWithType: Subscription
+  fullName: com.microsoft.azure.management.servicebus.Subscription
   type: Interface
   summary: <p>Type representing service bus topic subscription. </p>
   syntax:
-    content: public interface ServiceBusSubscription
+    content: public interface Subscription
 - uid: com.microsoft.azure.management.servicebus._topic
   parent: com.microsoft.azure.management.servicebus
   href: com.microsoft.azure.management.servicebus._topic.yml
@@ -652,4 +642,4 @@ references:
     content: public Observable<DiskVolumeEncryptionMonitor> refreshAsync()
     return:
       type: c2d0e8c6com.microsoft.azure.management.compute._disk_volume_encryption_monitora08ddfce
-      description: <p>a representation of the deferred computation of this call returning the encryption status once the refresh is done </p>
+      description: <p>observable that emits encryption status once the refresh is done </p>

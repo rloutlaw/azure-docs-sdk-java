@@ -69,10 +69,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 26
+    startLine: 25
   package: com.microsoft.azure.management.datalake.store
   summary: <p>An instance of this class provides access to all the operations defined in <xref href="com.microsoft.azure.management.datalake.store._accounts" data-throw-if-not-resolved="false"></xref>. </p>
   syntax: &o1
@@ -91,7 +91,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 85
+    startLine: 75
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Creates the specified Data Lake Store account.</p>
@@ -112,13 +112,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.store.models._data_lake_store_account
       description: <p>the DataLakeStoreAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginCreateAsync(String,String,DataLakeStoreAccount)
   id: beginCreateAsync(String,String,DataLakeStoreAccount)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -133,7 +126,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 108
+    startLine: 96
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Creates the specified Data Lake Store account.</p>
@@ -154,9 +147,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginCreateAsync(String,String,DataLakeStoreAccount,final ServiceCallback<DataLakeStoreAccount>)
   id: beginCreateAsync(String,String,DataLakeStoreAccount,final ServiceCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -171,7 +161,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 97
+    startLine: 86
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Creates the specified Data Lake Store account.</p>
@@ -195,9 +185,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginCreateWithServiceResponseAsync(String,String,DataLakeStoreAccount)
   id: beginCreateWithServiceResponseAsync(String,String,DataLakeStoreAccount)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -212,7 +199,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 119
+    startLine: 106
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Creates the specified Data Lake Store account.</p>
@@ -233,9 +220,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginDelete(String,String)
   id: beginDelete(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -250,7 +234,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 266
+    startLine: 232
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Deletes the specified Data Lake Store account.</p>
@@ -265,13 +249,6 @@ items:
     - id: name
       type: "26831127"
       description: <p>The name of the Data Lake Store account to delete. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginDeleteAsync(String,String)
   id: beginDeleteAsync(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -286,7 +263,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 287
+    startLine: 251
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Deletes the specified Data Lake Store account.</p>
@@ -304,9 +281,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginDeleteAsync(String,String,final ServiceCallback<Void>)
   id: beginDeleteAsync(String,String,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -321,7 +295,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 277
+    startLine: 242
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Deletes the specified Data Lake Store account.</p>
@@ -342,9 +316,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginDeleteWithServiceResponseAsync(String,String)
   id: beginDeleteWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -359,7 +330,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 297
+    startLine: 260
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Deletes the specified Data Lake Store account.</p>
@@ -377,9 +348,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginUpdate(String,String,DataLakeStoreAccountUpdateParameters)
   id: beginUpdate(String,String,DataLakeStoreAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -394,7 +362,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 179
+    startLine: 157
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Updates the specified Data Lake Store account information.</p>
@@ -415,13 +383,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.store.models._data_lake_store_account
       description: <p>the DataLakeStoreAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginUpdateAsync(String,String,DataLakeStoreAccountUpdateParameters)
   id: beginUpdateAsync(String,String,DataLakeStoreAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -436,7 +397,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 202
+    startLine: 178
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Updates the specified Data Lake Store account information.</p>
@@ -457,9 +418,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginUpdateAsync(String,String,DataLakeStoreAccountUpdateParameters,final ServiceCallback<DataLakeStoreAccount>)
   id: beginUpdateAsync(String,String,DataLakeStoreAccountUpdateParameters,final ServiceCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -474,7 +432,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 191
+    startLine: 168
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Updates the specified Data Lake Store account information.</p>
@@ -498,9 +456,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.beginUpdateWithServiceResponseAsync(String,String,DataLakeStoreAccountUpdateParameters)
   id: beginUpdateWithServiceResponseAsync(String,String,DataLakeStoreAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -515,7 +470,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 213
+    startLine: 188
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Updates the specified Data Lake Store account information.</p>
@@ -536,9 +491,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.create(String,String,DataLakeStoreAccount)
   id: create(String,String,DataLakeStoreAccount)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -553,7 +505,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 38
+    startLine: 34
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Creates the specified Data Lake Store account.</p>
@@ -574,13 +526,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.store.models._data_lake_store_account
       description: <p>the DataLakeStoreAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.createAsync(String,String,DataLakeStoreAccount)
   id: createAsync(String,String,DataLakeStoreAccount)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -595,7 +540,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 61
+    startLine: 55
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Creates the specified Data Lake Store account.</p>
@@ -616,9 +561,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.createAsync(String,String,DataLakeStoreAccount,final ServiceCallback<DataLakeStoreAccount>)
   id: createAsync(String,String,DataLakeStoreAccount,final ServiceCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -633,7 +575,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 50
+    startLine: 45
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Creates the specified Data Lake Store account.</p>
@@ -657,9 +599,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.createWithServiceResponseAsync(String,String,DataLakeStoreAccount)
   id: createWithServiceResponseAsync(String,String,DataLakeStoreAccount)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -674,7 +613,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 72
+    startLine: 65
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Creates the specified Data Lake Store account.</p>
@@ -695,9 +634,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.delete(String,String)
   id: delete(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -712,7 +648,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 224
+    startLine: 196
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Deletes the specified Data Lake Store account.</p>
@@ -727,13 +663,6 @@ items:
     - id: name
       type: "26831127"
       description: <p>The name of the Data Lake Store account to delete. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.deleteAsync(String,String)
   id: deleteAsync(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -748,7 +677,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 245
+    startLine: 215
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Deletes the specified Data Lake Store account.</p>
@@ -766,9 +695,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.deleteAsync(String,String,final ServiceCallback<Void>)
   id: deleteAsync(String,String,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -783,7 +709,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 235
+    startLine: 206
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Deletes the specified Data Lake Store account.</p>
@@ -804,9 +730,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.deleteWithServiceResponseAsync(String,String)
   id: deleteWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -821,7 +744,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 255
+    startLine: 224
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Deletes the specified Data Lake Store account.</p>
@@ -839,9 +762,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.enableKeyVault(String,String)
   id: enableKeyVault(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -856,10 +776,10 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 351
+    startLine: 305
   package: com.microsoft.azure.management.datalake.store
   summary: >-
-    <p>Attempts to enable a user managed Key Vault for encryption of the specified Data Lake Store account.</p>
+    <p>Attempts to enable a user managed key vault for encryption of the specified Data Lake Store account.</p>
 
     <p></p>
   syntax:
@@ -871,13 +791,6 @@ items:
     - id: accountName
       type: "26831127"
       description: <p>The name of the Data Lake Store account to attempt to enable the Key Vault for. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.enableKeyVaultAsync(String,String)
   id: enableKeyVaultAsync(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -892,10 +805,10 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 372
+    startLine: 324
   package: com.microsoft.azure.management.datalake.store
   summary: >-
-    <p>Attempts to enable a user managed Key Vault for encryption of the specified Data Lake Store account.</p>
+    <p>Attempts to enable a user managed key vault for encryption of the specified Data Lake Store account.</p>
 
     <p></p>
   syntax:
@@ -910,9 +823,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.enableKeyVaultAsync(String,String,final ServiceCallback<Void>)
   id: enableKeyVaultAsync(String,String,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -927,10 +837,10 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 362
+    startLine: 315
   package: com.microsoft.azure.management.datalake.store
   summary: >-
-    <p>Attempts to enable a user managed Key Vault for encryption of the specified Data Lake Store account.</p>
+    <p>Attempts to enable a user managed key vault for encryption of the specified Data Lake Store account.</p>
 
     <p></p>
   syntax:
@@ -948,9 +858,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.enableKeyVaultWithServiceResponseAsync(String,String)
   id: enableKeyVaultWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -965,10 +872,10 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 382
+    startLine: 333
   package: com.microsoft.azure.management.datalake.store
   summary: >-
-    <p>Attempts to enable a user managed Key Vault for encryption of the specified Data Lake Store account.</p>
+    <p>Attempts to enable a user managed key vault for encryption of the specified Data Lake Store account.</p>
 
     <p></p>
   syntax:
@@ -983,9 +890,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.get(String,String)
   id: get(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1000,7 +904,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 309
+    startLine: 269
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Gets the specified Data Lake Store account.</p>
@@ -1018,13 +922,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.store.models._data_lake_store_account
       description: <p>the DataLakeStoreAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.getAsync(String,String)
   id: getAsync(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1039,7 +936,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 330
+    startLine: 288
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Gets the specified Data Lake Store account.</p>
@@ -1057,9 +954,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.getAsync(String,String,final ServiceCallback<DataLakeStoreAccount>)
   id: getAsync(String,String,final ServiceCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1074,7 +968,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 320
+    startLine: 279
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Gets the specified Data Lake Store account.</p>
@@ -1095,9 +989,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.getWithServiceResponseAsync(String,String)
   id: getWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1112,7 +1003,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 340
+    startLine: 297
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Gets the specified Data Lake Store account.</p>
@@ -1130,9 +1021,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.list()
   id: list()
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1147,7 +1035,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 493
+    startLine: 429
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1158,13 +1046,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeStoreAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.list(final String,final Integer,final Integer,final String,final String,final Boolean)
   id: list(final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1179,7 +1060,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 533
+    startLine: 463
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1209,13 +1090,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeStoreAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listAsync()
   id: listAsync()
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1230,7 +1104,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 510
+    startLine: 444
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1241,9 +1115,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listAsync(final ListOperationCallback<DataLakeStoreAccount>)
   id: listAsync(final ListOperationCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1258,7 +1129,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 502
+    startLine: 437
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1273,9 +1144,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listAsync(final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listAsync(final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1290,7 +1158,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 562
+    startLine: 490
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1320,9 +1188,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listAsync(final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<DataLakeStoreAccount>)
   id: listAsync(final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1337,7 +1202,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 548
+    startLine: 477
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1370,9 +1235,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroup(final String)
   id: listByResourceGroup(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1387,7 +1249,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 393
+    startLine: 341
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1402,13 +1264,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeStoreAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroup(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByResourceGroup(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1423,7 +1278,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 437
+    startLine: 379
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1456,13 +1311,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeStoreAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupAsync(final String)
   id: listByResourceGroupAsync(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1477,7 +1325,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 412
+    startLine: 358
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1492,9 +1340,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupAsync(final String,final ListOperationCallback<DataLakeStoreAccount>)
   id: listByResourceGroupAsync(final String,final ListOperationCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1509,7 +1354,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 403
+    startLine: 350
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1527,9 +1372,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByResourceGroupAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1544,7 +1386,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 468
+    startLine: 408
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1577,9 +1419,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<DataLakeStoreAccount>)
   id: listByResourceGroupAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1594,7 +1433,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 453
+    startLine: 394
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1630,9 +1469,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupNext(final String)
   id: listByResourceGroupNext(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1647,7 +1483,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 587
+    startLine: 511
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1662,13 +1498,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeStoreAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupNextAsync(final String)
   id: listByResourceGroupNextAsync(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1683,7 +1512,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 607
+    startLine: 529
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1698,9 +1527,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupNextAsync(final String,final ServiceFuture<List<DataLakeStoreAccount>>,final ListOperationCallback<DataLakeStoreAccount>)
   id: listByResourceGroupNextAsync(final String,final ServiceFuture<List<DataLakeStoreAccount>>,final ListOperationCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1715,7 +1541,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 598
+    startLine: 521
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1729,16 +1555,13 @@ items:
       description: <p>The NextLink from the previous successful call to List operation. </p>
     - id: serviceFuture
       type: bd82102acom.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
-      description: <p>the ServiceFuture object tracking the Retrofit calls </p>
+      description: <p>the ServiceCall object tracking the Retrofit calls </p>
     - id: serviceCallback
       type: 3c4303efcom.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the async ServiceCallback to handle successful and failed responses. </p>
     return:
       type: b7698b59com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupNextWithServiceResponseAsync(final String)
   id: listByResourceGroupNextWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1753,7 +1576,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 616
+    startLine: 537
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1768,9 +1591,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.store.models._data_lake_store_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupWithServiceResponseAsync(final String)
   id: listByResourceGroupWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1785,7 +1605,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 421
+    startLine: 366
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1800,9 +1620,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.store.models._data_lake_store_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listByResourceGroupWithServiceResponseAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByResourceGroupWithServiceResponseAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1817,7 +1634,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 483
+    startLine: 422
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.</p>
@@ -1850,9 +1667,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.store.models._data_lake_store_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listNext(final String)
   id: listNext(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1867,7 +1681,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 627
+    startLine: 545
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1882,13 +1696,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeStoreAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listNextAsync(final String)
   id: listNextAsync(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1903,7 +1710,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 647
+    startLine: 563
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1918,9 +1725,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listNextAsync(final String,final ServiceFuture<List<DataLakeStoreAccount>>,final ListOperationCallback<DataLakeStoreAccount>)
   id: listNextAsync(final String,final ServiceFuture<List<DataLakeStoreAccount>>,final ListOperationCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1935,7 +1739,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 638
+    startLine: 555
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1949,16 +1753,13 @@ items:
       description: <p>The NextLink from the previous successful call to List operation. </p>
     - id: serviceFuture
       type: bd82102acom.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
-      description: <p>the ServiceFuture object tracking the Retrofit calls </p>
+      description: <p>the ServiceCall object tracking the Retrofit calls </p>
     - id: serviceCallback
       type: 3c4303efcom.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the async ServiceCallback to handle successful and failed responses. </p>
     return:
       type: b7698b59com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listNextWithServiceResponseAsync(final String)
   id: listNextWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -1973,7 +1774,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 656
+    startLine: 571
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -1988,9 +1789,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.store.models._data_lake_store_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listWithServiceResponseAsync()
   id: listWithServiceResponseAsync()
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -2005,7 +1803,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 518
+    startLine: 451
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -2016,9 +1814,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.store.models._data_lake_store_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.listWithServiceResponseAsync(final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listWithServiceResponseAsync(final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -2033,7 +1828,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 576
+    startLine: 503
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.</p>
@@ -2063,9 +1858,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.store.models._data_lake_store_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeStoreAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.update(String,String,DataLakeStoreAccountUpdateParameters)
   id: update(String,String,DataLakeStoreAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -2080,7 +1872,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 132
+    startLine: 116
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Updates the specified Data Lake Store account information.</p>
@@ -2101,13 +1893,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.store.models._data_lake_store_account
       description: <p>the DataLakeStoreAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.updateAsync(String,String,DataLakeStoreAccountUpdateParameters)
   id: updateAsync(String,String,DataLakeStoreAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -2122,7 +1907,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 155
+    startLine: 137
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Updates the specified Data Lake Store account information.</p>
@@ -2143,9 +1928,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.updateAsync(String,String,DataLakeStoreAccountUpdateParameters,final ServiceCallback<DataLakeStoreAccount>)
   id: updateAsync(String,String,DataLakeStoreAccountUpdateParameters,final ServiceCallback<DataLakeStoreAccount>)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -2160,7 +1942,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 144
+    startLine: 127
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Updates the specified Data Lake Store account information.</p>
@@ -2184,9 +1966,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.store.models._data_lake_store_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.store._accounts.updateWithServiceResponseAsync(String,String,DataLakeStoreAccountUpdateParameters)
   id: updateWithServiceResponseAsync(String,String,DataLakeStoreAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.store._accounts
@@ -2201,7 +1980,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/Accounts.java
-    startLine: 166
+    startLine: 147
   package: com.microsoft.azure.management.datalake.store
   summary: >-
     <p>Updates the specified Data Lake Store account information.</p>
@@ -2222,22 +2001,7 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.store.models._data_lake_store_accounte7daa122
       description: <p>the observable to the DataLakeStoreAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 references:
-- uid: 3c87bd19
-  spec.java:
-  - name: IllegalArgumentException
-    fullName: IllegalArgumentException
-- uid: dc385fd4
-  spec.java:
-  - name: CloudException
-    fullName: CloudException
-- uid: 9b2a4515
-  spec.java:
-  - name: RuntimeException
-    fullName: RuntimeException
 - uid: "26831127"
   spec.java:
   - name: String

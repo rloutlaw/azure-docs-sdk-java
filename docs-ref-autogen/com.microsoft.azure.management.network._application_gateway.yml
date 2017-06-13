@@ -8,7 +8,6 @@ items:
   - com.microsoft.azure.management.network._application_gateway.defaultIPConfiguration()
   - com.microsoft.azure.management.network._application_gateway.defaultPrivateFrontend()
   - com.microsoft.azure.management.network._application_gateway.defaultPublicFrontend()
-  - com.microsoft.azure.management.network._application_gateway.disabledSslProtocols()
   - com.microsoft.azure.management.network._application_gateway.frontendPortNameFromNumber(int)
   - com.microsoft.azure.management.network._application_gateway.frontendPorts()
   - com.microsoft.azure.management.network._application_gateway.frontends()
@@ -26,6 +25,7 @@ items:
   - com.microsoft.azure.management.network._application_gateway.size()
   - com.microsoft.azure.management.network._application_gateway.sku()
   - com.microsoft.azure.management.network._application_gateway.sslCertificates()
+  - com.microsoft.azure.management.network._application_gateway.sslPolicy()
   - com.microsoft.azure.management.network._application_gateway.start()
   - com.microsoft.azure.management.network._application_gateway.startAsync()
   - com.microsoft.azure.management.network._application_gateway.stop()
@@ -41,10 +41,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 32
+    startLine: 31
   package: com.microsoft.azure.management.network
   summary: <p>Entry point for application gateway management API in <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -129,7 +129,7 @@ items:
     content: public ApplicationGatewayIPConfiguration defaultIPConfiguration()
     return:
       type: com.microsoft.azure.management.network._application_gateway_i_p_configuration
-      description: <p>the existing IP configurations if only one exists, else null </p>
+      description: <p>the IP configuration named "default" if it exists, or the one existing IP configuration if only one exists, else null </p>
 - uid: com.microsoft.azure.management.network._application_gateway.defaultPrivateFrontend()
   id: defaultPrivateFrontend()
   parent: com.microsoft.azure.management.network._application_gateway
@@ -144,7 +144,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 92
+    startLine: 87
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayFrontend defaultPrivateFrontend()
@@ -165,34 +165,13 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 87
+    startLine: 82
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayFrontend defaultPublicFrontend()
     return:
       type: com.microsoft.azure.management.network._application_gateway_frontend
       description: <p>the frontend IP configuration associated with a public IP address, if any, that frontend listeners and request routing rules can reference implicitly </p>
-- uid: com.microsoft.azure.management.network._application_gateway.disabledSslProtocols()
-  id: disabledSslProtocols()
-  parent: com.microsoft.azure.management.network._application_gateway
-  href: com.microsoft.azure.management.network._application_gateway.yml
-  langs:
-  - java
-  name: disabledSslProtocols()
-  nameWithType: ApplicationGateway.disabledSslProtocols()
-  fullName: Collection<ApplicationGatewaySslProtocol> com.microsoft.azure.management.network.ApplicationGateway.disabledSslProtocols()
-  overload: com.microsoft.azure.management.network._application_gateway.disabledSslProtocols*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 72
-  package: com.microsoft.azure.management.network
-  syntax:
-    content: public Collection<ApplicationGatewaySslProtocol> disabledSslProtocols()
-    return:
-      type: 12ebb11acom.microsoft.azure.management.network._application_gateway_ssl_protocola08ddfce
-      description: <p>disabled SSL protocols </p>
 - uid: com.microsoft.azure.management.network._application_gateway.frontendPortNameFromNumber(int)
   id: frontendPortNameFromNumber(int)
   parent: com.microsoft.azure.management.network._application_gateway
@@ -275,7 +254,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 102
+    startLine: 97
   package: com.microsoft.azure.management.network
   syntax:
     content: public int instanceCount()
@@ -317,7 +296,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 77
+    startLine: 72
   package: com.microsoft.azure.management.network
   syntax:
     content: public boolean isPrivate()
@@ -338,7 +317,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 82
+    startLine: 77
   package: com.microsoft.azure.management.network
   syntax:
     content: public boolean isPublic()
@@ -361,7 +340,7 @@ items:
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
     startLine: 191
   package: com.microsoft.azure.management.network
-  summary: <p>Finds a front end listener associated with the specified front end port number, if any. </p>
+  summary: <p>Finds a frontend listener associated with the specified frontend port number, if any. </p>
   syntax:
     content: public ApplicationGatewayListener listenerByPortNumber(int portNumber)
     parameters:
@@ -370,7 +349,7 @@ items:
       description: <p>a used port number </p>
     return:
       type: com.microsoft.azure.management.network._application_gateway_listener
-      description: <p>a front end listener, or null if none found </p>
+      description: <p>a frontend listener, or null if none found </p>
 - uid: com.microsoft.azure.management.network._application_gateway.listeners()
   id: listeners()
   parent: com.microsoft.azure.management.network._application_gateway
@@ -391,7 +370,7 @@ items:
     content: public Map<String, ApplicationGatewayListener> listeners()
     return:
       type: 2108f1f4com.microsoft.azure.management.network._application_gateway_listenera08ddfce
-      description: <p>frontend listeners, indexed by name </p>
+      description: <p>Frontend listeners, indexed by name </p>
 - uid: com.microsoft.azure.management.network._application_gateway.operationalState()
   id: operationalState()
   parent: com.microsoft.azure.management.network._application_gateway
@@ -406,7 +385,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 117
+    startLine: 112
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayOperationalState operationalState()
@@ -433,7 +412,7 @@ items:
     content: public Map<String, ApplicationGatewayFrontend> privateFrontends()
     return:
       type: 2108f1f4com.microsoft.azure.management.network._application_gateway_frontenda08ddfce
-      description: <p>frontend IP configurations with a private IP address within a subnet, indexed by name </p>
+      description: <p>frontend IP configurations with a private IP address on a subnet, indexed by name </p>
 - uid: com.microsoft.azure.management.network._application_gateway.probes()
   id: probes()
   parent: com.microsoft.azure.management.network._application_gateway
@@ -511,7 +490,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 107
+    startLine: 102
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewaySkuName size()
@@ -532,7 +511,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 97
+    startLine: 92
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewaySku sku()
@@ -560,6 +539,27 @@ items:
     return:
       type: 2108f1f4com.microsoft.azure.management.network._application_gateway_ssl_certificatea08ddfce
       description: <p>SSL certificates, indexed by name </p>
+- uid: com.microsoft.azure.management.network._application_gateway.sslPolicy()
+  id: sslPolicy()
+  parent: com.microsoft.azure.management.network._application_gateway
+  href: com.microsoft.azure.management.network._application_gateway.yml
+  langs:
+  - java
+  name: sslPolicy()
+  nameWithType: ApplicationGateway.sslPolicy()
+  fullName: ApplicationGatewaySslPolicy com.microsoft.azure.management.network.ApplicationGateway.sslPolicy()
+  overload: com.microsoft.azure.management.network._application_gateway.sslPolicy*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
+    startLine: 117
+  package: com.microsoft.azure.management.network
+  syntax:
+    content: public ApplicationGatewaySslPolicy sslPolicy()
+    return:
+      type: com.microsoft.azure.management.network._application_gateway_ssl_policy
+      description: <p>the SSL policy for the application gateway </p>
 - uid: com.microsoft.azure.management.network._application_gateway.start()
   id: start()
   parent: com.microsoft.azure.management.network._application_gateway
@@ -574,7 +574,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 44
+    startLine: 43
   package: com.microsoft.azure.management.network
   summary: <p>Starts the application gateway. </p>
   syntax:
@@ -615,7 +615,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 50
+    startLine: 49
   package: com.microsoft.azure.management.network
   summary: <p>Stops the application gateway. </p>
   syntax:
@@ -634,7 +634,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 64
+    startLine: 65
   package: com.microsoft.azure.management.network
   summary: <p>Stops the application gateway asynchronously. </p>
   syntax:
@@ -656,7 +656,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-    startLine: 112
+    startLine: 107
   package: com.microsoft.azure.management.network
   syntax:
     content: public ApplicationGatewayTier tier()
@@ -687,21 +687,6 @@ references:
   name: stopAsync
   nameWithType: ApplicationGateway.stopAsync
   fullName: Completable com.microsoft.azure.management.network.ApplicationGateway.stopAsync
-  package: com.microsoft.azure.management.network
-- uid: 12ebb11acom.microsoft.azure.management.network._application_gateway_ssl_protocola08ddfce
-  spec.java:
-  - name: Collection<
-    fullName: Collection<
-  - uid: com.microsoft.azure.management.network._application_gateway_ssl_protocol
-    name: ApplicationGatewaySslProtocol
-    fullName: com.microsoft.azure.management.network.ApplicationGatewaySslProtocol
-    href: com.microsoft.azure.management.network._application_gateway_ssl_protocol.yml
-  - name: '>'
-    fullName: '>'
-- uid: com.microsoft.azure.management.network._application_gateway.disabledSslProtocols*
-  name: disabledSslProtocols
-  nameWithType: ApplicationGateway.disabledSslProtocols
-  fullName: Collection<ApplicationGatewaySslProtocol> com.microsoft.azure.management.network.ApplicationGateway.disabledSslProtocols
   package: com.microsoft.azure.management.network
 - uid: 4fc6e284
   spec.java:
@@ -755,6 +740,11 @@ references:
   name: operationalState
   nameWithType: ApplicationGateway.operationalState
   fullName: ApplicationGatewayOperationalState com.microsoft.azure.management.network.ApplicationGateway.operationalState
+  package: com.microsoft.azure.management.network
+- uid: com.microsoft.azure.management.network._application_gateway.sslPolicy*
+  name: sslPolicy
+  nameWithType: ApplicationGateway.sslPolicy
+  fullName: ApplicationGatewaySslPolicy com.microsoft.azure.management.network.ApplicationGateway.sslPolicy
   package: com.microsoft.azure.management.network
 - uid: 2108f1f4com.microsoft.azure.management.network._application_gateway_i_p_configurationa08ddfce
   spec.java:
@@ -1199,16 +1189,6 @@ references:
   summary: <p>An interface representing a model's ability to reference a private IP address. </p>
   syntax:
     content: public interface HasPrivateIPAddress
-- uid: com.microsoft.azure.management.network._application_gateway_ssl_protocol
-  parent: com.microsoft.azure.management.network
-  href: com.microsoft.azure.management.network._application_gateway_ssl_protocol.yml
-  name: ApplicationGatewaySslProtocol
-  nameWithType: ApplicationGatewaySslProtocol
-  fullName: com.microsoft.azure.management.network.ApplicationGatewaySslProtocol
-  type: Class
-  summary: <p>Defines values for <xref href="com.microsoft.azure.management.network._application_gateway_ssl_protocol" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public class ApplicationGatewaySslProtocol
 - uid: com.microsoft.azure.management.network._application_gateway_frontend
   parent: com.microsoft.azure.management.network
   href: com.microsoft.azure.management.network._application_gateway_frontend.yml
@@ -1216,7 +1196,7 @@ references:
   nameWithType: ApplicationGatewayFrontend
   fullName: com.microsoft.azure.management.network.ApplicationGatewayFrontend
   type: Interface
-  summary: <p>A client-side representation of an application gateway frontend. </p>
+  summary: <p>An immutable client-side representation of an application gateway frontend. </p>
   syntax:
     content: public interface ApplicationGatewayFrontend
 - uid: com.microsoft.azure.management.network._application_gateway_sku
@@ -1259,6 +1239,16 @@ references:
   summary: <p>Defines values for <xref href="com.microsoft.azure.management.network._application_gateway_operational_state" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public class ApplicationGatewayOperationalState
+- uid: com.microsoft.azure.management.network._application_gateway_ssl_policy
+  parent: com.microsoft.azure.management.network
+  href: com.microsoft.azure.management.network._application_gateway_ssl_policy.yml
+  name: ApplicationGatewaySslPolicy
+  nameWithType: ApplicationGatewaySslPolicy
+  fullName: com.microsoft.azure.management.network.ApplicationGatewaySslPolicy
+  type: Class
+  summary: <p>Application gateway SSL policy. </p>
+  syntax:
+    content: public class ApplicationGatewaySslPolicy
 - uid: com.microsoft.azure.management.network._application_gateway_i_p_configuration
   parent: com.microsoft.azure.management.network
   href: com.microsoft.azure.management.network._application_gateway_i_p_configuration.yml
@@ -1266,7 +1256,7 @@ references:
   nameWithType: ApplicationGatewayIPConfiguration
   fullName: com.microsoft.azure.management.network.ApplicationGatewayIPConfiguration
   type: Interface
-  summary: <p>A client-side representation of an application gateway IP configuration. </p>
+  summary: <p>An immutable client-side representation of an application gateway IP configuration. </p>
   syntax:
     content: public interface ApplicationGatewayIPConfiguration
 - uid: com.microsoft.azure.management.network._application_gateway_backend
@@ -1276,7 +1266,7 @@ references:
   nameWithType: ApplicationGatewayBackend
   fullName: com.microsoft.azure.management.network.ApplicationGatewayBackend
   type: Interface
-  summary: <p>A client-side representation of an application gateway backend. </p>
+  summary: <p>An immutable client-side representation of an application gateway backend. </p>
   syntax:
     content: public interface ApplicationGatewayBackend
 - uid: com.microsoft.azure.management.network._application_gateway_probe
@@ -1286,7 +1276,7 @@ references:
   nameWithType: ApplicationGatewayProbe
   fullName: com.microsoft.azure.management.network.ApplicationGatewayProbe
   type: Interface
-  summary: <p>A client-side representation of an application gateway probe. </p>
+  summary: <p>An immutable client-side representation of an application gateway probe. </p>
   syntax:
     content: public interface ApplicationGatewayProbe
 - uid: com.microsoft.azure.management.network._application_gateway_backend_http_configuration
@@ -1296,7 +1286,7 @@ references:
   nameWithType: ApplicationGatewayBackendHttpConfiguration
   fullName: com.microsoft.azure.management.network.ApplicationGatewayBackendHttpConfiguration
   type: Interface
-  summary: <p>A client-side representation of an application gateway's backend HTTP configuration. </p>
+  summary: <p>An immutable client-side representation of an application gateway's backend HTTP configuration. </p>
   syntax:
     content: public interface ApplicationGatewayBackendHttpConfiguration
 - uid: com.microsoft.azure.management.network._application_gateway_ssl_certificate
@@ -1306,7 +1296,7 @@ references:
   nameWithType: ApplicationGatewaySslCertificate
   fullName: com.microsoft.azure.management.network.ApplicationGatewaySslCertificate
   type: Interface
-  summary: <p>A client-side representation of an application gateway SSL certificate. </p>
+  summary: <p>An immutable client-side representation of an application gateway SSL certificate. </p>
   syntax:
     content: public interface ApplicationGatewaySslCertificate
 - uid: com.microsoft.azure.management.network._application_gateway_listener
@@ -1316,7 +1306,7 @@ references:
   nameWithType: ApplicationGatewayListener
   fullName: com.microsoft.azure.management.network.ApplicationGatewayListener
   type: Interface
-  summary: <p>A client-side representation of an application gateway's HTTP listener. </p>
+  summary: <p>An immutable client-side representation of an application gateway's HTTP listener. </p>
   syntax:
     content: public interface ApplicationGatewayListener
 - uid: com.microsoft.azure.management.network._application_gateway_request_routing_rule
@@ -1326,7 +1316,7 @@ references:
   nameWithType: ApplicationGatewayRequestRoutingRule
   fullName: com.microsoft.azure.management.network.ApplicationGatewayRequestRoutingRule
   type: Interface
-  summary: <p>A client-side representation of an application gateway request routing rule. </p>
+  summary: <p>An immutable client-side representation of an application gateway request routing rule. </p>
   syntax:
     content: public interface ApplicationGatewayRequestRoutingRule
 - uid: com.microsoft.azure.management._azure

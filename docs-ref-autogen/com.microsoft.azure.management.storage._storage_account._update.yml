@@ -12,10 +12,10 @@ items:
   source:
     remote:
       path: azure-mgmt-storage/src/main/java/com/microsoft/azure/management/storage/StorageAccount.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-storage/src/main/java/com/microsoft/azure/management/storage/StorageAccount.java
-    startLine: 376
+    startLine: 380
   package: com.microsoft.azure.management.storage
   summary: <p>The template for a storage account update operation, containing all the settings that can be modified. </p>
   syntax:

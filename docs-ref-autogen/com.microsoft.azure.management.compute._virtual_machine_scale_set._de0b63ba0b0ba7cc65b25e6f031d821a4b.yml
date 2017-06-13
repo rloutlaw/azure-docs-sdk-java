@@ -19,10 +19,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 997
+    startLine: 1008
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of a virtual machine scale set definition allowing to specify managed data disks. </p>
   syntax:
@@ -41,7 +41,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1004
+    startLine: 1015
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies that a managed disk needs to be created implicitly with the given size.</p>
@@ -70,7 +70,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1014
+    startLine: 1025
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies that a managed disk needs to be created implicitly with the given settings.</p>
@@ -105,7 +105,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1025
+    startLine: 1036
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies that a managed disk needs to be created implicitly with the given settings.</p>
@@ -143,7 +143,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1036
+    startLine: 1047
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the data disk to be created from the data disk image in the virtual machine image.</p>
@@ -172,7 +172,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1046
+    startLine: 1057
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the data disk to be created from the data disk image in the virtual machine image.</p>
@@ -207,7 +207,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1059
+    startLine: 1070
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the data disk to be created from the data disk image in the virtual machine image.</p>

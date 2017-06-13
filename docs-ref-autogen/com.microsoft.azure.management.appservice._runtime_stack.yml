@@ -6,15 +6,13 @@ items:
   - com.microsoft.azure.management.appservice._runtime_stack.equals(Object)
   - com.microsoft.azure.management.appservice._runtime_stack.hashCode()
   - com.microsoft.azure.management.appservice._runtime_stack.NETCORE_V1_0()
-  - com.microsoft.azure.management.appservice._runtime_stack.NETCORE_V1_1()
-  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_4_4()
-  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_4_5()
-  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_10()
-  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_2()
-  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_6()
-  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_9()
-  - com.microsoft.azure.management.appservice._runtime_stack.PHP_5_6()
-  - com.microsoft.azure.management.appservice._runtime_stack.PHP_7_0()
+  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_4_4_7()
+  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_4_5_0()
+  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_2_2()
+  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_6_0()
+  - com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_9_3()
+  - com.microsoft.azure.management.appservice._runtime_stack.PHP_5_6_23()
+  - com.microsoft.azure.management.appservice._runtime_stack.PHP_7_0_6()
   - com.microsoft.azure.management.appservice._runtime_stack.RUBY_2_3()
   - com.microsoft.azure.management.appservice._runtime_stack.RuntimeStack(String,String)
   - com.microsoft.azure.management.appservice._runtime_stack.stack()
@@ -30,7 +28,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
     startLine: 14
@@ -54,7 +52,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 88
+    startLine: 82
   package: com.microsoft.azure.management.appservice
   syntax:
     content: public boolean equals(Object obj)
@@ -77,7 +75,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 83
+    startLine: 77
   package: com.microsoft.azure.management.appservice
   syntax:
     content: public int hashCode()
@@ -96,191 +94,151 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 40
+    startLine: 37
   package: com.microsoft.azure.management.appservice
   summary: <p>.NET Core v1.0. </p>
   syntax:
-    content: public static final RuntimeStack NETCORE_V1_0= new RuntimeStack("DOTNETCORE", "1.0")
+    content: public static final RuntimeStack NETCORE_V1_0= new RuntimeStack("DOTNETCORE", "v1.0")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.NETCORE_V1_1()
-  id: NETCORE_V1_1()
+- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_4_4_7()
+  id: NODEJS_4_4_7()
   parent: com.microsoft.azure.management.appservice._runtime_stack
   href: com.microsoft.azure.management.appservice._runtime_stack.yml
   langs:
   - java
-  name: NETCORE_V1_1
-  nameWithType: RuntimeStack.NETCORE_V1_1
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NETCORE_V1_1
-  type: Field
-  source:
-    remote: *o0
-    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 43
-  package: com.microsoft.azure.management.appservice
-  summary: <p>.NET Core v1.1. </p>
-  syntax:
-    content: public static final RuntimeStack NETCORE_V1_1= new RuntimeStack("DOTNETCORE", "1.1")
-    return:
-      type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_4_4()
-  id: NODEJS_4_4()
-  parent: com.microsoft.azure.management.appservice._runtime_stack
-  href: com.microsoft.azure.management.appservice._runtime_stack.yml
-  langs:
-  - java
-  name: NODEJS_4_4
-  nameWithType: RuntimeStack.NODEJS_4_4
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_4_4
-  type: Field
-  source:
-    remote: *o0
-    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 31
-  package: com.microsoft.azure.management.appservice
-  summary: <p>Node.JS 4.4. </p>
-  syntax:
-    content: public static final RuntimeStack NODEJS_4_4= new RuntimeStack("NODE", "4.4")
-    return:
-      type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_4_5()
-  id: NODEJS_4_5()
-  parent: com.microsoft.azure.management.appservice._runtime_stack
-  href: com.microsoft.azure.management.appservice._runtime_stack.yml
-  langs:
-  - java
-  name: NODEJS_4_5
-  nameWithType: RuntimeStack.NODEJS_4_5
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_4_5
+  name: NODEJS_4_4_7
+  nameWithType: RuntimeStack.NODEJS_4_4_7
+  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_4_4_7
   type: Field
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
     startLine: 28
   package: com.microsoft.azure.management.appservice
-  summary: <p>Node.JS 4.5. </p>
+  summary: <p>Node.JS 4.4.7. </p>
   syntax:
-    content: public static final RuntimeStack NODEJS_4_5= new RuntimeStack("NODE", "4.5")
+    content: public static final RuntimeStack NODEJS_4_4_7= new RuntimeStack("NODE", "4.4.7")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_10()
-  id: NODEJS_6_10()
+- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_4_5_0()
+  id: NODEJS_4_5_0()
   parent: com.microsoft.azure.management.appservice._runtime_stack
   href: com.microsoft.azure.management.appservice._runtime_stack.yml
   langs:
   - java
-  name: NODEJS_6_10
-  nameWithType: RuntimeStack.NODEJS_6_10
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_6_10
-  type: Field
-  source:
-    remote: *o0
-    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 16
-  package: com.microsoft.azure.management.appservice
-  summary: <p>Node.JS 6.10. </p>
-  syntax:
-    content: public static final RuntimeStack NODEJS_6_10= new RuntimeStack("NODE", "6.10")
-    return:
-      type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_2()
-  id: NODEJS_6_2()
-  parent: com.microsoft.azure.management.appservice._runtime_stack
-  href: com.microsoft.azure.management.appservice._runtime_stack.yml
-  langs:
-  - java
-  name: NODEJS_6_2
-  nameWithType: RuntimeStack.NODEJS_6_2
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_6_2
+  name: NODEJS_4_5_0
+  nameWithType: RuntimeStack.NODEJS_4_5_0
+  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_4_5_0
   type: Field
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
     startLine: 25
   package: com.microsoft.azure.management.appservice
-  summary: <p>Node.JS 6.2. </p>
+  summary: <p>Node.JS 4.5.0. </p>
   syntax:
-    content: public static final RuntimeStack NODEJS_6_2= new RuntimeStack("NODE", "6.2")
+    content: public static final RuntimeStack NODEJS_4_5_0= new RuntimeStack("NODE", "4.5.0")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_6()
-  id: NODEJS_6_6()
+- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_2_2()
+  id: NODEJS_6_2_2()
   parent: com.microsoft.azure.management.appservice._runtime_stack
   href: com.microsoft.azure.management.appservice._runtime_stack.yml
   langs:
   - java
-  name: NODEJS_6_6
-  nameWithType: RuntimeStack.NODEJS_6_6
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_6_6
+  name: NODEJS_6_2_2
+  nameWithType: RuntimeStack.NODEJS_6_2_2
+  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_6_2_2
   type: Field
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
     startLine: 22
   package: com.microsoft.azure.management.appservice
-  summary: <p>Node.JS 6.6. </p>
+  summary: <p>Node.JS 6.2.2. </p>
   syntax:
-    content: public static final RuntimeStack NODEJS_6_6= new RuntimeStack("NODE", "6.6")
+    content: public static final RuntimeStack NODEJS_6_2_2= new RuntimeStack("NODE", "6.2.2")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_9()
-  id: NODEJS_6_9()
+- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_6_0()
+  id: NODEJS_6_6_0()
   parent: com.microsoft.azure.management.appservice._runtime_stack
   href: com.microsoft.azure.management.appservice._runtime_stack.yml
   langs:
   - java
-  name: NODEJS_6_9
-  nameWithType: RuntimeStack.NODEJS_6_9
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_6_9
+  name: NODEJS_6_6_0
+  nameWithType: RuntimeStack.NODEJS_6_6_0
+  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_6_6_0
   type: Field
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
     startLine: 19
   package: com.microsoft.azure.management.appservice
-  summary: <p>Node.JS 6.9. </p>
+  summary: <p>Node.JS 6.6.0. </p>
   syntax:
-    content: public static final RuntimeStack NODEJS_6_9= new RuntimeStack("NODE", "6.9")
+    content: public static final RuntimeStack NODEJS_6_6_0= new RuntimeStack("NODE", "6.6.0")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.PHP_5_6()
-  id: PHP_5_6()
+- uid: com.microsoft.azure.management.appservice._runtime_stack.NODEJS_6_9_3()
+  id: NODEJS_6_9_3()
   parent: com.microsoft.azure.management.appservice._runtime_stack
   href: com.microsoft.azure.management.appservice._runtime_stack.yml
   langs:
   - java
-  name: PHP_5_6
-  nameWithType: RuntimeStack.PHP_5_6
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.PHP_5_6
+  name: NODEJS_6_9_3
+  nameWithType: RuntimeStack.NODEJS_6_9_3
+  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.NODEJS_6_9_3
+  type: Field
+  source:
+    remote: *o0
+    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
+    startLine: 16
+  package: com.microsoft.azure.management.appservice
+  summary: <p>Node.JS 6.9.3. </p>
+  syntax:
+    content: public static final RuntimeStack NODEJS_6_9_3= new RuntimeStack("NODE", "6.9.3")
+    return:
+      type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
+- uid: com.microsoft.azure.management.appservice._runtime_stack.PHP_5_6_23()
+  id: PHP_5_6_23()
+  parent: com.microsoft.azure.management.appservice._runtime_stack
+  href: com.microsoft.azure.management.appservice._runtime_stack.yml
+  langs:
+  - java
+  name: PHP_5_6_23
+  nameWithType: RuntimeStack.PHP_5_6_23
+  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.PHP_5_6_23
+  type: Field
+  source:
+    remote: *o0
+    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
+    startLine: 31
+  package: com.microsoft.azure.management.appservice
+  summary: <p>PHP 5.6.23. </p>
+  syntax:
+    content: public static final RuntimeStack PHP_5_6_23= new RuntimeStack("PHP", "5.6.23")
+    return:
+      type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
+- uid: com.microsoft.azure.management.appservice._runtime_stack.PHP_7_0_6()
+  id: PHP_7_0_6()
+  parent: com.microsoft.azure.management.appservice._runtime_stack
+  href: com.microsoft.azure.management.appservice._runtime_stack.yml
+  langs:
+  - java
+  name: PHP_7_0_6
+  nameWithType: RuntimeStack.PHP_7_0_6
+  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.PHP_7_0_6
   type: Field
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
     startLine: 34
   package: com.microsoft.azure.management.appservice
-  summary: <p>PHP 5.6. </p>
+  summary: <p>PHP 7.0.6. </p>
   syntax:
-    content: public static final RuntimeStack PHP_5_6= new RuntimeStack("PHP", "5.6")
-    return:
-      type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
-- uid: com.microsoft.azure.management.appservice._runtime_stack.PHP_7_0()
-  id: PHP_7_0()
-  parent: com.microsoft.azure.management.appservice._runtime_stack
-  href: com.microsoft.azure.management.appservice._runtime_stack.yml
-  langs:
-  - java
-  name: PHP_7_0
-  nameWithType: RuntimeStack.PHP_7_0
-  fullName: final RuntimeStack com.microsoft.azure.management.appservice.RuntimeStack.PHP_7_0
-  type: Field
-  source:
-    remote: *o0
-    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 37
-  package: com.microsoft.azure.management.appservice
-  summary: <p>PHP 7.0. </p>
-  syntax:
-    content: public static final RuntimeStack PHP_7_0= new RuntimeStack("PHP", "7.0")
+    content: public static final RuntimeStack PHP_7_0_6= new RuntimeStack("PHP", "7.0.6")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._runtime_stack
 - uid: com.microsoft.azure.management.appservice._runtime_stack.RUBY_2_3()
@@ -296,7 +254,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 46
+    startLine: 40
   package: com.microsoft.azure.management.appservice
   summary: <p>Ruby 2.3. </p>
   syntax:
@@ -317,7 +275,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 58
+    startLine: 52
   package: com.microsoft.azure.management.appservice
   summary: <p>Creates a custom app service pricing tier. </p>
   syntax:
@@ -343,7 +301,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 66
+    startLine: 60
   package: com.microsoft.azure.management.appservice
   syntax:
     content: public String stack()
@@ -364,7 +322,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 78
+    startLine: 72
   package: com.microsoft.azure.management.appservice
   syntax:
     content: public String toString()
@@ -384,7 +342,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/RuntimeStack.java
-    startLine: 73
+    startLine: 67
   package: com.microsoft.azure.management.appservice
   syntax:
     content: public String version()

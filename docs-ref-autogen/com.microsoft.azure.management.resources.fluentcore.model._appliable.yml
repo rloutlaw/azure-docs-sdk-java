@@ -16,7 +16,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Appliable.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Appliable.java
     startLine: 20
@@ -253,16 +253,6 @@ references:
   summary: <p>The template for an availability set update operation, containing all the settings that can be modified. </p>
   syntax:
     content: public interface Update
-- uid: com.microsoft.azure.management.compute._container_service._update
-  parent: com.microsoft.azure.management.compute
-  href: com.microsoft.azure.management.compute._container_service._update.yml
-  name: ContainerService.Update
-  nameWithType: ContainerService.Update
-  fullName: com.microsoft.azure.management.compute.ContainerService.Update
-  type: Interface
-  summary: <p>The template for an update operation, containing all the settings that can be modified. </p>
-  syntax:
-    content: public interface Update
 - uid: com.microsoft.azure.management.compute._disk._update
   parent: com.microsoft.azure.management.compute
   href: com.microsoft.azure.management.compute._disk._update.yml
@@ -316,16 +306,6 @@ references:
     <p>Call <xref href="com.microsoft.azure.management.resources.fluentcore.model._appliable.apply()" data-throw-if-not-resolved="false"></xref> to apply the changes to the resource in <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public interface Update
-- uid: com.microsoft.azure.management.graphrbac._active_directory_application._update
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._active_directory_application._update.yml
-  name: ActiveDirectoryApplication.Update
-  nameWithType: ActiveDirectoryApplication.Update
-  fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryApplication.Update
-  type: Interface
-  summary: <p>The template for an application update operation, containing all the settings that can be modified. </p>
-  syntax:
-    content: public interface Update
 - uid: com.microsoft.azure.management.keyvault._vault._update
   parent: com.microsoft.azure.management.keyvault
   href: com.microsoft.azure.management.keyvault._vault._update.yml
@@ -343,7 +323,10 @@ references:
   nameWithType: ApplicationGateway.Update
   fullName: com.microsoft.azure.management.network.ApplicationGateway.Update
   type: Interface
-  summary: <p>The template for an application gateway update operation, containing all the settings that can be modified. </p>
+  summary: >-
+    <p>The template for an application gateway update operation, containing all the settings that can be modified. </p>
+
+    <p>Call<programlisting><codeline><highlight class="normal">apply()<sp></sp></highlight></codeline></programlisting> to apply the changes to the resource in <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public interface Update
 - uid: com.microsoft.azure.management.network._load_balancer._update
@@ -520,12 +503,12 @@ references:
   summary: <p>The template for a Service Bus namespace update operation, containing all the settings that can be modified. </p>
   syntax:
     content: public interface Update
-- uid: com.microsoft.azure.management.servicebus._service_bus_subscription._update
+- uid: com.microsoft.azure.management.servicebus._subscription._update
   parent: com.microsoft.azure.management.servicebus
-  href: com.microsoft.azure.management.servicebus._service_bus_subscription._update.yml
-  name: ServiceBusSubscription.Update
-  nameWithType: ServiceBusSubscription.Update
-  fullName: com.microsoft.azure.management.servicebus.ServiceBusSubscription.Update
+  href: com.microsoft.azure.management.servicebus._subscription._update.yml
+  name: Subscription.Update
+  nameWithType: Subscription.Update
+  fullName: com.microsoft.azure.management.servicebus.Subscription.Update
   type: Interface
   summary: <p>The template for a subscription update operation, containing all the settings that can be modified. </p>
   syntax:

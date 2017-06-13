@@ -18,12 +18,12 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayProbe.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayProbe.java
-    startLine: 19
+    startLine: 21
   package: com.microsoft.azure.management.network
-  summary: <p>A client-side representation of an application gateway probe. </p>
+  summary: <p>An immutable client-side representation of an application gateway probe. </p>
   syntax:
     content: public interface ApplicationGatewayProbe extends HasInner<ApplicationGatewayProbeInner>,ChildResource<ApplicationGateway>,HasProtocol<ApplicationGatewayProtocol>
   inheritedMembers:
@@ -46,7 +46,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayProbe.java
-    startLine: 49
+    startLine: 51
   package: com.microsoft.azure.management.network
   syntax:
     content: public String host()
@@ -67,7 +67,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayProbe.java
-    startLine: 32
+    startLine: 34
   package: com.microsoft.azure.management.network
   syntax:
     content: public String path()
@@ -88,7 +88,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayProbe.java
-    startLine: 44
+    startLine: 46
   package: com.microsoft.azure.management.network
   summary: >-
     <p>
@@ -113,7 +113,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayProbe.java
-    startLine: 27
+    startLine: 29
   package: com.microsoft.azure.management.network
   syntax:
     content: public int timeBetweenProbesInSeconds()
@@ -134,7 +134,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayProbe.java
-    startLine: 38
+    startLine: 40
   package: com.microsoft.azure.management.network
   summary: >-
     <p>

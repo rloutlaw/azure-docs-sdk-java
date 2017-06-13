@@ -7,10 +7,12 @@ items:
   - com.microsoft.azure.management.network._network_usage_unit.BYTES_PER_SECOND()
   - com.microsoft.azure.management.network._network_usage_unit.COUNT()
   - com.microsoft.azure.management.network._network_usage_unit.COUNTS_PER_SECOND()
-  - com.microsoft.azure.management.network._network_usage_unit.fromString(String)
+  - com.microsoft.azure.management.network._network_usage_unit.equals(Object)
+  - com.microsoft.azure.management.network._network_usage_unit.hashCode()
+  - com.microsoft.azure.management.network._network_usage_unit.NetworkUsageUnit(String)
   - com.microsoft.azure.management.network._network_usage_unit.PERCENT()
   - com.microsoft.azure.management.network._network_usage_unit.SECONDS()
-  - com.microsoft.azure.management.network._network_usage_unit.values()
+  - com.microsoft.azure.management.network._network_usage_unit.toString()
   href: com.microsoft.azure.management.network._network_usage_unit.yml
   langs:
   - java
@@ -21,24 +23,16 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-    startLine: 14
+    startLine: 10
   package: com.microsoft.azure.management.network
-  summary: <p>Netowork usage units. </p>
+  summary: <p>Netowrk usage units. </p>
   syntax: &o1
-    content: public class NetworkUsageUnit extends ExpandableStringEnum<NetworkUsageUnit>
+    content: public class NetworkUsageUnit
   inheritance:
   - java.lang.Object
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  inheritedMembers:
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.equals(Object)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.fromString(String,Class<T>)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.hashCode()
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.toString()
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.values(Class<T>)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.withNameValue(String,T,Class<T>)
 - uid: com.microsoft.azure.management.network._network_usage_unit.BYTES()
   id: BYTES()
   parent: com.microsoft.azure.management.network._network_usage_unit
@@ -52,11 +46,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-    startLine: 19
+    startLine: 15
   package: com.microsoft.azure.management.network
   summary: <p>Static value Bytes for <xref href="com.microsoft.azure.management.network._network_usage_unit" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final NetworkUsageUnit BYTES= fromString("Bytes")
+    content: public static final NetworkUsageUnit BYTES= new NetworkUsageUnit("Bytes")
     return:
       type: 93de0ef9com.microsoft.azure.management.network._network_usage_unit
 - uid: com.microsoft.azure.management.network._network_usage_unit.BYTES_PER_SECOND()
@@ -72,11 +66,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-    startLine: 31
+    startLine: 27
   package: com.microsoft.azure.management.network
   summary: <p>Static value BytesPerSecond for ComputeUsageUnit. </p>
   syntax:
-    content: public static final NetworkUsageUnit BYTES_PER_SECOND= fromString("BytesPerSecond")
+    content: public static final NetworkUsageUnit BYTES_PER_SECOND= new NetworkUsageUnit("BytesPerSecond")
     return:
       type: 93de0ef9com.microsoft.azure.management.network._network_usage_unit
 - uid: com.microsoft.azure.management.network._network_usage_unit.COUNT()
@@ -92,11 +86,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-    startLine: 16
+    startLine: 12
   package: com.microsoft.azure.management.network
   summary: <p>Static value Count for <xref href="com.microsoft.azure.management.network._network_usage_unit" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final NetworkUsageUnit COUNT= fromString("Count")
+    content: public static final NetworkUsageUnit COUNT= new NetworkUsageUnit("Count")
     return:
       type: 93de0ef9com.microsoft.azure.management.network._network_usage_unit
 - uid: com.microsoft.azure.management.network._network_usage_unit.COUNTS_PER_SECOND()
@@ -112,39 +106,79 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-    startLine: 28
+    startLine: 24
   package: com.microsoft.azure.management.network
   summary: <p>Static value CountsPerSecond for <xref href="com.microsoft.azure.management.network._network_usage_unit" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final NetworkUsageUnit COUNTS_PER_SECOND= fromString("CountsPerSecond")
+    content: public static final NetworkUsageUnit COUNTS_PER_SECOND= new NetworkUsageUnit("CountsPerSecond")
     return:
       type: 93de0ef9com.microsoft.azure.management.network._network_usage_unit
-- uid: com.microsoft.azure.management.network._network_usage_unit.fromString(String)
-  id: fromString(String)
+- uid: com.microsoft.azure.management.network._network_usage_unit.equals(Object)
+  id: equals(Object)
   parent: com.microsoft.azure.management.network._network_usage_unit
   href: com.microsoft.azure.management.network._network_usage_unit.yml
   langs:
   - java
-  name: fromString(String name)
-  nameWithType: NetworkUsageUnit.fromString(String name)
-  fullName: static NetworkUsageUnit com.microsoft.azure.management.network.NetworkUsageUnit.fromString(String name)
-  overload: com.microsoft.azure.management.network._network_usage_unit.fromString*
+  name: equals(Object obj)
+  nameWithType: NetworkUsageUnit.equals(Object obj)
+  fullName: boolean com.microsoft.azure.management.network.NetworkUsageUnit.equals(Object obj)
+  overload: com.microsoft.azure.management.network._network_usage_unit.equals*
   type: Method
+  source:
+    remote: *o0
+    path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
+    startLine: 53
+  package: com.microsoft.azure.management.network
+  syntax:
+    content: public boolean equals(Object obj)
+    parameters:
+    - id: obj
+      type: "79317049"
+    return:
+      type: 4fc6e284
+- uid: com.microsoft.azure.management.network._network_usage_unit.hashCode()
+  id: hashCode()
+  parent: com.microsoft.azure.management.network._network_usage_unit
+  href: com.microsoft.azure.management.network._network_usage_unit.yml
+  langs:
+  - java
+  name: hashCode()
+  nameWithType: NetworkUsageUnit.hashCode()
+  fullName: int com.microsoft.azure.management.network.NetworkUsageUnit.hashCode()
+  overload: com.microsoft.azure.management.network._network_usage_unit.hashCode*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
+    startLine: 48
+  package: com.microsoft.azure.management.network
+  syntax:
+    content: public int hashCode()
+    return:
+      type: f75371fa
+- uid: com.microsoft.azure.management.network._network_usage_unit.NetworkUsageUnit(String)
+  id: NetworkUsageUnit(String)
+  parent: com.microsoft.azure.management.network._network_usage_unit
+  href: com.microsoft.azure.management.network._network_usage_unit.yml
+  langs:
+  - java
+  name: NetworkUsageUnit(String value)
+  nameWithType: NetworkUsageUnit.NetworkUsageUnit(String value)
+  fullName: com.microsoft.azure.management.network.NetworkUsageUnit.NetworkUsageUnit(String value)
+  overload: com.microsoft.azure.management.network._network_usage_unit.NetworkUsageUnit*
+  type: Constructor
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
     startLine: 38
   package: com.microsoft.azure.management.network
-  summary: <p>Finds or creates a network usage unit based on the specified name. </p>
-  syntax: &o2
-    content: public static NetworkUsageUnit fromString(String name)
+  summary: <p>Creates a custom value for <xref href="com.microsoft.azure.management.network._network_usage_unit" data-throw-if-not-resolved="false"></xref>. </p>
+  syntax:
+    content: public NetworkUsageUnit(String value)
     parameters:
-    - id: name
+    - id: value
       type: "26831127"
-      description: <p>a name </p>
-    return:
-      type: com.microsoft.azure.management.network._network_usage_unit
-      description: <p>an instance of <xref href="com.microsoft.azure.management.network._network_usage_unit" data-throw-if-not-resolved="false"></xref></p>
+      description: <p>the custom value </p>
 - uid: com.microsoft.azure.management.network._network_usage_unit.PERCENT()
   id: PERCENT()
   parent: com.microsoft.azure.management.network._network_usage_unit
@@ -158,11 +192,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-    startLine: 25
+    startLine: 21
   package: com.microsoft.azure.management.network
   summary: <p>Static value Percent for <xref href="com.microsoft.azure.management.network._network_usage_unit" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final NetworkUsageUnit PERCENT= fromString("Percent")
+    content: public static final NetworkUsageUnit PERCENT= new NetworkUsageUnit("Percent")
     return:
       type: 93de0ef9com.microsoft.azure.management.network._network_usage_unit
 - uid: com.microsoft.azure.management.network._network_usage_unit.SECONDS()
@@ -178,34 +212,33 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-    startLine: 22
+    startLine: 18
   package: com.microsoft.azure.management.network
   summary: <p>Static value Seconds for <xref href="com.microsoft.azure.management.network._network_usage_unit" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final NetworkUsageUnit SECONDS= fromString("Seconds")
+    content: public static final NetworkUsageUnit SECONDS= new NetworkUsageUnit("Seconds")
     return:
       type: 93de0ef9com.microsoft.azure.management.network._network_usage_unit
-- uid: com.microsoft.azure.management.network._network_usage_unit.values()
-  id: values()
+- uid: com.microsoft.azure.management.network._network_usage_unit.toString()
+  id: toString()
   parent: com.microsoft.azure.management.network._network_usage_unit
   href: com.microsoft.azure.management.network._network_usage_unit.yml
   langs:
   - java
-  name: values()
-  nameWithType: NetworkUsageUnit.values()
-  fullName: static Collection<NetworkUsageUnit> com.microsoft.azure.management.network.NetworkUsageUnit.values()
-  overload: com.microsoft.azure.management.network._network_usage_unit.values*
+  name: toString()
+  nameWithType: NetworkUsageUnit.toString()
+  fullName: String com.microsoft.azure.management.network.NetworkUsageUnit.toString()
+  overload: com.microsoft.azure.management.network._network_usage_unit.toString*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/NetworkUsageUnit.java
-    startLine: 45
+    startLine: 43
   package: com.microsoft.azure.management.network
   syntax:
-    content: public static Collection<NetworkUsageUnit> values()
+    content: public String toString()
     return:
-      type: 12ebb11acom.microsoft.azure.management.network._network_usage_unita08ddfce
-      description: <p>known network usage units </p>
+      type: "26831127"
 references:
 - uid: 93de0ef9com.microsoft.azure.management.network._network_usage_unit
   spec.java:
@@ -219,123 +252,38 @@ references:
   spec.java:
   - name: String
     fullName: String
-- uid: com.microsoft.azure.management.network._network_usage_unit.fromString*
-  name: fromString
-  nameWithType: NetworkUsageUnit.fromString
-  fullName: static NetworkUsageUnit com.microsoft.azure.management.network.NetworkUsageUnit.fromString
+- uid: com.microsoft.azure.management.network._network_usage_unit.NetworkUsageUnit*
+  name: NetworkUsageUnit
+  nameWithType: NetworkUsageUnit.NetworkUsageUnit
+  fullName: com.microsoft.azure.management.network.NetworkUsageUnit.NetworkUsageUnit
   package: com.microsoft.azure.management.network
-- uid: 12ebb11acom.microsoft.azure.management.network._network_usage_unita08ddfce
+- uid: com.microsoft.azure.management.network._network_usage_unit.toString*
+  name: toString
+  nameWithType: NetworkUsageUnit.toString
+  fullName: String com.microsoft.azure.management.network.NetworkUsageUnit.toString
+  package: com.microsoft.azure.management.network
+- uid: f75371fa
   spec.java:
-  - name: Collection<
-    fullName: Collection<
-  - uid: com.microsoft.azure.management.network._network_usage_unit
-    name: NetworkUsageUnit
-    fullName: com.microsoft.azure.management.network.NetworkUsageUnit
-    href: com.microsoft.azure.management.network._network_usage_unit.yml
-  - name: '>'
-    fullName: '>'
-- uid: com.microsoft.azure.management.network._network_usage_unit.values*
-  name: values
-  nameWithType: NetworkUsageUnit.values
-  fullName: static Collection<NetworkUsageUnit> com.microsoft.azure.management.network.NetworkUsageUnit.values
+  - name: int
+    fullName: int
+- uid: com.microsoft.azure.management.network._network_usage_unit.hashCode*
+  name: hashCode
+  nameWithType: NetworkUsageUnit.hashCode
+  fullName: int com.microsoft.azure.management.network.NetworkUsageUnit.hashCode
   package: com.microsoft.azure.management.network
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.equals(Object)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: equals(Object obj)
-  nameWithType: ExpandableStringEnum<T>.equals(Object obj)
-  fullName: boolean com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.equals(Object obj)
-  type: Method
-  syntax:
-    content: public boolean equals(Object obj)
-    parameters:
-    - id: obj
-      type: "79317049"
-    return:
-      type: 4fc6e284
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.fromString(String,Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: fromString(String name, Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.fromString(String name, Class<T> clazz)
-  fullName: static <T extends ExpandableStringEnum<T> T com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.fromString(String name, Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected static static<T extends ExpandableStringEnum<T> T fromString(String name, Class<T> clazz)
-    parameters:
-    - id: name
-      type: "26831127"
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 1e2c6103com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum34698212
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.hashCode()
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: hashCode()
-  nameWithType: ExpandableStringEnum<T>.hashCode()
-  fullName: int com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.hashCode()
-  type: Method
-  syntax:
-    content: public int hashCode()
-    return:
-      type: f75371fa
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.toString()
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: toString()
-  nameWithType: ExpandableStringEnum<T>.toString()
-  fullName: String com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.toString()
-  type: Method
-  syntax:
-    content: public String toString()
-    return:
-      type: "26831127"
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.values(Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: values(Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.values(Class<T> clazz)
-  fullName: static <T extends ExpandableStringEnum<T> Collection<T> com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.values(Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected static static<T extends ExpandableStringEnum<T> Collection<T> values(Class<T> clazz)
-    parameters:
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 1e2c6103com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum20a2b48e
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.withNameValue(String,T,Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: withNameValue(String name, T value, Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.withNameValue(String name, T value, Class<T> clazz)
-  fullName: T com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.withNameValue(String name, T value, Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected T withNameValue(String name, T value, Class<T> clazz)
-    parameters:
-    - id: name
-      type: "26831127"
-    - id: value
-      type: 8ce1ecb9
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 8ce1ecb9
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  parent: com.microsoft.azure.management.resources.fluentcore.arm
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: ExpandableStringEnum<T>
-  nameWithType: ExpandableStringEnum<T>
-  fullName: com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T>
-  type: Class
-  summary: <p>Base implementation for expandable, single string enums. </p>
-  syntax:
-    content: public class ExpandableStringEnum<T extends ExpandableStringEnum<T>>
-    typeParameters:
-    - type: 8ce1ecb9
-      description: <p>a specific expandable enum type </p>
+- uid: "79317049"
+  spec.java:
+  - name: Object
+    fullName: Object
+- uid: 4fc6e284
+  spec.java:
+  - name: boolean
+    fullName: boolean
+- uid: com.microsoft.azure.management.network._network_usage_unit.equals*
+  name: equals
+  nameWithType: NetworkUsageUnit.equals
+  fullName: boolean com.microsoft.azure.management.network.NetworkUsageUnit.equals
+  package: com.microsoft.azure.management.network
 - uid: com.microsoft.azure.management.network._network_usage_unit
   parent: com.microsoft.azure.management.network
   href: com.microsoft.azure.management.network._network_usage_unit.yml
@@ -343,14 +291,5 @@ references:
   nameWithType: NetworkUsageUnit
   fullName: com.microsoft.azure.management.network.NetworkUsageUnit
   type: Class
-  summary: <p>Netowork usage units. </p>
+  summary: <p>Netowrk usage units. </p>
   syntax: *o1
-- uid: com.microsoft.azure.management.network._network_usage_unit.fromString(String)
-  parent: com.microsoft.azure.management.network._network_usage_unit
-  href: com.microsoft.azure.management.network._network_usage_unit.yml
-  name: fromString(String name)
-  nameWithType: NetworkUsageUnit.fromString(String name)
-  fullName: static NetworkUsageUnit com.microsoft.azure.management.network.NetworkUsageUnit.fromString(String name)
-  type: Method
-  summary: <p>Finds or creates a network usage unit based on the specified name. </p>
-  syntax: *o2

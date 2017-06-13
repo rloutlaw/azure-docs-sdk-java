@@ -65,10 +65,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 29
+    startLine: 28
   package: com.microsoft.azure.management.datalake.analytics
   summary: <p>An instance of this class provides access to all the operations defined in <xref href="com.microsoft.azure.management.datalake.analytics._storage_accounts" data-throw-if-not-resolved="false"></xref>. </p>
   syntax: &o1
@@ -87,7 +87,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 229
+    startLine: 201
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the specified Data Lake Analytics account to add an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account.</p>
@@ -108,13 +108,6 @@ items:
     - id: parameters
       type: com.microsoft.azure.management.datalake.analytics.models._add_storage_account_parameters
       description: <p>The parameters containing the access key and optional suffix for the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage Account. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.addAsync(String,String,String,AddStorageAccountParameters)
   id: addAsync(String,String,String,AddStorageAccountParameters)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -129,7 +122,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 254
+    startLine: 224
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the specified Data Lake Analytics account to add an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account.</p>
@@ -153,9 +146,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.addAsync(String,String,String,AddStorageAccountParameters,final ServiceCallback<Void>)
   id: addAsync(String,String,String,AddStorageAccountParameters,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -170,7 +160,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 242
+    startLine: 213
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the specified Data Lake Analytics account to add an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account.</p>
@@ -197,9 +187,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.addWithServiceResponseAsync(String,String,String,AddStorageAccountParameters)
   id: addWithServiceResponseAsync(String,String,String,AddStorageAccountParameters)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -214,7 +201,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 266
+    startLine: 235
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the specified Data Lake Analytics account to add an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account.</p>
@@ -238,9 +225,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.delete(String,String,String)
   id: delete(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -255,7 +239,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 87
+    startLine: 77
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the specified Data Lake Analytics account to remove an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account.</p>
@@ -273,13 +257,6 @@ items:
     - id: storageAccountName
       type: "26831127"
       description: <p>The name of the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account to remove </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.deleteAsync(String,String,String)
   id: deleteAsync(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -294,7 +271,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 110
+    startLine: 98
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the specified Data Lake Analytics account to remove an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account.</p>
@@ -315,9 +292,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.deleteAsync(String,String,String,final ServiceCallback<Void>)
   id: deleteAsync(String,String,String,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -332,7 +306,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 99
+    startLine: 88
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the specified Data Lake Analytics account to remove an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account.</p>
@@ -356,9 +330,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.deleteWithServiceResponseAsync(String,String,String)
   id: deleteWithServiceResponseAsync(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -373,7 +344,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 121
+    startLine: 108
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the specified Data Lake Analytics account to remove an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account.</p>
@@ -394,9 +365,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.get(String,String,String)
   id: get(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -411,7 +379,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 41
+    startLine: 37
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the specified <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account linked to the given Data Lake Analytics account.</p>
@@ -432,13 +400,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._storage_account_info
       description: <p>the StorageAccountInfo object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.getAsync(String,String,String)
   id: getAsync(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -453,7 +414,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 64
+    startLine: 58
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the specified <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account linked to the given Data Lake Analytics account.</p>
@@ -474,9 +435,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._storage_account_infoa08ddfce
       description: <p>the observable to the StorageAccountInfo object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.getAsync(String,String,String,final ServiceCallback<StorageAccountInfo>)
   id: getAsync(String,String,String,final ServiceCallback<StorageAccountInfo>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -491,7 +449,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 53
+    startLine: 48
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the specified <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account linked to the given Data Lake Analytics account.</p>
@@ -515,9 +473,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._storage_account_infoa08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.getStorageContainer(String,String,String,String)
   id: getStorageContainer(String,String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -532,7 +487,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 280
+    startLine: 246
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the specified <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage container associated with the given Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts.</p>
@@ -556,13 +511,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._storage_container
       description: <p>the StorageContainer object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.getStorageContainerAsync(String,String,String,String)
   id: getStorageContainerAsync(String,String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -577,7 +525,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 305
+    startLine: 269
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the specified <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage container associated with the given Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts.</p>
@@ -601,9 +549,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._storage_containera08ddfce
       description: <p>the observable to the StorageContainer object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.getStorageContainerAsync(String,String,String,String,final ServiceCallback<StorageContainer>)
   id: getStorageContainerAsync(String,String,String,String,final ServiceCallback<StorageContainer>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -618,7 +563,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 293
+    startLine: 258
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the specified <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage container associated with the given Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts.</p>
@@ -645,9 +590,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._storage_containera08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.getStorageContainerWithServiceResponseAsync(String,String,String,String)
   id: getStorageContainerWithServiceResponseAsync(String,String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -662,7 +604,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 317
+    startLine: 280
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the specified <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage container associated with the given Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts.</p>
@@ -686,9 +628,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._storage_containere7daa122
       description: <p>the observable to the StorageContainer object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.getWithServiceResponseAsync(String,String,String)
   id: getWithServiceResponseAsync(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -703,7 +642,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 75
+    startLine: 68
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the specified <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account linked to the given Data Lake Analytics account.</p>
@@ -724,9 +663,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._storage_account_infoe7daa122
       description: <p>the observable to the StorageAccountInfo object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccount(final String,final String)
   id: listByAccount(final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -741,7 +677,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 427
+    startLine: 375
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -759,13 +695,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._storage_account_infoa08ddfce
       description: <p>the PagedList&lt;StorageAccountInfo&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccount(final String,final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByAccount(final String,final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -780,7 +709,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 475
+    startLine: 417
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -816,13 +745,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._storage_account_infoa08ddfce
       description: <p>the PagedList&lt;StorageAccountInfo&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountAsync(final String,final String)
   id: listByAccountAsync(final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -837,7 +759,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 448
+    startLine: 394
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -855,9 +777,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._storage_account_infoe7daa122
       description: <p>the observable to the PagedList&lt;StorageAccountInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountAsync(final String,final String,final ListOperationCallback<StorageAccountInfo>)
   id: listByAccountAsync(final String,final String,final ListOperationCallback<StorageAccountInfo>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -872,7 +791,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 438
+    startLine: 385
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -893,9 +812,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._storage_account_infoe7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountAsync(final String,final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByAccountAsync(final String,final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -910,7 +826,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 508
+    startLine: 448
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -946,9 +862,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._storage_account_infoe7daa122
       description: <p>the observable to the PagedList&lt;StorageAccountInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountAsync(final String,final String,final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<StorageAccountInfo>)
   id: listByAccountAsync(final String,final String,final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<StorageAccountInfo>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -963,7 +876,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 492
+    startLine: 433
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -1002,9 +915,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._storage_account_infoe7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountNext(final String)
   id: listByAccountNext(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1019,7 +929,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 615
+    startLine: 539
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -1034,13 +944,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._storage_account_infoa08ddfce
       description: <p>the PagedList&lt;StorageAccountInfo&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountNextAsync(final String)
   id: listByAccountNextAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1055,7 +958,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 635
+    startLine: 557
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -1070,9 +973,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._storage_account_infoe7daa122
       description: <p>the observable to the PagedList&lt;StorageAccountInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountNextAsync(final String,final ServiceFuture<List<StorageAccountInfo>>,final ListOperationCallback<StorageAccountInfo>)
   id: listByAccountNextAsync(final String,final ServiceFuture<List<StorageAccountInfo>>,final ListOperationCallback<StorageAccountInfo>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1087,7 +987,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 626
+    startLine: 549
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -1101,16 +1001,13 @@ items:
       description: <p>The NextLink from the previous successful call to List operation. </p>
     - id: serviceFuture
       type: bd82102acom.microsoft.azure.management.datalake.analytics.models._storage_account_infoe7daa122
-      description: <p>the ServiceFuture object tracking the Retrofit calls </p>
+      description: <p>the ServiceCall object tracking the Retrofit calls </p>
     - id: serviceCallback
       type: 3c4303efcom.microsoft.azure.management.datalake.analytics.models._storage_account_infoa08ddfce
       description: <p>the async ServiceCallback to handle successful and failed responses. </p>
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._storage_account_infoe7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountNextWithServiceResponseAsync(final String)
   id: listByAccountNextWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1125,7 +1022,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 644
+    startLine: 565
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -1140,9 +1037,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._storage_account_info2646ccb0
       description: <p>the observable to the PagedList&lt;StorageAccountInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountWithServiceResponseAsync(final String,final String)
   id: listByAccountWithServiceResponseAsync(final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1157,7 +1051,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 458
+    startLine: 403
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -1175,9 +1069,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._storage_account_info2646ccb0
       description: <p>the observable to the PagedList&lt;StorageAccountInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listByAccountWithServiceResponseAsync(final String,final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByAccountWithServiceResponseAsync(final String,final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1192,7 +1083,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 524
+    startLine: 463
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage accounts, if any, linked to the specified Data Lake Analytics account. The response includes a link to the next page, if any.</p>
@@ -1228,9 +1119,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._storage_account_info2646ccb0
       description: <p>the observable to the PagedList&lt;StorageAccountInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listSasTokens(final String,final String,final String,final String)
   id: listSasTokens(final String,final String,final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1245,7 +1133,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 378
+    startLine: 332
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the SAS token associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account and container combination.</p>
@@ -1269,13 +1157,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._sas_token_infoa08ddfce
       description: <p>the PagedList&lt;SasTokenInfo&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listSasTokensAsync(final String,final String,final String,final String)
   id: listSasTokensAsync(final String,final String,final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1290,7 +1171,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 403
+    startLine: 355
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the SAS token associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account and container combination.</p>
@@ -1314,9 +1195,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._sas_token_infoe7daa122
       description: <p>the observable to the PagedList&lt;SasTokenInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listSasTokensAsync(final String,final String,final String,final String,final ListOperationCallback<SasTokenInfo>)
   id: listSasTokensAsync(final String,final String,final String,final String,final ListOperationCallback<SasTokenInfo>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1331,7 +1209,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 391
+    startLine: 344
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the SAS token associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account and container combination.</p>
@@ -1358,9 +1236,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._sas_token_infoe7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listSasTokensNext(final String)
   id: listSasTokensNext(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1375,7 +1250,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 575
+    startLine: 505
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the SAS token associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account and container combination.</p>
@@ -1390,13 +1265,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._sas_token_infoa08ddfce
       description: <p>the PagedList&lt;SasTokenInfo&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listSasTokensNextAsync(final String)
   id: listSasTokensNextAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1411,7 +1279,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 595
+    startLine: 523
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the SAS token associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account and container combination.</p>
@@ -1426,9 +1294,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._sas_token_infoe7daa122
       description: <p>the observable to the PagedList&lt;SasTokenInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listSasTokensNextAsync(final String,final ServiceFuture<List<SasTokenInfo>>,final ListOperationCallback<SasTokenInfo>)
   id: listSasTokensNextAsync(final String,final ServiceFuture<List<SasTokenInfo>>,final ListOperationCallback<SasTokenInfo>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1443,7 +1308,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 586
+    startLine: 515
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the SAS token associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account and container combination.</p>
@@ -1457,16 +1322,13 @@ items:
       description: <p>The NextLink from the previous successful call to List operation. </p>
     - id: serviceFuture
       type: bd82102acom.microsoft.azure.management.datalake.analytics.models._sas_token_infoe7daa122
-      description: <p>the ServiceFuture object tracking the Retrofit calls </p>
+      description: <p>the ServiceCall object tracking the Retrofit calls </p>
     - id: serviceCallback
       type: 3c4303efcom.microsoft.azure.management.datalake.analytics.models._sas_token_infoa08ddfce
       description: <p>the async ServiceCallback to handle successful and failed responses. </p>
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._sas_token_infoe7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listSasTokensNextWithServiceResponseAsync(final String)
   id: listSasTokensNextWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1481,7 +1343,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 604
+    startLine: 531
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the SAS token associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account and container combination.</p>
@@ -1496,9 +1358,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._sas_token_info2646ccb0
       description: <p>the observable to the PagedList&lt;SasTokenInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listSasTokensWithServiceResponseAsync(final String,final String,final String,final String)
   id: listSasTokensWithServiceResponseAsync(final String,final String,final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1513,7 +1372,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 415
+    startLine: 366
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the SAS token associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account and container combination.</p>
@@ -1537,9 +1396,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._sas_token_info2646ccb0
       description: <p>the observable to the PagedList&lt;SasTokenInfo&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listStorageContainers(final String,final String,final String)
   id: listStorageContainers(final String,final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1554,7 +1410,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 330
+    startLine: 290
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage containers, if any, associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account combination. The response includes a link to the next page of results, if any.</p>
@@ -1575,13 +1431,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._storage_containera08ddfce
       description: <p>the PagedList&lt;StorageContainer&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listStorageContainersAsync(final String,final String,final String)
   id: listStorageContainersAsync(final String,final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1596,7 +1445,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 353
+    startLine: 311
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage containers, if any, associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account combination. The response includes a link to the next page of results, if any.</p>
@@ -1617,9 +1466,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._storage_containere7daa122
       description: <p>the observable to the PagedList&lt;StorageContainer&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listStorageContainersAsync(final String,final String,final String,final ListOperationCallback<StorageContainer>)
   id: listStorageContainersAsync(final String,final String,final String,final ListOperationCallback<StorageContainer>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1634,7 +1480,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 342
+    startLine: 301
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage containers, if any, associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account combination. The response includes a link to the next page of results, if any.</p>
@@ -1658,9 +1504,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._storage_containere7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listStorageContainersNext(final String)
   id: listStorageContainersNext(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1675,7 +1518,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 535
+    startLine: 471
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage containers, if any, associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account combination. The response includes a link to the next page of results, if any.</p>
@@ -1690,13 +1533,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._storage_containera08ddfce
       description: <p>the PagedList&lt;StorageContainer&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listStorageContainersNextAsync(final String)
   id: listStorageContainersNextAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1711,7 +1547,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 555
+    startLine: 489
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage containers, if any, associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account combination. The response includes a link to the next page of results, if any.</p>
@@ -1726,9 +1562,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._storage_containere7daa122
       description: <p>the observable to the PagedList&lt;StorageContainer&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listStorageContainersNextAsync(final String,final ServiceFuture<List<StorageContainer>>,final ListOperationCallback<StorageContainer>)
   id: listStorageContainersNextAsync(final String,final ServiceFuture<List<StorageContainer>>,final ListOperationCallback<StorageContainer>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1743,7 +1576,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 546
+    startLine: 481
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage containers, if any, associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account combination. The response includes a link to the next page of results, if any.</p>
@@ -1757,16 +1590,13 @@ items:
       description: <p>The NextLink from the previous successful call to List operation. </p>
     - id: serviceFuture
       type: bd82102acom.microsoft.azure.management.datalake.analytics.models._storage_containere7daa122
-      description: <p>the ServiceFuture object tracking the Retrofit calls </p>
+      description: <p>the ServiceCall object tracking the Retrofit calls </p>
     - id: serviceCallback
       type: 3c4303efcom.microsoft.azure.management.datalake.analytics.models._storage_containera08ddfce
       description: <p>the async ServiceCallback to handle successful and failed responses. </p>
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._storage_containere7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listStorageContainersNextWithServiceResponseAsync(final String)
   id: listStorageContainersNextWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1781,7 +1611,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 564
+    startLine: 497
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage containers, if any, associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account combination. The response includes a link to the next page of results, if any.</p>
@@ -1796,9 +1626,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._storage_container2646ccb0
       description: <p>the observable to the PagedList&lt;StorageContainer&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.listStorageContainersWithServiceResponseAsync(final String,final String,final String)
   id: listStorageContainersWithServiceResponseAsync(final String,final String,final String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1813,7 +1640,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 364
+    startLine: 321
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage containers, if any, associated with the specified Data Lake Analytics and <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account combination. The response includes a link to the next page of results, if any.</p>
@@ -1834,9 +1661,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._storage_container2646ccb0
       description: <p>the observable to the PagedList&lt;StorageContainer&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.update(String,String,String)
   id: update(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1851,7 +1675,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 133
+    startLine: 117
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account to replace <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage blob account details, such as the access key and/or suffix.</p>
@@ -1869,13 +1693,6 @@ items:
     - id: storageAccountName
       type: "26831127"
       description: <p>The <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage account to modify </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.update(String,String,String,UpdateStorageAccountParameters)
   id: update(String,String,String,UpdateStorageAccountParameters)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1890,7 +1707,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 179
+    startLine: 157
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account to replace <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage blob account details, such as the access key and/or suffix.</p>
@@ -1911,13 +1728,6 @@ items:
     - id: parameters
       type: com.microsoft.azure.management.datalake.analytics.models._update_storage_account_parameters
       description: <p>The parameters containing the access key and suffix to update the storage account with, if any. Passing nothing results in no change. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.updateAsync(String,String,String)
   id: updateAsync(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1932,7 +1742,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 156
+    startLine: 138
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account to replace <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage blob account details, such as the access key and/or suffix.</p>
@@ -1953,9 +1763,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.updateAsync(String,String,String,final ServiceCallback<Void>)
   id: updateAsync(String,String,String,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -1970,7 +1777,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 145
+    startLine: 128
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account to replace <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage blob account details, such as the access key and/or suffix.</p>
@@ -1994,9 +1801,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.updateAsync(String,String,String,UpdateStorageAccountParameters)
   id: updateAsync(String,String,String,UpdateStorageAccountParameters)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -2011,7 +1815,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 204
+    startLine: 180
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account to replace <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage blob account details, such as the access key and/or suffix.</p>
@@ -2035,9 +1839,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.updateAsync(String,String,String,UpdateStorageAccountParameters,final ServiceCallback<Void>)
   id: updateAsync(String,String,String,UpdateStorageAccountParameters,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -2052,7 +1853,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 192
+    startLine: 169
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account to replace <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage blob account details, such as the access key and/or suffix.</p>
@@ -2079,9 +1880,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.updateWithServiceResponseAsync(String,String,String)
   id: updateWithServiceResponseAsync(String,String,String)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -2096,7 +1894,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 167
+    startLine: 148
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account to replace <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage blob account details, such as the access key and/or suffix.</p>
@@ -2117,9 +1915,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._storage_accounts.updateWithServiceResponseAsync(String,String,String,UpdateStorageAccountParameters)
   id: updateWithServiceResponseAsync(String,String,String,UpdateStorageAccountParameters)
   parent: com.microsoft.azure.management.datalake.analytics._storage_accounts
@@ -2134,7 +1929,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/StorageAccounts.java
-    startLine: 216
+    startLine: 191
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account to replace <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Storage blob account details, such as the access key and/or suffix.</p>
@@ -2158,22 +1953,7 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 references:
-- uid: 3c87bd19
-  spec.java:
-  - name: IllegalArgumentException
-    fullName: IllegalArgumentException
-- uid: dc385fd4
-  spec.java:
-  - name: CloudException
-    fullName: CloudException
-- uid: 9b2a4515
-  spec.java:
-  - name: RuntimeException
-    fullName: RuntimeException
 - uid: "26831127"
   spec.java:
   - name: String

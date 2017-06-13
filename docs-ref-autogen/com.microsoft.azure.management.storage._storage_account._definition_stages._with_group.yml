@@ -12,10 +12,10 @@ items:
   source:
     remote:
       path: azure-mgmt-storage/src/main/java/com/microsoft/azure/management/storage/StorageAccount.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-storage/src/main/java/com/microsoft/azure/management/storage/StorageAccount.java
-    startLine: 171
+    startLine: 175
   package: com.microsoft.azure.management.storage
   summary: <p>A storage account definition allowing resource group to be set. </p>
   syntax:
@@ -37,7 +37,7 @@ references:
 
     <p></p>
   syntax:
-    content: public interface WithGroup<T> extends GroupableResource<T>.DefinitionStages.WithExistingResourceGroup,GroupableResource<T>.DefinitionStages.WithNewResourceGroup
+    content: public interface WithGroup<T>
     typeParameters:
     - type: 8ce1ecb9
       description: <p>the next stage of the definition </p>

@@ -39,10 +39,7 @@ items:
   - com.microsoft.azure.management.batch._batch_account_keys
   - com.microsoft.azure.management.batch._batch_account_regenerate_key_parameters
   - com.microsoft.azure.management.batch._batch_accounts
-  - com.microsoft.azure.management.batch._key_vault_reference
-  - com.microsoft.azure.management.batch._operation_display
   - com.microsoft.azure.management.batch._package_state
-  - com.microsoft.azure.management.batch._pool_allocation_mode
   - com.microsoft.azure.management.batch._provisioning_state
   href: com.microsoft.azure.management.batch.yml
   langs:
@@ -54,7 +51,7 @@ items:
   source:
     remote:
       path: azure-mgmt-batch/src/main/java/com/microsoft/azure/management/batch/AccountKeyType.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-batch/src/main/java/com/microsoft/azure/management/batch/AccountKeyType.java
     startLine: 8
@@ -79,7 +76,7 @@ references:
   nameWithType: ActivateApplicationPackageParameters
   fullName: com.microsoft.azure.management.batch.ActivateApplicationPackageParameters
   type: Class
-  summary: <p>Parameters for an activating an application package. </p>
+  summary: <p>Parameters for an ApplicationOperations.ActivateApplicationPackage request. </p>
   syntax:
     content: public class ActivateApplicationPackageParameters
 - uid: com.microsoft.azure.management.batch._application
@@ -109,7 +106,7 @@ references:
   nameWithType: AutoStorageBaseProperties
   fullName: com.microsoft.azure.management.batch.AutoStorageBaseProperties
   type: Class
-  summary: <p>The properties related to the auto-storage account. </p>
+  summary: <p>The properties related to auto storage account. </p>
   syntax:
     content: public class AutoStorageBaseProperties
 - uid: com.microsoft.azure.management.batch._auto_storage_properties
@@ -119,9 +116,9 @@ references:
   nameWithType: AutoStorageProperties
   fullName: com.microsoft.azure.management.batch.AutoStorageProperties
   type: Class
-  summary: <p>Contains information about the auto-storage account associated with a Batch account. </p>
+  summary: <p>Contains information about the auto storage account associated with a Batch account. </p>
   syntax:
-    content: public class AutoStorageProperties extends AutoStorageBaseProperties
+    content: public class AutoStorageProperties
 - uid: com.microsoft.azure.management.batch._batch_account
   parent: com.microsoft.azure.management.batch
   href: com.microsoft.azure.management.batch._batch_account.yml
@@ -162,26 +159,6 @@ references:
   summary: <p>Entry point to <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Batch account management API. </p>
   syntax:
     content: public interface BatchAccounts extends SupportsCreating<BatchAccount.DefinitionStages.Blank>,SupportsListing<BatchAccount>,SupportsListingByResourceGroup<BatchAccount>,SupportsGettingByResourceGroup<BatchAccount>,SupportsGettingById<BatchAccount>,SupportsDeletingById,SupportsDeletingByResourceGroup,SupportsBatchCreation<BatchAccount>,SupportsBatchDeletion,HasManager<BatchManager>,HasInner<BatchAccountsInner>
-- uid: com.microsoft.azure.management.batch._key_vault_reference
-  parent: com.microsoft.azure.management.batch
-  href: com.microsoft.azure.management.batch._key_vault_reference.yml
-  name: KeyVaultReference
-  nameWithType: KeyVaultReference
-  fullName: com.microsoft.azure.management.batch.KeyVaultReference
-  type: Class
-  summary: <p>Identifies the <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> key vault associated with a Batch account. </p>
-  syntax:
-    content: public class KeyVaultReference
-- uid: com.microsoft.azure.management.batch._operation_display
-  parent: com.microsoft.azure.management.batch
-  href: com.microsoft.azure.management.batch._operation_display.yml
-  name: OperationDisplay
-  nameWithType: OperationDisplay
-  fullName: com.microsoft.azure.management.batch.OperationDisplay
-  type: Class
-  summary: <p>The object that describes the operation. </p>
-  syntax:
-    content: public class OperationDisplay
 - uid: com.microsoft.azure.management.batch._package_state
   parent: com.microsoft.azure.management.batch
   href: com.microsoft.azure.management.batch._package_state.yml
@@ -192,16 +169,6 @@ references:
   summary: <p>Defines values for <xref href="com.microsoft.azure.management.batch._package_state" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public enum PackageState
-- uid: com.microsoft.azure.management.batch._pool_allocation_mode
-  parent: com.microsoft.azure.management.batch
-  href: com.microsoft.azure.management.batch._pool_allocation_mode.yml
-  name: PoolAllocationMode
-  nameWithType: PoolAllocationMode
-  fullName: com.microsoft.azure.management.batch.PoolAllocationMode
-  type: Enum
-  summary: <p>Defines values for <xref href="com.microsoft.azure.management.batch._pool_allocation_mode" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public enum PoolAllocationMode
 - uid: com.microsoft.azure.management.batch._provisioning_state
   parent: com.microsoft.azure.management.batch
   href: com.microsoft.azure.management.batch._provisioning_state.yml
@@ -212,22 +179,6 @@ references:
   summary: <p>Defines values for <xref href="com.microsoft.azure.management.batch._provisioning_state" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public enum ProvisioningState
-- uid: com.microsoft.azure.management.batch._application._update_definition_stages._blank
-  parent: com.microsoft.azure.management.batch
-  href: com.microsoft.azure.management.batch._application._update_definition_stages._blank.yml
-  name: Application.UpdateDefinitionStages.Blank<ParentT>
-  nameWithType: Application.UpdateDefinitionStages.Blank<ParentT>
-  fullName: com.microsoft.azure.management.batch.Application.UpdateDefinitionStages.Blank<ParentT>
-  type: Interface
-  summary: >-
-    <p>The first stage of a Batch application definition.</p>
-
-    <p></p>
-  syntax:
-    content: public interface Blank<ParentT> extends Application.UpdateDefinitionStages.WithAttach<ParentT>
-    typeParameters:
-    - type: 18a275b1
-      description: <p>the stage of the parent Batch account definition to return to after attaching this definition </p>
 - uid: com.microsoft.azure.management.batch._application._definition_stages._blank
   parent: com.microsoft.azure.management.batch
   href: com.microsoft.azure.management.batch._application._definition_stages._blank.yml
@@ -241,6 +192,22 @@ references:
     <p></p>
   syntax:
     content: public interface Blank<ParentT> extends Application.DefinitionStages.WithAttach<ParentT>
+    typeParameters:
+    - type: 18a275b1
+      description: <p>the stage of the parent Batch account definition to return to after attaching this definition </p>
+- uid: com.microsoft.azure.management.batch._application._update_definition_stages._blank
+  parent: com.microsoft.azure.management.batch
+  href: com.microsoft.azure.management.batch._application._update_definition_stages._blank.yml
+  name: Application.UpdateDefinitionStages.Blank<ParentT>
+  nameWithType: Application.UpdateDefinitionStages.Blank<ParentT>
+  fullName: com.microsoft.azure.management.batch.Application.UpdateDefinitionStages.Blank<ParentT>
+  type: Interface
+  summary: >-
+    <p>The first stage of a Batch application definition.</p>
+
+    <p></p>
+  syntax:
+    content: public interface Blank<ParentT> extends Application.UpdateDefinitionStages.WithAttach<ParentT>
     typeParameters:
     - type: 18a275b1
       description: <p>the stage of the parent Batch account definition to return to after attaching this definition </p>
@@ -343,16 +310,6 @@ references:
   summary: <p>Grouping of application definition stages as part of a Batch account update. </p>
   syntax:
     content: public interface UpdateDefinitionStages
-- uid: com.microsoft.azure.management.batch._application._update_stages
-  parent: com.microsoft.azure.management.batch
-  href: com.microsoft.azure.management.batch._application._update_stages.yml
-  name: Application.UpdateStages
-  nameWithType: Application.UpdateStages
-  fullName: com.microsoft.azure.management.batch.Application.UpdateStages
-  type: Interface
-  summary: <p>Grouping of Batch application update stages. </p>
-  syntax:
-    content: public interface UpdateStages
 - uid: com.microsoft.azure.management.batch._batch_account._update_stages
   parent: com.microsoft.azure.management.batch
   href: com.microsoft.azure.management.batch._batch_account._update_stages.yml
@@ -361,6 +318,16 @@ references:
   fullName: com.microsoft.azure.management.batch.BatchAccount.UpdateStages
   type: Interface
   summary: <p>Grouping of all Batch account update stages. </p>
+  syntax:
+    content: public interface UpdateStages
+- uid: com.microsoft.azure.management.batch._application._update_stages
+  parent: com.microsoft.azure.management.batch
+  href: com.microsoft.azure.management.batch._application._update_stages.yml
+  name: Application.UpdateStages
+  nameWithType: Application.UpdateStages
+  fullName: com.microsoft.azure.management.batch.Application.UpdateStages
+  type: Interface
+  summary: <p>Grouping of Batch application update stages. </p>
   syntax:
     content: public interface UpdateStages
 - uid: com.microsoft.azure.management.batch._batch_account._update_stages._with_application
@@ -393,22 +360,6 @@ references:
   summary: <p>The stage of a Batch account definition allowing adding an application and a storage account. </p>
   syntax:
     content: public interface WithApplicationAndStorage extends BatchAccount.DefinitionStages.WithStorage,BatchAccount.DefinitionStages.WithApplication
-- uid: com.microsoft.azure.management.batch._application._update_definition_af002c8421e16b745af55a95ece4e746
-  parent: com.microsoft.azure.management.batch
-  href: com.microsoft.azure.management.batch._application._update_definition_af002c8421e16b745af55a95ece4e746.yml
-  name: Application.UpdateDefinitionStages.WithApplicationPackage<ParentT>
-  nameWithType: Application.UpdateDefinitionStages.WithApplicationPackage<ParentT>
-  fullName: com.microsoft.azure.management.batch.Application.UpdateDefinitionStages.WithApplicationPackage<ParentT>
-  type: Interface
-  summary: >-
-    <p>The stage of a Batch application definition allowing the creation of an application package.</p>
-
-    <p></p>
-  syntax:
-    content: public interface WithApplicationPackage<ParentT>
-    typeParameters:
-    - type: 18a275b1
-      description: <p>the stage of the parent Batch account definition to return to after attaching this definition </p>
 - uid: com.microsoft.azure.management.batch._application._definition_stages._with_application_package
   parent: com.microsoft.azure.management.batch
   href: com.microsoft.azure.management.batch._application._definition_stages._with_application_package.yml
@@ -418,6 +369,22 @@ references:
   type: Interface
   summary: >-
     <p>The stage of a Batch application definition that allows the creation of an application package.</p>
+
+    <p></p>
+  syntax:
+    content: public interface WithApplicationPackage<ParentT>
+    typeParameters:
+    - type: 18a275b1
+      description: <p>the stage of the parent Batch account definition to return to after attaching this definition </p>
+- uid: com.microsoft.azure.management.batch._application._update_definition_af002c8421e16b745af55a95ece4e746
+  parent: com.microsoft.azure.management.batch
+  href: com.microsoft.azure.management.batch._application._update_definition_af002c8421e16b745af55a95ece4e746.yml
+  name: Application.UpdateDefinitionStages.WithApplicationPackage<ParentT>
+  nameWithType: Application.UpdateDefinitionStages.WithApplicationPackage<ParentT>
+  fullName: com.microsoft.azure.management.batch.Application.UpdateDefinitionStages.WithApplicationPackage<ParentT>
+  type: Interface
+  summary: >-
+    <p>The stage of a Batch application definition allowing the creation of an application package.</p>
 
     <p></p>
   syntax:

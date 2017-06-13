@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Features.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Features.java
-    startLine: 18
+    startLine: 19
   package: com.microsoft.azure.management.resources
   summary: <p>Entry point to features management API. </p>
   syntax:
@@ -41,7 +41,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Features.java
-    startLine: 27
+    startLine: 28
   package: com.microsoft.azure.management.resources
   summary: >-
     <p>Registers a feature in a resource provider.</p>
@@ -58,7 +58,7 @@ items:
       description: <p>the name of the feature </p>
     return:
       type: com.microsoft.azure.management.resources._feature
-      description: <p>the registered feature </p>
+      description: <p>the immutable client-side feature object created </p>
 - uid: com.microsoft.azure.management.resources._features.registerAsync(String,String)
   id: registerAsync(String,String)
   parent: com.microsoft.azure.management.resources._features
@@ -73,7 +73,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Features.java
-    startLine: 35
+    startLine: 37
   package: com.microsoft.azure.management.resources
   summary: >-
     <p>Registers a feature in a resource provider asynchronously.</p>
@@ -90,7 +90,7 @@ items:
       description: <p>the name of the feature </p>
     return:
       type: c2d0e8c6com.microsoft.azure.management.resources._featurea08ddfce
-      description: <p>a representation of the deferred computation of this call returning the registered feature </p>
+      description: <p>observable to the immutable client-side feature object created </p>
 - uid: com.microsoft.azure.management.resources._features.registerAsync(String,String,ServiceCallback<Feature>)
   id: registerAsync(String,String,ServiceCallback<Feature>)
   parent: com.microsoft.azure.management.resources._features
@@ -105,7 +105,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/Features.java
-    startLine: 45
+    startLine: 48
   package: com.microsoft.azure.management.resources
   summary: >-
     <p>Registers a feature in a resource provider asynchronously.</p>

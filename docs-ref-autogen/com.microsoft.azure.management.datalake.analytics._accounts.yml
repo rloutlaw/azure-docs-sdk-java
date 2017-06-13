@@ -73,10 +73,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 26
+    startLine: 25
   package: com.microsoft.azure.management.datalake.analytics
   summary: <p>An instance of this class provides access to all the operations defined in <xref href="com.microsoft.azure.management.datalake.analytics._accounts" data-throw-if-not-resolved="false"></xref>. </p>
   syntax: &o1
@@ -95,7 +95,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 406
+    startLine: 354
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Creates the specified Data Lake Analytics account. This supplies the user with computation services for Data Lake Analytics workloads.</p>
@@ -116,13 +116,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account
       description: <p>the DataLakeAnalyticsAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginCreateAsync(String,String,DataLakeAnalyticsAccount)
   id: beginCreateAsync(String,String,DataLakeAnalyticsAccount)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -137,7 +130,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 429
+    startLine: 375
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Creates the specified Data Lake Analytics account. This supplies the user with computation services for Data Lake Analytics workloads.</p>
@@ -158,9 +151,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginCreateAsync(String,String,DataLakeAnalyticsAccount,final ServiceCallback<DataLakeAnalyticsAccount>)
   id: beginCreateAsync(String,String,DataLakeAnalyticsAccount,final ServiceCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -175,7 +165,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 418
+    startLine: 365
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Creates the specified Data Lake Analytics account. This supplies the user with computation services for Data Lake Analytics workloads.</p>
@@ -199,9 +189,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginCreateWithServiceResponseAsync(String,String,DataLakeAnalyticsAccount)
   id: beginCreateWithServiceResponseAsync(String,String,DataLakeAnalyticsAccount)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -216,7 +203,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 440
+    startLine: 385
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Creates the specified Data Lake Analytics account. This supplies the user with computation services for Data Lake Analytics workloads.</p>
@@ -237,9 +224,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginDelete(String,String)
   id: beginDelete(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -254,7 +238,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 315
+    startLine: 275
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Begins the delete delete process for the Data Lake Analytics account object specified by the account name.</p>
@@ -269,13 +253,6 @@ items:
     - id: accountName
       type: "26831127"
       description: <p>The name of the Data Lake Analytics account to delete </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginDeleteAsync(String,String)
   id: beginDeleteAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -290,7 +267,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 336
+    startLine: 294
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Begins the delete delete process for the Data Lake Analytics account object specified by the account name.</p>
@@ -308,9 +285,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginDeleteAsync(String,String,final ServiceCallback<Void>)
   id: beginDeleteAsync(String,String,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -325,7 +299,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 326
+    startLine: 285
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Begins the delete delete process for the Data Lake Analytics account object specified by the account name.</p>
@@ -346,9 +320,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginDeleteWithServiceResponseAsync(String,String)
   id: beginDeleteWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -363,7 +334,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 346
+    startLine: 303
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Begins the delete delete process for the Data Lake Analytics account object specified by the account name.</p>
@@ -381,9 +352,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginUpdate(String,String)
   id: beginUpdate(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -398,7 +366,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 541
+    startLine: 471
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -416,13 +384,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account
       description: <p>the DataLakeAnalyticsAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginUpdate(String,String,DataLakeAnalyticsAccountUpdateParameters)
   id: beginUpdate(String,String,DataLakeAnalyticsAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -437,7 +398,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 584
+    startLine: 508
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -458,13 +419,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account
       description: <p>the DataLakeAnalyticsAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginUpdateAsync(String,String)
   id: beginUpdateAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -479,7 +433,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 562
+    startLine: 490
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -497,9 +451,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginUpdateAsync(String,String,DataLakeAnalyticsAccountUpdateParameters)
   id: beginUpdateAsync(String,String,DataLakeAnalyticsAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -514,7 +465,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 607
+    startLine: 529
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -535,9 +486,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginUpdateAsync(String,String,DataLakeAnalyticsAccountUpdateParameters,final ServiceCallback<DataLakeAnalyticsAccount>)
   id: beginUpdateAsync(String,String,DataLakeAnalyticsAccountUpdateParameters,final ServiceCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -552,7 +500,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 596
+    startLine: 519
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -576,9 +524,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginUpdateAsync(String,String,final ServiceCallback<DataLakeAnalyticsAccount>)
   id: beginUpdateAsync(String,String,final ServiceCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -593,7 +538,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 552
+    startLine: 481
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -614,9 +559,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginUpdateWithServiceResponseAsync(String,String)
   id: beginUpdateWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -631,7 +573,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 572
+    startLine: 499
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -649,9 +591,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.beginUpdateWithServiceResponseAsync(String,String,DataLakeAnalyticsAccountUpdateParameters)
   id: beginUpdateWithServiceResponseAsync(String,String,DataLakeAnalyticsAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -666,7 +605,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 618
+    startLine: 539
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -687,9 +626,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.create(String,String,DataLakeAnalyticsAccount)
   id: create(String,String,DataLakeAnalyticsAccount)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -704,7 +640,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 359
+    startLine: 313
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Creates the specified Data Lake Analytics account. This supplies the user with computation services for Data Lake Analytics workloads.</p>
@@ -725,13 +661,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account
       description: <p>the DataLakeAnalyticsAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.createAsync(String,String,DataLakeAnalyticsAccount)
   id: createAsync(String,String,DataLakeAnalyticsAccount)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -746,7 +675,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 382
+    startLine: 334
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Creates the specified Data Lake Analytics account. This supplies the user with computation services for Data Lake Analytics workloads.</p>
@@ -767,9 +696,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.createAsync(String,String,DataLakeAnalyticsAccount,final ServiceCallback<DataLakeAnalyticsAccount>)
   id: createAsync(String,String,DataLakeAnalyticsAccount,final ServiceCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -784,7 +710,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 371
+    startLine: 324
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Creates the specified Data Lake Analytics account. This supplies the user with computation services for Data Lake Analytics workloads.</p>
@@ -808,9 +734,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.createWithServiceResponseAsync(String,String,DataLakeAnalyticsAccount)
   id: createWithServiceResponseAsync(String,String,DataLakeAnalyticsAccount)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -825,7 +748,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 393
+    startLine: 344
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Creates the specified Data Lake Analytics account. This supplies the user with computation services for Data Lake Analytics workloads.</p>
@@ -846,9 +769,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.delete(String,String)
   id: delete(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -863,7 +783,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 273
+    startLine: 239
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Begins the delete delete process for the Data Lake Analytics account object specified by the account name.</p>
@@ -878,13 +798,6 @@ items:
     - id: accountName
       type: "26831127"
       description: <p>The name of the Data Lake Analytics account to delete </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.deleteAsync(String,String)
   id: deleteAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -899,7 +812,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 294
+    startLine: 258
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Begins the delete delete process for the Data Lake Analytics account object specified by the account name.</p>
@@ -917,9 +830,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.deleteAsync(String,String,final ServiceCallback<Void>)
   id: deleteAsync(String,String,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -934,7 +844,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 284
+    startLine: 249
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Begins the delete delete process for the Data Lake Analytics account object specified by the account name.</p>
@@ -955,9 +865,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.deleteWithServiceResponseAsync(String,String)
   id: deleteWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -972,7 +879,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 304
+    startLine: 267
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Begins the delete delete process for the Data Lake Analytics account object specified by the account name.</p>
@@ -990,9 +897,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.get(String,String)
   id: get(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1007,7 +911,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 231
+    startLine: 203
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets details of the specified Data Lake Analytics account.</p>
@@ -1025,13 +929,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account
       description: <p>the DataLakeAnalyticsAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.getAsync(String,String)
   id: getAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1046,7 +943,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 252
+    startLine: 222
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets details of the specified Data Lake Analytics account.</p>
@@ -1064,9 +961,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.getAsync(String,String,final ServiceCallback<DataLakeAnalyticsAccount>)
   id: getAsync(String,String,final ServiceCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1081,7 +975,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 242
+    startLine: 213
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets details of the specified Data Lake Analytics account.</p>
@@ -1102,9 +996,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.getWithServiceResponseAsync(String,String)
   id: getWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1119,7 +1010,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 262
+    startLine: 231
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets details of the specified Data Lake Analytics account.</p>
@@ -1137,9 +1028,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.list()
   id: list()
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1154,7 +1042,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 136
+    startLine: 120
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1165,13 +1053,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeAnalyticsAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.list(final String,final Integer,final Integer,final String,final String,final Boolean)
   id: list(final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1186,7 +1067,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 176
+    startLine: 154
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1216,13 +1097,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeAnalyticsAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listAsync()
   id: listAsync()
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1237,7 +1111,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 153
+    startLine: 135
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1248,9 +1122,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listAsync(final ListOperationCallback<DataLakeAnalyticsAccount>)
   id: listAsync(final ListOperationCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1265,7 +1136,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 145
+    startLine: 128
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1280,9 +1151,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listAsync(final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listAsync(final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1297,7 +1165,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 205
+    startLine: 181
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1327,9 +1195,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listAsync(final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<DataLakeAnalyticsAccount>)
   id: listAsync(final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1344,7 +1209,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 191
+    startLine: 168
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1377,9 +1242,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroup(final String)
   id: listByResourceGroup(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1394,7 +1256,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 36
+    startLine: 32
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1409,13 +1271,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeAnalyticsAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroup(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByResourceGroup(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1430,7 +1285,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 80
+    startLine: 70
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1463,13 +1318,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeAnalyticsAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupAsync(final String)
   id: listByResourceGroupAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1484,7 +1332,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 55
+    startLine: 49
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1499,9 +1347,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupAsync(final String,final ListOperationCallback<DataLakeAnalyticsAccount>)
   id: listByResourceGroupAsync(final String,final ListOperationCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1516,7 +1361,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 46
+    startLine: 41
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1534,9 +1379,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByResourceGroupAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1551,7 +1393,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 111
+    startLine: 99
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1584,9 +1426,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<DataLakeAnalyticsAccount>)
   id: listByResourceGroupAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1601,7 +1440,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 96
+    startLine: 85
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1637,9 +1476,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupNext(final String)
   id: listByResourceGroupNext(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1654,7 +1490,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 629
+    startLine: 547
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1669,13 +1505,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeAnalyticsAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupNextAsync(final String)
   id: listByResourceGroupNextAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1690,7 +1519,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 649
+    startLine: 565
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1705,9 +1534,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupNextAsync(final String,final ServiceFuture<List<DataLakeAnalyticsAccount>>,final ListOperationCallback<DataLakeAnalyticsAccount>)
   id: listByResourceGroupNextAsync(final String,final ServiceFuture<List<DataLakeAnalyticsAccount>>,final ListOperationCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1722,7 +1548,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 640
+    startLine: 557
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1736,16 +1562,13 @@ items:
       description: <p>The NextLink from the previous successful call to List operation. </p>
     - id: serviceFuture
       type: bd82102acom.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
-      description: <p>the ServiceFuture object tracking the Retrofit calls </p>
+      description: <p>the ServiceCall object tracking the Retrofit calls </p>
     - id: serviceCallback
       type: 3c4303efcom.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the async ServiceCallback to handle successful and failed responses. </p>
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupNextWithServiceResponseAsync(final String)
   id: listByResourceGroupNextWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1760,7 +1583,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 658
+    startLine: 573
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1775,9 +1598,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupWithServiceResponseAsync(final String)
   id: listByResourceGroupWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1792,7 +1612,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 64
+    startLine: 57
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1807,9 +1627,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listByResourceGroupWithServiceResponseAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listByResourceGroupWithServiceResponseAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1824,7 +1641,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 126
+    startLine: 113
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within a specific resource group. This includes a link to the next page, if any.</p>
@@ -1857,9 +1674,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listNext(final String)
   id: listNext(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1874,7 +1688,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 669
+    startLine: 581
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1889,13 +1703,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the PagedList&lt;DataLakeAnalyticsAccount&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listNextAsync(final String)
   id: listNextAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1910,7 +1717,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 689
+    startLine: 599
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1925,9 +1732,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listNextAsync(final String,final ServiceFuture<List<DataLakeAnalyticsAccount>>,final ListOperationCallback<DataLakeAnalyticsAccount>)
   id: listNextAsync(final String,final ServiceFuture<List<DataLakeAnalyticsAccount>>,final ListOperationCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1942,7 +1746,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 680
+    startLine: 591
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1956,16 +1760,13 @@ items:
       description: <p>The NextLink from the previous successful call to List operation. </p>
     - id: serviceFuture
       type: bd82102acom.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
-      description: <p>the ServiceFuture object tracking the Retrofit calls </p>
+      description: <p>the ServiceCall object tracking the Retrofit calls </p>
     - id: serviceCallback
       type: 3c4303efcom.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the async ServiceCallback to handle successful and failed responses. </p>
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listNextWithServiceResponseAsync(final String)
   id: listNextWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -1980,7 +1781,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 698
+    startLine: 607
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -1995,9 +1796,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listWithServiceResponseAsync()
   id: listWithServiceResponseAsync()
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2012,7 +1810,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 161
+    startLine: 142
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -2023,9 +1821,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.listWithServiceResponseAsync(final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listWithServiceResponseAsync(final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2040,7 +1835,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 219
+    startLine: 194
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the first page of Data Lake Analytics accounts, if any, within the current subscription. This includes a link to the next page, if any.</p>
@@ -2070,9 +1865,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account2646ccb0
       description: <p>the observable to the PagedList&lt;DataLakeAnalyticsAccount&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.update(String,String)
   id: update(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2087,7 +1879,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 452
+    startLine: 394
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -2105,13 +1897,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account
       description: <p>the DataLakeAnalyticsAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.update(String,String,DataLakeAnalyticsAccountUpdateParameters)
   id: update(String,String,DataLakeAnalyticsAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2126,7 +1911,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 495
+    startLine: 431
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -2147,13 +1932,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_account
       description: <p>the DataLakeAnalyticsAccount object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.updateAsync(String,String)
   id: updateAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2168,7 +1946,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 473
+    startLine: 413
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -2186,9 +1964,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.updateAsync(String,String,DataLakeAnalyticsAccountUpdateParameters)
   id: updateAsync(String,String,DataLakeAnalyticsAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2203,7 +1978,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 518
+    startLine: 452
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -2224,9 +1999,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.updateAsync(String,String,DataLakeAnalyticsAccountUpdateParameters,final ServiceCallback<DataLakeAnalyticsAccount>)
   id: updateAsync(String,String,DataLakeAnalyticsAccountUpdateParameters,final ServiceCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2241,7 +2013,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 507
+    startLine: 442
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -2265,9 +2037,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.updateAsync(String,String,final ServiceCallback<DataLakeAnalyticsAccount>)
   id: updateAsync(String,String,final ServiceCallback<DataLakeAnalyticsAccount>)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2282,7 +2051,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 463
+    startLine: 404
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -2303,9 +2072,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounta08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.updateWithServiceResponseAsync(String,String)
   id: updateWithServiceResponseAsync(String,String)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2320,7 +2086,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 483
+    startLine: 422
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -2338,9 +2104,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._accounts.updateWithServiceResponseAsync(String,String,DataLakeAnalyticsAccountUpdateParameters)
   id: updateWithServiceResponseAsync(String,String,DataLakeAnalyticsAccountUpdateParameters)
   parent: com.microsoft.azure.management.datalake.analytics._accounts
@@ -2355,7 +2118,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Accounts.java
-    startLine: 529
+    startLine: 462
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Updates the Data Lake Analytics account object specified by the accountName with the contents of the account object.</p>
@@ -2376,22 +2139,7 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._data_lake_analytics_accounte7daa122
       description: <p>the observable to the DataLakeAnalyticsAccount object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 references:
-- uid: 3c87bd19
-  spec.java:
-  - name: IllegalArgumentException
-    fullName: IllegalArgumentException
-- uid: dc385fd4
-  spec.java:
-  - name: CloudException
-    fullName: CloudException
-- uid: 9b2a4515
-  spec.java:
-  - name: RuntimeException
-    fullName: RuntimeException
 - uid: 3d93591e
   spec.java:
   - name: final String

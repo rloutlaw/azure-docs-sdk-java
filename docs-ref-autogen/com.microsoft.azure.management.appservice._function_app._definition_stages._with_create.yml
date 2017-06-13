@@ -12,10 +12,10 @@ items:
   source:
     remote:
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 240
+    startLine: 228
   package: com.microsoft.azure.management.appservice
   summary: <p>A function app definition with sufficient inputs to create a new function app in the cloud, but exposing additional optional inputs to specify. </p>
   syntax:

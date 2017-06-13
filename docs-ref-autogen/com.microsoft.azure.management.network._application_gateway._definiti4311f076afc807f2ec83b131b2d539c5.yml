@@ -15,7 +15,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
     startLine: 244
@@ -62,9 +62,9 @@ items:
     startLine: 252
   package: com.microsoft.azure.management.network
   summary: >-
-    <p>Enables a private (internal) default frontend within the subnet containing the application gateway. </p>
+    <p>Enables a private (internal) default frontend in the subnet containing the application gateway. </p>
 
-    <p>A frontend with an automatically generated name will be created if none exists. </p>
+    <p>A frontend with the name "default" will be created if needed. </p>
   syntax:
     content: public WithCreate withPrivateFrontend()
     return:
@@ -88,6 +88,6 @@ references:
   nameWithType: ApplicationGateway.DefinitionStages.WithCreate
   fullName: com.microsoft.azure.management.network.ApplicationGateway.DefinitionStages.WithCreate
   type: Interface
-  summary: <p>The stage of an application gateway definition containing all the required inputs for the resource to be created, but also allowing for any other optional settings to be specified. </p>
+  summary: <p>The stage of an application gateway definition containing all the required inputs for the resource to be created (via <xref href="com.microsoft.azure.management.resources.fluentcore.model._creatable.create()" data-throw-if-not-resolved="false"></xref>), but also allowing for any other optional settings to be specified. </p>
   syntax:
-    content: public interface WithCreate extends Creatable<ApplicationGateway>,Resource.DefinitionWithTags<WithCreate>,ApplicationGateway.DefinitionStages.WithSize,ApplicationGateway.DefinitionStages.WithInstanceCount,ApplicationGateway.DefinitionStages.WithSslCert,ApplicationGateway.DefinitionStages.WithFrontendPort,ApplicationGateway.DefinitionStages.WithListener,ApplicationGateway.DefinitionStages.WithBackendHttpConfig,ApplicationGateway.DefinitionStages.WithBackend,ApplicationGateway.DefinitionStages.WithExistingSubnet,ApplicationGateway.DefinitionStages.WithPrivateIPAddress,ApplicationGateway.DefinitionStages.WithPrivateFrontend,ApplicationGateway.DefinitionStages.WithPublicFrontend,ApplicationGateway.DefinitionStages.WithPublicIPAddress,ApplicationGateway.DefinitionStages.WithProbe,ApplicationGateway.DefinitionStages.WithDisabledSslProtocol
+    content: public interface WithCreate extends Creatable<ApplicationGateway>,Resource.DefinitionWithTags<WithCreate>,ApplicationGateway.DefinitionStages.WithSize,ApplicationGateway.DefinitionStages.WithInstanceCount,ApplicationGateway.DefinitionStages.WithSslCert,ApplicationGateway.DefinitionStages.WithFrontendPort,ApplicationGateway.DefinitionStages.WithListener,ApplicationGateway.DefinitionStages.WithBackendHttpConfig,ApplicationGateway.DefinitionStages.WithBackend,ApplicationGateway.DefinitionStages.WithExistingSubnet,ApplicationGateway.DefinitionStages.WithPrivateIPAddress,ApplicationGateway.DefinitionStages.WithPrivateFrontend,ApplicationGateway.DefinitionStages.WithPublicFrontend,ApplicationGateway.DefinitionStages.WithPublicIPAddress,ApplicationGateway.DefinitionStages.WithProbe

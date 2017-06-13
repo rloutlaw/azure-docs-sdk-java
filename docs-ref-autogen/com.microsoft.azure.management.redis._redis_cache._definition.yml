@@ -12,10 +12,10 @@ items:
   source:
     remote:
       path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-redis/src/main/java/com/microsoft/azure/management/redis/RedisCache.java
-    startLine: 132
+    startLine: 126
   package: com.microsoft.azure.management.redis
   summary: <p>Container interface for all the definitions that need to be implemented. </p>
   syntax:

@@ -12,12 +12,12 @@ items:
   - com.microsoft.azure.management.cdn._cdn_profile.generateSsoUriAsync(ServiceCallback<String>)
   - com.microsoft.azure.management.cdn._cdn_profile.isPremiumVerizon()
   - com.microsoft.azure.management.cdn._cdn_profile.listResourceUsage()
-  - com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContent(String,Set<String>)
-  - com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync(String,Set<String>)
-  - com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync(String,Set<String>,ServiceCallback<Void>)
-  - com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContent(String,Set<String>)
-  - com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync(String,Set<String>)
-  - com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync(String,Set<String>,ServiceCallback<Void>)
+  - com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContent(String,List<String>)
+  - com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync(String,List<String>)
+  - com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync(String,List<String>,ServiceCallback<Void>)
+  - com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContent(String,List<String>)
+  - com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync(String,List<String>)
+  - com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync(String,List<String>,ServiceCallback<Void>)
   - com.microsoft.azure.management.cdn._cdn_profile.resourceState()
   - com.microsoft.azure.management.cdn._cdn_profile.sku()
   - com.microsoft.azure.management.cdn._cdn_profile.startEndpoint(String)
@@ -39,7 +39,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
     startLine: 32
@@ -75,7 +75,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 220
+    startLine: 234
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Checks the availability of an endpoint name without creating the CDN endpoint.</p>
@@ -104,7 +104,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 228
+    startLine: 243
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Checks the availability of an endpoint name without creating the CDN endpoint asynchronously.</p>
@@ -118,7 +118,7 @@ items:
       description: <p>the endpoint resource name to validate. </p>
     return:
       type: c2d0e8c6com.microsoft.azure.management.cdn._check_name_availability_resulta08ddfce
-      description: <p>a representation of the deferred computation of this call </p>
+      description: <p>the Observable of the result if successful </p>
 - uid: com.microsoft.azure.management.cdn._cdn_profile.checkEndpointNameAvailabilityAsync(String,ServiceCallback<CheckNameAvailabilityResult>)
   id: checkEndpointNameAvailabilityAsync(String,ServiceCallback<CheckNameAvailabilityResult>)
   parent: com.microsoft.azure.management.cdn._cdn_profile
@@ -133,7 +133,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 237
+    startLine: 253
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Checks the availability of an endpoint name without creating the CDN endpoint asynchronously.</p>
@@ -211,7 +211,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 66
+    startLine: 67
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Asynchronously generates a dynamic SSO URI used to sign into the CDN supplemental portal used for advanced management tasks.</p>
@@ -236,7 +236,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 75
+    startLine: 77
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Asynchronously generates a dynamic SSO URI used to sign in to the CDN supplemental portal used for advanced management tasks.</p>
@@ -265,7 +265,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 242
+    startLine: 258
   package: com.microsoft.azure.management.cdn
   syntax:
     content: public boolean isPremiumVerizon()
@@ -286,28 +286,28 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 247
+    startLine: 263
   package: com.microsoft.azure.management.cdn
   syntax:
     content: public PagedList<ResourceUsage> listResourceUsage()
     return:
       type: 36b27be0com.microsoft.azure.management.cdn._resource_usagea08ddfce
       description: <p>quotas and actual usages of endpoints under the current CDN profile </p>
-- uid: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContent(String,Set<String>)
-  id: loadEndpointContent(String,Set<String>)
+- uid: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContent(String,List<String>)
+  id: loadEndpointContent(String,List<String>)
   parent: com.microsoft.azure.management.cdn._cdn_profile
   href: com.microsoft.azure.management.cdn._cdn_profile.yml
   langs:
   - java
-  name: loadEndpointContent(String endpointName, Set<String> contentPaths)
-  nameWithType: CdnProfile.loadEndpointContent(String endpointName, Set<String> contentPaths)
-  fullName: void com.microsoft.azure.management.cdn.CdnProfile.loadEndpointContent(String endpointName, Set<String> contentPaths)
+  name: loadEndpointContent(String endpointName, List<String> contentPaths)
+  nameWithType: CdnProfile.loadEndpointContent(String endpointName, List<String> contentPaths)
+  fullName: void com.microsoft.azure.management.cdn.CdnProfile.loadEndpointContent(String endpointName, List<String> contentPaths)
   overload: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContent*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 160
+    startLine: 170
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Forcibly pre-loads CDN endpoint content in the CDN profile. </p>
@@ -316,29 +316,29 @@ items:
 
     <p></p>
   syntax:
-    content: public void loadEndpointContent(String endpointName, Set<String> contentPaths)
+    content: public void loadEndpointContent(String endpointName, List<String> contentPaths)
     parameters:
     - id: endpointName
       type: "26831127"
       description: <p>a name of the endpoint under the profile </p>
     - id: contentPaths
-      type: df32358c
+      type: 7d60c20e
       description: <p>the paths to the content to be purged, which can be file paths or directory wild cards </p>
-- uid: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync(String,Set<String>)
-  id: loadEndpointContentAsync(String,Set<String>)
+- uid: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync(String,List<String>)
+  id: loadEndpointContentAsync(String,List<String>)
   parent: com.microsoft.azure.management.cdn._cdn_profile
   href: com.microsoft.azure.management.cdn._cdn_profile.yml
   langs:
   - java
-  name: loadEndpointContentAsync(String endpointName, Set<String> contentPaths)
-  nameWithType: CdnProfile.loadEndpointContentAsync(String endpointName, Set<String> contentPaths)
-  fullName: Completable com.microsoft.azure.management.cdn.CdnProfile.loadEndpointContentAsync(String endpointName, Set<String> contentPaths)
+  name: loadEndpointContentAsync(String endpointName, List<String> contentPaths)
+  nameWithType: CdnProfile.loadEndpointContentAsync(String endpointName, List<String> contentPaths)
+  fullName: Completable com.microsoft.azure.management.cdn.CdnProfile.loadEndpointContentAsync(String endpointName, List<String> contentPaths)
   overload: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 171
+    startLine: 182
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Forcibly pre-loads CDN endpoint content in the CDN profile asynchronously. </p>
@@ -347,32 +347,32 @@ items:
 
     <p></p>
   syntax:
-    content: public Completable loadEndpointContentAsync(String endpointName, Set<String> contentPaths)
+    content: public Completable loadEndpointContentAsync(String endpointName, List<String> contentPaths)
     parameters:
     - id: endpointName
       type: "26831127"
       description: <p>a name of the endpoint under the profile </p>
     - id: contentPaths
-      type: df32358c
+      type: 7d60c20e
       description: <p>the paths to the content to be purged, which can be file paths or directory wild cards </p>
     return:
       type: "56537e90"
       description: <p>a representation of the deferred computation of this call </p>
-- uid: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync(String,Set<String>,ServiceCallback<Void>)
-  id: loadEndpointContentAsync(String,Set<String>,ServiceCallback<Void>)
+- uid: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync(String,List<String>,ServiceCallback<Void>)
+  id: loadEndpointContentAsync(String,List<String>,ServiceCallback<Void>)
   parent: com.microsoft.azure.management.cdn._cdn_profile
   href: com.microsoft.azure.management.cdn._cdn_profile.yml
   langs:
   - java
-  name: loadEndpointContentAsync(String endpointName, Set<String> contentPaths, ServiceCallback<Void> callback)
-  nameWithType: CdnProfile.loadEndpointContentAsync(String endpointName, Set<String> contentPaths, ServiceCallback<Void> callback)
-  fullName: ServiceFuture<Void> com.microsoft.azure.management.cdn.CdnProfile.loadEndpointContentAsync(String endpointName, Set<String> contentPaths, ServiceCallback<Void> callback)
+  name: loadEndpointContentAsync(String endpointName, List<String> contentPaths, ServiceCallback<Void> callback)
+  nameWithType: CdnProfile.loadEndpointContentAsync(String endpointName, List<String> contentPaths, ServiceCallback<Void> callback)
+  fullName: ServiceFuture<Void> com.microsoft.azure.management.cdn.CdnProfile.loadEndpointContentAsync(String endpointName, List<String> contentPaths, ServiceCallback<Void> callback)
   overload: com.microsoft.azure.management.cdn._cdn_profile.loadEndpointContentAsync*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 183
+    startLine: 195
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Forcibly pre-loads CDN endpoint content in the CDN profile asynchronously. </p>
@@ -381,13 +381,13 @@ items:
 
     <p></p>
   syntax:
-    content: public ServiceFuture<Void> loadEndpointContentAsync(String endpointName, Set<String> contentPaths, ServiceCallback<Void> callback)
+    content: public ServiceFuture<Void> loadEndpointContentAsync(String endpointName, List<String> contentPaths, ServiceCallback<Void> callback)
     parameters:
     - id: endpointName
       type: "26831127"
       description: <p>a name of the endpoint under the profile </p>
     - id: contentPaths
-      type: df32358c
+      type: 7d60c20e
       description: <p>the paths to the content to be purged, which can be file paths or directory wild cards </p>
     - id: callback
       type: da7fd5ea
@@ -395,95 +395,95 @@ items:
     return:
       type: aa81d378
       description: <p>a representation of the deferred computation of this call </p>
-- uid: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContent(String,Set<String>)
-  id: purgeEndpointContent(String,Set<String>)
+- uid: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContent(String,List<String>)
+  id: purgeEndpointContent(String,List<String>)
   parent: com.microsoft.azure.management.cdn._cdn_profile
   href: com.microsoft.azure.management.cdn._cdn_profile.yml
   langs:
   - java
-  name: purgeEndpointContent(String endpointName, Set<String> contentPaths)
-  nameWithType: CdnProfile.purgeEndpointContent(String endpointName, Set<String> contentPaths)
-  fullName: void com.microsoft.azure.management.cdn.CdnProfile.purgeEndpointContent(String endpointName, Set<String> contentPaths)
+  name: purgeEndpointContent(String endpointName, List<String> contentPaths)
+  nameWithType: CdnProfile.purgeEndpointContent(String endpointName, List<String> contentPaths)
+  fullName: void com.microsoft.azure.management.cdn.CdnProfile.purgeEndpointContent(String endpointName, List<String> contentPaths)
   overload: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContent*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 131
+    startLine: 138
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Forcibly purges CDN endpoint content in the CDN profile.</p>
 
     <p></p>
   syntax:
-    content: public void purgeEndpointContent(String endpointName, Set<String> contentPaths)
+    content: public void purgeEndpointContent(String endpointName, List<String> contentPaths)
     parameters:
     - id: endpointName
       type: "26831127"
       description: <p>a name of the endpoint under the profile </p>
     - id: contentPaths
-      type: df32358c
+      type: 7d60c20e
       description: <p>the paths to the content to be purged, which can be file paths or directory wild cards </p>
-- uid: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync(String,Set<String>)
-  id: purgeEndpointContentAsync(String,Set<String>)
+- uid: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync(String,List<String>)
+  id: purgeEndpointContentAsync(String,List<String>)
   parent: com.microsoft.azure.management.cdn._cdn_profile
   href: com.microsoft.azure.management.cdn._cdn_profile.yml
   langs:
   - java
-  name: purgeEndpointContentAsync(String endpointName, Set<String> contentPaths)
-  nameWithType: CdnProfile.purgeEndpointContentAsync(String endpointName, Set<String> contentPaths)
-  fullName: Completable com.microsoft.azure.management.cdn.CdnProfile.purgeEndpointContentAsync(String endpointName, Set<String> contentPaths)
+  name: purgeEndpointContentAsync(String endpointName, List<String> contentPaths)
+  nameWithType: CdnProfile.purgeEndpointContentAsync(String endpointName, List<String> contentPaths)
+  fullName: Completable com.microsoft.azure.management.cdn.CdnProfile.purgeEndpointContentAsync(String endpointName, List<String> contentPaths)
   overload: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 140
+    startLine: 148
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Forcibly purges CDN endpoint content in the CDN profile asynchronously.</p>
 
     <p></p>
   syntax:
-    content: public Completable purgeEndpointContentAsync(String endpointName, Set<String> contentPaths)
+    content: public Completable purgeEndpointContentAsync(String endpointName, List<String> contentPaths)
     parameters:
     - id: endpointName
       type: "26831127"
       description: <p>a name of the endpoint under the profile </p>
     - id: contentPaths
-      type: df32358c
+      type: 7d60c20e
       description: <p>the paths to the content to be purged, which can be file paths or directory wild cards </p>
     return:
       type: "56537e90"
       description: <p>a representation of the deferred computation of this call </p>
-- uid: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync(String,Set<String>,ServiceCallback<Void>)
-  id: purgeEndpointContentAsync(String,Set<String>,ServiceCallback<Void>)
+- uid: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync(String,List<String>,ServiceCallback<Void>)
+  id: purgeEndpointContentAsync(String,List<String>,ServiceCallback<Void>)
   parent: com.microsoft.azure.management.cdn._cdn_profile
   href: com.microsoft.azure.management.cdn._cdn_profile.yml
   langs:
   - java
-  name: purgeEndpointContentAsync(String endpointName, Set<String> contentPaths, ServiceCallback<Void> callback)
-  nameWithType: CdnProfile.purgeEndpointContentAsync(String endpointName, Set<String> contentPaths, ServiceCallback<Void> callback)
-  fullName: ServiceFuture<Void> com.microsoft.azure.management.cdn.CdnProfile.purgeEndpointContentAsync(String endpointName, Set<String> contentPaths, ServiceCallback<Void> callback)
+  name: purgeEndpointContentAsync(String endpointName, List<String> contentPaths, ServiceCallback<Void> callback)
+  nameWithType: CdnProfile.purgeEndpointContentAsync(String endpointName, List<String> contentPaths, ServiceCallback<Void> callback)
+  fullName: ServiceFuture<Void> com.microsoft.azure.management.cdn.CdnProfile.purgeEndpointContentAsync(String endpointName, List<String> contentPaths, ServiceCallback<Void> callback)
   overload: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContentAsync*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 150
+    startLine: 159
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Forcibly purges CDN endpoint content in the CDN profile asynchronously.</p>
 
     <p></p>
   syntax:
-    content: public ServiceFuture<Void> purgeEndpointContentAsync(String endpointName, Set<String> contentPaths, ServiceCallback<Void> callback)
+    content: public ServiceFuture<Void> purgeEndpointContentAsync(String endpointName, List<String> contentPaths, ServiceCallback<Void> callback)
     parameters:
     - id: endpointName
       type: "26831127"
       description: <p>a name of the endpoint under the profile </p>
     - id: contentPaths
-      type: df32358c
+      type: 7d60c20e
       description: <p>the paths to the content to be purged, which can be file paths or directory wild cards </p>
     - id: callback
       type: da7fd5ea
@@ -547,7 +547,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 82
+    startLine: 84
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Starts a stopped CDN endpoint.</p>
@@ -573,7 +573,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 90
+    startLine: 93
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Starts a stopped CDN endpoint asynchronously.</p>
@@ -602,7 +602,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 99
+    startLine: 103
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Starts a stopped CDN endpoint asynchronously.</p>
@@ -634,7 +634,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 106
+    startLine: 110
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Stops a running CDN endpoint.</p>
@@ -660,7 +660,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 114
+    startLine: 119
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Stops a running CDN endpoint asynchronously.</p>
@@ -689,7 +689,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 123
+    startLine: 129
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Stops a running CDN endpoint asynchronously.</p>
@@ -721,7 +721,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 192
+    startLine: 204
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Validates a custom domain mapping to ensure it maps to the correct CNAME in DNS in current profile.</p>
@@ -756,7 +756,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 201
+    startLine: 214
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Validates a custom domain mapping to ensure it maps to the correct CNAME in DNS in current profile asynchronously.</p>
@@ -788,7 +788,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnProfile.java
-    startLine: 212
+    startLine: 226
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Validates a custom domain mapping to ensure it maps to the correct CNAME in DNS in current profile asynchronously.</p>
@@ -893,10 +893,10 @@ references:
   nameWithType: CdnProfile.stopEndpointAsync
   fullName: Completable com.microsoft.azure.management.cdn.CdnProfile.stopEndpointAsync
   package: com.microsoft.azure.management.cdn
-- uid: df32358c
+- uid: 7d60c20e
   spec.java:
-  - name: Set<String>
-    fullName: Set<String>
+  - name: List<String>
+    fullName: List<String>
 - uid: com.microsoft.azure.management.cdn._cdn_profile.purgeEndpointContent*
   name: purgeEndpointContent
   nameWithType: CdnProfile.purgeEndpointContent

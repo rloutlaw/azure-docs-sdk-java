@@ -15,10 +15,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 712
+    startLine: 726
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of a Linux virtual machine definition allowing to specify an SSH root password or public key. </p>
   syntax:
@@ -37,7 +37,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 719
+    startLine: 733
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the SSH root password for the Linux virtual machine.</p>
@@ -66,7 +66,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 726
+    startLine: 740
   package: com.microsoft.azure.management.compute
   summary: <p>Specifies the SSH public key. </p>
   syntax:

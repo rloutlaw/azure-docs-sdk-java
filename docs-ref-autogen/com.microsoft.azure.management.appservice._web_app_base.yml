@@ -75,7 +75,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebAppBase.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebAppBase.java
     startLine: 30
@@ -2062,7 +2062,7 @@ references:
   type: Class
   summary: <p>Defines values for .NET framework version. </p>
   syntax:
-    content: public class NetFrameworkVersion extends ExpandableStringEnum<NetFrameworkVersion>
+    content: public class NetFrameworkVersion
 - uid: com.microsoft.azure.management.appservice._php_version
   parent: com.microsoft.azure.management.appservice
   href: com.microsoft.azure.management.appservice._php_version.yml
@@ -2072,7 +2072,7 @@ references:
   type: Class
   summary: <p>Defines values for PHP version. </p>
   syntax:
-    content: public class PhpVersion extends ExpandableStringEnum<PhpVersion>
+    content: public class PhpVersion
 - uid: com.microsoft.azure.management.appservice._python_version
   parent: com.microsoft.azure.management.appservice
   href: com.microsoft.azure.management.appservice._python_version.yml
@@ -2082,7 +2082,7 @@ references:
   type: Class
   summary: <p>Defines values for Python version. </p>
   syntax:
-    content: public class PythonVersion extends ExpandableStringEnum<PythonVersion>
+    content: public class PythonVersion
 - uid: com.microsoft.azure.management.appservice._remote_visual_studio_version
   parent: com.microsoft.azure.management.appservice
   href: com.microsoft.azure.management.appservice._remote_visual_studio_version.yml
@@ -2092,7 +2092,7 @@ references:
   type: Class
   summary: <p>Defines values for remote visual studio version for remote debugging. </p>
   syntax:
-    content: public class RemoteVisualStudioVersion extends ExpandableStringEnum<RemoteVisualStudioVersion>
+    content: public class RemoteVisualStudioVersion
 - uid: com.microsoft.azure.management.appservice._java_version
   parent: com.microsoft.azure.management.appservice
   href: com.microsoft.azure.management.appservice._java_version.yml
@@ -2102,7 +2102,7 @@ references:
   type: Class
   summary: <p>Defines values for Java versions. </p>
   syntax:
-    content: public class JavaVersion extends ExpandableStringEnum<JavaVersion>
+    content: public class JavaVersion
 - uid: com.microsoft.azure.management.appservice._managed_pipeline_mode
   parent: com.microsoft.azure.management.appservice
   href: com.microsoft.azure.management.appservice._managed_pipeline_mode.yml

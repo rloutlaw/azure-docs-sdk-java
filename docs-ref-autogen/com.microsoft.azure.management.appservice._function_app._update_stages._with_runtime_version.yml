@@ -15,10 +15,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 306
+    startLine: 294
   package: com.microsoft.azure.management.appservice
   summary: <p>A function app update allowing runtime version to be specified. </p>
   syntax:
@@ -37,7 +37,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 318
+    startLine: 306
   package: com.microsoft.azure.management.appservice
   summary: <p>Uses the latest runtime version for the function app. </p>
   syntax:
@@ -59,7 +59,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 312
+    startLine: 300
   package: com.microsoft.azure.management.appservice
   summary: <p>Specifies the runtime version for the function app. </p>
   syntax:

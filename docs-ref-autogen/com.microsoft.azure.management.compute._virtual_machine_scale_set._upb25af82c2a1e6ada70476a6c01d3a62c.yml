@@ -17,10 +17,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1540
+    startLine: 1551
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of a virtual machine scale set update allowing to specify managed data disks. </p>
   syntax:
@@ -39,7 +39,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1547
+    startLine: 1558
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies that a managed disk needs to be created implicitly with the given size.</p>
@@ -68,7 +68,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1557
+    startLine: 1568
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies that a managed disk needs to be created implicitly with the given settings.</p>
@@ -103,7 +103,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1568
+    startLine: 1579
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies that a managed disk needs to be created implicitly with the given settings.</p>
@@ -141,7 +141,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1579
+    startLine: 1590
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Detaches managed data disk with the given LUN from the virtual machine scale set instances.</p>

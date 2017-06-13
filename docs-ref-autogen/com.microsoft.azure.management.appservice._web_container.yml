@@ -3,7 +3,8 @@ items:
   id: _web_container
   parent: com.microsoft.azure.management.appservice
   children:
-  - com.microsoft.azure.management.appservice._web_container.fromString(String)
+  - com.microsoft.azure.management.appservice._web_container.equals(Object)
+  - com.microsoft.azure.management.appservice._web_container.hashCode()
   - com.microsoft.azure.management.appservice._web_container.JETTY_9_1_NEWEST()
   - com.microsoft.azure.management.appservice._web_container.JETTY_9_1_V20131115()
   - com.microsoft.azure.management.appservice._web_container.JETTY_9_3_NEWEST()
@@ -15,7 +16,8 @@ items:
   - com.microsoft.azure.management.appservice._web_container.TOMCAT_8_0_NEWEST()
   - com.microsoft.azure.management.appservice._web_container.TOMCAT_8_5_6()
   - com.microsoft.azure.management.appservice._web_container.TOMCAT_8_5_NEWEST()
-  - com.microsoft.azure.management.appservice._web_container.values()
+  - com.microsoft.azure.management.appservice._web_container.toString()
+  - com.microsoft.azure.management.appservice._web_container.WebContainer(String)
   href: com.microsoft.azure.management.appservice._web_container.yml
   langs:
   - java
@@ -26,50 +28,59 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 15
+    startLine: 13
   package: com.microsoft.azure.management.appservice
   summary: <p>Defines values for Java web container. </p>
   syntax: &o1
-    content: public class WebContainer extends ExpandableStringEnum<WebContainer>
+    content: public class WebContainer
   inheritance:
   - java.lang.Object
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  inheritedMembers:
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.equals(Object)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.fromString(String,Class<T>)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.hashCode()
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.toString()
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.values(Class<T>)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.withNameValue(String,T,Class<T>)
-- uid: com.microsoft.azure.management.appservice._web_container.fromString(String)
-  id: fromString(String)
+- uid: com.microsoft.azure.management.appservice._web_container.equals(Object)
+  id: equals(Object)
   parent: com.microsoft.azure.management.appservice._web_container
   href: com.microsoft.azure.management.appservice._web_container.yml
   langs:
   - java
-  name: fromString(String name)
-  nameWithType: WebContainer.fromString(String name)
-  fullName: static WebContainer com.microsoft.azure.management.appservice.WebContainer.fromString(String name)
-  overload: com.microsoft.azure.management.appservice._web_container.fromString*
+  name: equals(Object obj)
+  nameWithType: WebContainer.equals(Object obj)
+  fullName: boolean com.microsoft.azure.management.appservice.WebContainer.equals(Object obj)
+  overload: com.microsoft.azure.management.appservice._web_container.equals*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 54
+    startLine: 69
   package: com.microsoft.azure.management.appservice
-  summary: <p>Finds or creates a Web container based on the specified name. </p>
-  syntax: &o2
-    content: public static WebContainer fromString(String name)
+  syntax:
+    content: public boolean equals(Object obj)
     parameters:
-    - id: name
-      type: "26831127"
-      description: <p>a name </p>
+    - id: obj
+      type: "79317049"
     return:
-      type: com.microsoft.azure.management.appservice._web_container
-      description: <p>a <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref> instance </p>
+      type: 4fc6e284
+- uid: com.microsoft.azure.management.appservice._web_container.hashCode()
+  id: hashCode()
+  parent: com.microsoft.azure.management.appservice._web_container
+  href: com.microsoft.azure.management.appservice._web_container.yml
+  langs:
+  - java
+  name: hashCode()
+  nameWithType: WebContainer.hashCode()
+  fullName: int com.microsoft.azure.management.appservice.WebContainer.hashCode()
+  overload: com.microsoft.azure.management.appservice._web_container.hashCode*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
+    startLine: 64
+  package: com.microsoft.azure.management.appservice
+  syntax:
+    content: public int hashCode()
+    return:
+      type: f75371fa
 - uid: com.microsoft.azure.management.appservice._web_container.JETTY_9_1_NEWEST()
   id: JETTY_9_1_NEWEST()
   parent: com.microsoft.azure.management.appservice._web_container
@@ -83,11 +94,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 38
+    startLine: 36
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value jetty 9.1 for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer JETTY_9_1_NEWEST= WebContainer.fromString("jetty 9.1")
+    content: public static final WebContainer JETTY_9_1_NEWEST= new WebContainer("jetty 9.1")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.JETTY_9_1_V20131115()
@@ -103,11 +114,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 41
+    startLine: 39
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value jetty 9.1.0 v20131115 for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer JETTY_9_1_V20131115= WebContainer.fromString("jetty 9.1.0.20131115")
+    content: public static final WebContainer JETTY_9_1_V20131115= new WebContainer("jetty 9.1.0.20131115")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.JETTY_9_3_NEWEST()
@@ -123,11 +134,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 44
+    startLine: 42
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value jetty 9.3 for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer JETTY_9_3_NEWEST= WebContainer.fromString("jetty 9.3")
+    content: public static final WebContainer JETTY_9_3_NEWEST= new WebContainer("jetty 9.3")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.JETTY_9_3_V20161014()
@@ -143,11 +154,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 47
+    startLine: 45
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value jetty 9.3.13 v20161014 for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer JETTY_9_3_V20161014= WebContainer.fromString("jetty 9.3.13.20161014")
+    content: public static final WebContainer JETTY_9_3_V20161014= new WebContainer("jetty 9.3.13.20161014")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.TOMCAT_7_0_50()
@@ -163,11 +174,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 20
+    startLine: 18
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value tomcat 7.0.50 for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer TOMCAT_7_0_50= WebContainer.fromString("tomcat 7.0.50")
+    content: public static final WebContainer TOMCAT_7_0_50= new WebContainer("tomcat 7.0.50")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.TOMCAT_7_0_62()
@@ -183,11 +194,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 23
+    startLine: 21
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value tomcat 7.0.62 for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer TOMCAT_7_0_62= WebContainer.fromString("tomcat 7.0.62")
+    content: public static final WebContainer TOMCAT_7_0_62= new WebContainer("tomcat 7.0.62")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.TOMCAT_7_0_NEWEST()
@@ -203,11 +214,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 17
+    startLine: 15
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value tomcat 7.0 newest for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer TOMCAT_7_0_NEWEST= WebContainer.fromString("tomcat 7.0")
+    content: public static final WebContainer TOMCAT_7_0_NEWEST= new WebContainer("tomcat 7.0")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.TOMCAT_8_0_23()
@@ -223,11 +234,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 29
+    startLine: 27
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value tomcat 8.0.23 for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer TOMCAT_8_0_23= WebContainer.fromString("tomcat 8.0.23")
+    content: public static final WebContainer TOMCAT_8_0_23= new WebContainer("tomcat 8.0.23")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.TOMCAT_8_0_NEWEST()
@@ -243,11 +254,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 26
+    startLine: 24
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value tomcat 8.0 newest for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer TOMCAT_8_0_NEWEST= WebContainer.fromString("tomcat 8.0")
+    content: public static final WebContainer TOMCAT_8_0_NEWEST= new WebContainer("tomcat 8.0")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.TOMCAT_8_5_6()
@@ -263,11 +274,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 35
+    startLine: 33
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value tomcat 8.0.23 for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer TOMCAT_8_5_6= WebContainer.fromString("tomcat 8.5.6")
+    content: public static final WebContainer TOMCAT_8_5_6= new WebContainer("tomcat 8.5.6")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
 - uid: com.microsoft.azure.management.appservice._web_container.TOMCAT_8_5_NEWEST()
@@ -283,34 +294,56 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 32
+    startLine: 30
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value tomcat 8.0 newest for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final WebContainer TOMCAT_8_5_NEWEST= WebContainer.fromString("tomcat 8.5")
+    content: public static final WebContainer TOMCAT_8_5_NEWEST= new WebContainer("tomcat 8.5")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._web_container
-- uid: com.microsoft.azure.management.appservice._web_container.values()
-  id: values()
+- uid: com.microsoft.azure.management.appservice._web_container.toString()
+  id: toString()
   parent: com.microsoft.azure.management.appservice._web_container
   href: com.microsoft.azure.management.appservice._web_container.yml
   langs:
   - java
-  name: values()
-  nameWithType: WebContainer.values()
-  fullName: static Collection<WebContainer> com.microsoft.azure.management.appservice.WebContainer.values()
-  overload: com.microsoft.azure.management.appservice._web_container.values*
+  name: toString()
+  nameWithType: WebContainer.toString()
+  fullName: String com.microsoft.azure.management.appservice.WebContainer.toString()
+  overload: com.microsoft.azure.management.appservice._web_container.toString*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
-    startLine: 61
+    startLine: 59
   package: com.microsoft.azure.management.appservice
   syntax:
-    content: public static Collection<WebContainer> values()
+    content: public String toString()
     return:
-      type: 12ebb11acom.microsoft.azure.management.appservice._web_containera08ddfce
-      description: <p>known Web container types </p>
+      type: "26831127"
+- uid: com.microsoft.azure.management.appservice._web_container.WebContainer(String)
+  id: WebContainer(String)
+  parent: com.microsoft.azure.management.appservice._web_container
+  href: com.microsoft.azure.management.appservice._web_container.yml
+  langs:
+  - java
+  name: WebContainer(String value)
+  nameWithType: WebContainer.WebContainer(String value)
+  fullName: com.microsoft.azure.management.appservice.WebContainer.WebContainer(String value)
+  overload: com.microsoft.azure.management.appservice._web_container.WebContainer*
+  type: Constructor
+  source:
+    remote: *o0
+    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/WebContainer.java
+    startLine: 53
+  package: com.microsoft.azure.management.appservice
+  summary: <p>Creates a custom value for <xref href="com.microsoft.azure.management.appservice._web_container" data-throw-if-not-resolved="false"></xref>. </p>
+  syntax:
+    content: public WebContainer(String value)
+    parameters:
+    - id: value
+      type: "26831127"
+      description: <p>the custom value </p>
 references:
 - uid: 93de0ef9com.microsoft.azure.management.appservice._web_container
   spec.java:
@@ -324,123 +357,38 @@ references:
   spec.java:
   - name: String
     fullName: String
-- uid: com.microsoft.azure.management.appservice._web_container.fromString*
-  name: fromString
-  nameWithType: WebContainer.fromString
-  fullName: static WebContainer com.microsoft.azure.management.appservice.WebContainer.fromString
+- uid: com.microsoft.azure.management.appservice._web_container.WebContainer*
+  name: WebContainer
+  nameWithType: WebContainer.WebContainer
+  fullName: com.microsoft.azure.management.appservice.WebContainer.WebContainer
   package: com.microsoft.azure.management.appservice
-- uid: 12ebb11acom.microsoft.azure.management.appservice._web_containera08ddfce
+- uid: com.microsoft.azure.management.appservice._web_container.toString*
+  name: toString
+  nameWithType: WebContainer.toString
+  fullName: String com.microsoft.azure.management.appservice.WebContainer.toString
+  package: com.microsoft.azure.management.appservice
+- uid: f75371fa
   spec.java:
-  - name: Collection<
-    fullName: Collection<
-  - uid: com.microsoft.azure.management.appservice._web_container
-    name: WebContainer
-    fullName: com.microsoft.azure.management.appservice.WebContainer
-    href: com.microsoft.azure.management.appservice._web_container.yml
-  - name: '>'
-    fullName: '>'
-- uid: com.microsoft.azure.management.appservice._web_container.values*
-  name: values
-  nameWithType: WebContainer.values
-  fullName: static Collection<WebContainer> com.microsoft.azure.management.appservice.WebContainer.values
+  - name: int
+    fullName: int
+- uid: com.microsoft.azure.management.appservice._web_container.hashCode*
+  name: hashCode
+  nameWithType: WebContainer.hashCode
+  fullName: int com.microsoft.azure.management.appservice.WebContainer.hashCode
   package: com.microsoft.azure.management.appservice
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.equals(Object)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: equals(Object obj)
-  nameWithType: ExpandableStringEnum<T>.equals(Object obj)
-  fullName: boolean com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.equals(Object obj)
-  type: Method
-  syntax:
-    content: public boolean equals(Object obj)
-    parameters:
-    - id: obj
-      type: "79317049"
-    return:
-      type: 4fc6e284
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.fromString(String,Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: fromString(String name, Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.fromString(String name, Class<T> clazz)
-  fullName: static <T extends ExpandableStringEnum<T> T com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.fromString(String name, Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected static static<T extends ExpandableStringEnum<T> T fromString(String name, Class<T> clazz)
-    parameters:
-    - id: name
-      type: "26831127"
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 1e2c6103com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum34698212
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.hashCode()
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: hashCode()
-  nameWithType: ExpandableStringEnum<T>.hashCode()
-  fullName: int com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.hashCode()
-  type: Method
-  syntax:
-    content: public int hashCode()
-    return:
-      type: f75371fa
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.toString()
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: toString()
-  nameWithType: ExpandableStringEnum<T>.toString()
-  fullName: String com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.toString()
-  type: Method
-  syntax:
-    content: public String toString()
-    return:
-      type: "26831127"
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.values(Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: values(Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.values(Class<T> clazz)
-  fullName: static <T extends ExpandableStringEnum<T> Collection<T> com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.values(Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected static static<T extends ExpandableStringEnum<T> Collection<T> values(Class<T> clazz)
-    parameters:
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 1e2c6103com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum20a2b48e
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.withNameValue(String,T,Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: withNameValue(String name, T value, Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.withNameValue(String name, T value, Class<T> clazz)
-  fullName: T com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.withNameValue(String name, T value, Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected T withNameValue(String name, T value, Class<T> clazz)
-    parameters:
-    - id: name
-      type: "26831127"
-    - id: value
-      type: 8ce1ecb9
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 8ce1ecb9
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  parent: com.microsoft.azure.management.resources.fluentcore.arm
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: ExpandableStringEnum<T>
-  nameWithType: ExpandableStringEnum<T>
-  fullName: com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T>
-  type: Class
-  summary: <p>Base implementation for expandable, single string enums. </p>
-  syntax:
-    content: public class ExpandableStringEnum<T extends ExpandableStringEnum<T>>
-    typeParameters:
-    - type: 8ce1ecb9
-      description: <p>a specific expandable enum type </p>
+- uid: "79317049"
+  spec.java:
+  - name: Object
+    fullName: Object
+- uid: 4fc6e284
+  spec.java:
+  - name: boolean
+    fullName: boolean
+- uid: com.microsoft.azure.management.appservice._web_container.equals*
+  name: equals
+  nameWithType: WebContainer.equals
+  fullName: boolean com.microsoft.azure.management.appservice.WebContainer.equals
+  package: com.microsoft.azure.management.appservice
 - uid: com.microsoft.azure.management.appservice._web_container
   parent: com.microsoft.azure.management.appservice
   href: com.microsoft.azure.management.appservice._web_container.yml
@@ -450,12 +398,3 @@ references:
   type: Class
   summary: <p>Defines values for Java web container. </p>
   syntax: *o1
-- uid: com.microsoft.azure.management.appservice._web_container.fromString(String)
-  parent: com.microsoft.azure.management.appservice._web_container
-  href: com.microsoft.azure.management.appservice._web_container.yml
-  name: fromString(String name)
-  nameWithType: WebContainer.fromString(String name)
-  fullName: static WebContainer com.microsoft.azure.management.appservice.WebContainer.fromString(String name)
-  type: Method
-  summary: <p>Finds or creates a Web container based on the specified name. </p>
-  syntax: *o2

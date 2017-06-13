@@ -21,10 +21,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 964
+    startLine: 986
   package: com.microsoft.azure.management.cdn
   summary: <p>The stage of an CDN profile endpoint update allowing to specify endpoint properties. </p>
   syntax: &o1
@@ -45,7 +45,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 1020
+    startLine: 1042
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Adds a new CDN custom domain within an endpoint.</p>
@@ -74,7 +74,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 979
+    startLine: 1001
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Specifies the host header.</p>
@@ -103,7 +103,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 988
+    startLine: 1010
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Specifies if HTTP traffic is allowed.</p>
@@ -132,7 +132,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 1004
+    startLine: 1026
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Specifies the port for HTTP traffic.</p>
@@ -161,7 +161,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 996
+    startLine: 1018
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Specifies if HTTPS traffic is allowed.</p>
@@ -190,7 +190,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 1012
+    startLine: 1034
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Specifies the port for HTTPS traffic.</p>
@@ -219,7 +219,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 971
+    startLine: 993
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Specifies the origin path.</p>
@@ -248,7 +248,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CdnEndpoint.java
-    startLine: 1028
+    startLine: 1050
   package: com.microsoft.azure.management.cdn
   summary: >-
     <p>Removes CDN custom domain within an endpoint.</p>

@@ -12,10 +12,10 @@ items:
   source:
     remote:
       path: azure-mgmt-batch/src/main/java/com/microsoft/azure/management/batch/Application.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-batch/src/main/java/com/microsoft/azure/management/batch/Application.java
-    startLine: 115
+    startLine: 114
   package: com.microsoft.azure.management.batch
   summary: <p>The entirety of a Batch application definition as a part of parent update. </p>
   syntax:

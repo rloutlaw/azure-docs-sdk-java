@@ -15,10 +15,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1076
+    startLine: 1089
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of a virtual machine definition allowing to select a VM size. </p>
   syntax:
@@ -37,7 +37,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1083
+    startLine: 1096
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Selects the size of the virtual machine.</p>
@@ -66,7 +66,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1091
+    startLine: 1104
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the size of the virtual machine.</p>

@@ -14,7 +14,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Updatable.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/fluentcore/model/Updatable.java
     startLine: 17
@@ -158,16 +158,6 @@ references:
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> availability set. </p>
   syntax:
     content: public interface AvailabilitySet extends GroupableResource<ComputeManager, AvailabilitySetInner>,Refreshable<AvailabilitySet>,Updatable<AvailabilitySet.Update>
-- uid: com.microsoft.azure.management.compute._container_service
-  parent: com.microsoft.azure.management.compute
-  href: com.microsoft.azure.management.compute._container_service.yml
-  name: ContainerService
-  nameWithType: ContainerService
-  fullName: com.microsoft.azure.management.compute.ContainerService
-  type: Interface
-  summary: <p>An client-side representation for a container service. </p>
-  syntax:
-    content: public interface ContainerService extends GroupableResource<ComputeManager, ContainerServiceInner>,Refreshable<ContainerService>,Updatable<ContainerService.Update>
 - uid: com.microsoft.azure.management.compute._disk
   parent: com.microsoft.azure.management.compute
   href: com.microsoft.azure.management.compute._disk.yml
@@ -218,16 +208,6 @@ references:
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> DNS Zone. </p>
   syntax:
     content: public interface DnsZone extends GroupableResource<DnsZoneManager, ZoneInner>,Refreshable<DnsZone>,Updatable<DnsZone.Update>
-- uid: com.microsoft.azure.management.graphrbac._active_directory_application
-  parent: com.microsoft.azure.management.graphrbac
-  href: com.microsoft.azure.management.graphrbac._active_directory_application.yml
-  name: ActiveDirectoryApplication
-  nameWithType: ActiveDirectoryApplication
-  fullName: com.microsoft.azure.management.graphrbac.ActiveDirectoryApplication
-  type: Interface
-  summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> AD application. </p>
-  syntax:
-    content: public interface ActiveDirectoryApplication extends Indexable,HasInner<ApplicationInner>,HasId,HasName,HasManager<GraphRbacManager>,Updatable<ActiveDirectoryApplication.Update>
 - uid: com.microsoft.azure.management.keyvault._vault
   parent: com.microsoft.azure.management.keyvault
   href: com.microsoft.azure.management.keyvault._vault.yml
@@ -404,16 +384,16 @@ references:
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Service Bus namespace. </p>
   syntax:
     content: public interface ServiceBusNamespace extends GroupableResource<ServiceBusManager, NamespaceInner>,Refreshable<ServiceBusNamespace>,Updatable<ServiceBusNamespace.Update>
-- uid: com.microsoft.azure.management.servicebus._service_bus_subscription
+- uid: com.microsoft.azure.management.servicebus._subscription
   parent: com.microsoft.azure.management.servicebus
-  href: com.microsoft.azure.management.servicebus._service_bus_subscription.yml
-  name: ServiceBusSubscription
-  nameWithType: ServiceBusSubscription
-  fullName: com.microsoft.azure.management.servicebus.ServiceBusSubscription
+  href: com.microsoft.azure.management.servicebus._subscription.yml
+  name: Subscription
+  nameWithType: Subscription
+  fullName: com.microsoft.azure.management.servicebus.Subscription
   type: Interface
   summary: <p>Type representing service bus topic subscription. </p>
   syntax:
-    content: public interface ServiceBusSubscription extends IndependentChildResource<ServiceBusManager, SubscriptionInner>,Refreshable<ServiceBusSubscription>,Updatable<ServiceBusSubscription.Update>
+    content: public interface Subscription extends IndependentChildResource<ServiceBusManager, SubscriptionInner>,Refreshable<Subscription>,Updatable<Subscription.Update>
 - uid: com.microsoft.azure.management.servicebus._topic
   parent: com.microsoft.azure.management.servicebus
   href: com.microsoft.azure.management.servicebus._topic.yml
@@ -473,7 +453,7 @@ references:
   type: Interface
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> SQL Server. </p>
   syntax:
-    content: public interface SqlServer extends GroupableResource<SqlServerManager, ServerInner>,Refreshable<SqlServer>,Updatable<SqlServer.Update>
+    content: public interface SqlServer extends GroupableResource<SqlServerManager, ServerInner>,Refreshable<SqlServer>,Updatable<SqlServer.Update>,HasManager<SqlServerManager>
 - uid: com.microsoft.azure.management.storage._storage_account
   parent: com.microsoft.azure.management.storage
   href: com.microsoft.azure.management.storage._storage_account.yml

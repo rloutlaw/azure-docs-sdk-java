@@ -6,11 +6,9 @@ items:
   - com.microsoft.azure.management.compute._disk_sku_types.accountType()
   - com.microsoft.azure.management.compute._disk_sku_types.DiskSkuTypes(StorageAccountTypes)
   - com.microsoft.azure.management.compute._disk_sku_types.equals(Object)
-  - com.microsoft.azure.management.compute._disk_sku_types.fromStorageAccountType(StorageAccountTypes)
   - com.microsoft.azure.management.compute._disk_sku_types.hashCode()
   - com.microsoft.azure.management.compute._disk_sku_types.PREMIUM_LRS()
   - com.microsoft.azure.management.compute._disk_sku_types.STANDARD_LRS()
-  - com.microsoft.azure.management.compute._disk_sku_types.values()
   href: com.microsoft.azure.management.compute._disk_sku_types.yml
   langs:
   - java
@@ -21,10 +19,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 16
+    startLine: 11
   package: com.microsoft.azure.management.compute
   summary: <p>Defines values for <xref href="com.microsoft.azure.management.compute._disk_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax: &o1
@@ -45,7 +43,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 71
+    startLine: 32
   package: com.microsoft.azure.management.compute
   syntax:
     content: public StorageAccountTypes accountType()
@@ -66,7 +64,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 41
+    startLine: 25
   package: com.microsoft.azure.management.compute
   summary: <p>Creates a custom value for <xref href="com.microsoft.azure.management.compute._disk_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -89,7 +87,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 81
+    startLine: 42
   package: com.microsoft.azure.management.compute
   syntax:
     content: public boolean equals(Object obj)
@@ -98,35 +96,6 @@ items:
       type: "79317049"
     return:
       type: 4fc6e284
-- uid: com.microsoft.azure.management.compute._disk_sku_types.fromStorageAccountType(StorageAccountTypes)
-  id: fromStorageAccountType(StorageAccountTypes)
-  parent: com.microsoft.azure.management.compute._disk_sku_types
-  href: com.microsoft.azure.management.compute._disk_sku_types.yml
-  langs:
-  - java
-  name: fromStorageAccountType(StorageAccountTypes value)
-  nameWithType: DiskSkuTypes.fromStorageAccountType(StorageAccountTypes value)
-  fullName: static DiskSkuTypes com.microsoft.azure.management.compute.DiskSkuTypes.fromStorageAccountType(StorageAccountTypes value)
-  overload: com.microsoft.azure.management.compute._disk_sku_types.fromStorageAccountType*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 55
-  package: com.microsoft.azure.management.compute
-  summary: >-
-    <p>Parses a value into a disk SKU type and creates a new DiskSkuType instance if not found among the existing ones.</p>
-
-    <p></p>
-  syntax:
-    content: public static DiskSkuTypes fromStorageAccountType(StorageAccountTypes value)
-    parameters:
-    - id: value
-      type: com.microsoft.azure.management.compute._storage_account_types
-      description: <p>a disk SKU type name </p>
-    return:
-      type: com.microsoft.azure.management.compute._disk_sku_types
-      description: <p>the parsed or created disk SKU type </p>
 - uid: com.microsoft.azure.management.compute._disk_sku_types.hashCode()
   id: hashCode()
   parent: com.microsoft.azure.management.compute._disk_sku_types
@@ -141,7 +110,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 76
+    startLine: 37
   package: com.microsoft.azure.management.compute
   syntax:
     content: public int hashCode()
@@ -160,7 +129,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 24
+    startLine: 16
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Classic for <xref href="com.microsoft.azure.management.compute._disk_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
@@ -180,34 +149,13 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 21
+    startLine: 13
   package: com.microsoft.azure.management.compute
   summary: <p>Static value Aligned for <xref href="com.microsoft.azure.management.compute._disk_sku_types" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public static final DiskSkuTypes STANDARD_LRS= new DiskSkuTypes(StorageAccountTypes.STANDARD_LRS)
     return:
       type: 93de0ef9com.microsoft.azure.management.compute._disk_sku_types
-- uid: com.microsoft.azure.management.compute._disk_sku_types.values()
-  id: values()
-  parent: com.microsoft.azure.management.compute._disk_sku_types
-  href: com.microsoft.azure.management.compute._disk_sku_types.yml
-  langs:
-  - java
-  name: values()
-  nameWithType: DiskSkuTypes.values()
-  fullName: static DiskSkuTypes [] com.microsoft.azure.management.compute.DiskSkuTypes.values()
-  overload: com.microsoft.azure.management.compute._disk_sku_types.values*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/DiskSkuTypes.java
-    startLine: 32
-  package: com.microsoft.azure.management.compute
-  syntax:
-    content: public static DiskSkuTypes [] values()
-    return:
-      type: com.microsoft.azure.management.compute._disk_sku_typese5b41c5f
-      description: <p>predefined disk SKU types </p>
 references:
 - uid: 93de0ef9com.microsoft.azure.management.compute._disk_sku_types
   spec.java:
@@ -217,24 +165,6 @@ references:
     name: DiskSkuTypes
     fullName: com.microsoft.azure.management.compute.DiskSkuTypes
     href: com.microsoft.azure.management.compute._disk_sku_types.yml
-- uid: com.microsoft.azure.management.compute._disk_sku_typese5b41c5f
-  spec.java:
-  - uid: com.microsoft.azure.management.compute._disk_sku_types
-    name: DiskSkuTypes
-    fullName: com.microsoft.azure.management.compute.DiskSkuTypes
-    href: com.microsoft.azure.management.compute._disk_sku_types.yml
-  - name: " []"
-    fullName: " []"
-- uid: com.microsoft.azure.management.compute._disk_sku_types.values*
-  name: values
-  nameWithType: DiskSkuTypes.values
-  fullName: static DiskSkuTypes [] com.microsoft.azure.management.compute.DiskSkuTypes.values
-  package: com.microsoft.azure.management.compute
-- uid: com.microsoft.azure.management.compute._disk_sku_types.fromStorageAccountType*
-  name: fromStorageAccountType
-  nameWithType: DiskSkuTypes.fromStorageAccountType
-  fullName: static DiskSkuTypes com.microsoft.azure.management.compute.DiskSkuTypes.fromStorageAccountType
-  package: com.microsoft.azure.management.compute
 - uid: com.microsoft.azure.management.compute._disk_sku_types.DiskSkuTypes*
   name: DiskSkuTypes
   nameWithType: DiskSkuTypes.DiskSkuTypes

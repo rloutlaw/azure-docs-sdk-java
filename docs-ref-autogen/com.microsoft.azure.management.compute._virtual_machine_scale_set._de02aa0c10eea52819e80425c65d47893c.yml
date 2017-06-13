@@ -16,10 +16,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1212
+    startLine: 1223
   package: com.microsoft.azure.management.compute
   summary: <p>The stage of a virtual machine scale set definition allowing to specify the storage account. </p>
   syntax:
@@ -38,7 +38,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1238
+    startLine: 1249
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies an existing storage account for the OS and data disk VHDs of the virtual machines in the scale set.</p>
@@ -67,7 +67,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1229
+    startLine: 1240
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies a new storage account for the OS and data disk VHDs of the virtual machines in the scale set.</p>
@@ -96,7 +96,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 1220
+    startLine: 1231
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies a new storage account for the OS and data disk VHDs of the virtual machines in the scale set.</p>

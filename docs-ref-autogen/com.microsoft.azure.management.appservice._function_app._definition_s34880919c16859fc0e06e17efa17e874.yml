@@ -18,10 +18,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 138
+    startLine: 126
   package: com.microsoft.azure.management.appservice
   summary: <p>A function app definition allowing app service plan to be set. </p>
   syntax:
@@ -40,7 +40,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 174
+    startLine: 162
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Creates a new app service plan to use.</p>
@@ -69,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 166
+    startLine: 154
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Creates a new app service plan to use.</p>
@@ -98,7 +98,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 143
+    startLine: 131
   package: com.microsoft.azure.management.appservice
   summary: <p>Creates a new consumption plan to use. </p>
   syntax:
@@ -120,7 +120,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 151
+    startLine: 139
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Creates a new free app service plan. This will fail if there are 10 or more free plans in the current subscription.</p>
@@ -145,7 +145,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/FunctionApp.java
-    startLine: 158
+    startLine: 146
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Creates a new shared app service plan.</p>

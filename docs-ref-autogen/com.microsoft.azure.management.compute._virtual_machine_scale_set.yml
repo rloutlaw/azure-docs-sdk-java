@@ -54,10 +54,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 36
+    startLine: 37
   package: com.microsoft.azure.management.compute
   summary: <p>An immutable client-side representation of an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> virtual machine scale set. </p>
   syntax:
@@ -90,7 +90,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 194
+    startLine: 205
   package: com.microsoft.azure.management.compute
   syntax:
     content: public long capacity()
@@ -111,7 +111,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 159
+    startLine: 170
   package: com.microsoft.azure.management.compute
   syntax:
     content: public String computerNamePrefix()
@@ -132,7 +132,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 57
+    startLine: 58
   package: com.microsoft.azure.management.compute
   summary: <p>Shuts down the virtual machines in the scale set and releases its compute resources. </p>
   syntax:
@@ -151,7 +151,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 64
+    startLine: 66
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Shuts down the virtual machines in the scale set and releases its compute resources asynchronously.</p>
@@ -176,7 +176,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 72
+    startLine: 75
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Shuts down the virtual machines in the scale set and releases its compute resources asynchronously.</p>
@@ -205,7 +205,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 280
+    startLine: 291
   package: com.microsoft.azure.management.compute
   syntax:
     content: public Map<String, VirtualMachineScaleSetExtension> extensions()
@@ -226,7 +226,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 289
+    startLine: 300
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Gets a network interface associated with a virtual machine scale set instance.</p>
@@ -258,7 +258,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 237
+    startLine: 248
   package: com.microsoft.azure.management.compute
   syntax:
     content: public LoadBalancer getPrimaryInternalLoadBalancer()
@@ -282,7 +282,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 213
+    startLine: 224
   package: com.microsoft.azure.management.compute
   syntax:
     content: public LoadBalancer getPrimaryInternetFacingLoadBalancer()
@@ -306,7 +306,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 205
+    startLine: 216
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>
@@ -336,7 +336,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 307
+    startLine: 318
   package: com.microsoft.azure.management.compute
   syntax:
     content: public boolean isManagedDiskEnabled()
@@ -357,7 +357,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 52
+    startLine: 53
   package: com.microsoft.azure.management.compute
   syntax:
     content: public PagedList<VirtualMachineScaleSetSku> listAvailableSkus()
@@ -378,7 +378,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 294
+    startLine: 305
   package: com.microsoft.azure.management.compute
   syntax:
     content: public PagedList<VirtualMachineScaleSetNetworkInterface> listNetworkInterfaces()
@@ -399,7 +399,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 302
+    startLine: 313
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Lists the network interface associated with a specific virtual machine instance in the scale set.</p>
@@ -428,7 +428,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 245
+    startLine: 256
   package: com.microsoft.azure.management.compute
   syntax:
     content: public Map<String, LoadBalancerBackend> listPrimaryInternalLoadBalancerBackends()
@@ -452,7 +452,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 253
+    startLine: 264
   package: com.microsoft.azure.management.compute
   syntax:
     content: public Map<String, LoadBalancerInboundNatPool> listPrimaryInternalLoadBalancerInboundNatPools()
@@ -476,7 +476,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 221
+    startLine: 232
   package: com.microsoft.azure.management.compute
   syntax:
     content: public Map<String, LoadBalancerBackend> listPrimaryInternetFacingLoadBalancerBackends()
@@ -500,7 +500,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 229
+    startLine: 240
   package: com.microsoft.azure.management.compute
   syntax:
     content: public Map<String, LoadBalancerInboundNatPool> listPrimaryInternetFacingLoadBalancerInboundNatPools()
@@ -524,7 +524,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 275
+    startLine: 286
   package: com.microsoft.azure.management.compute
   syntax:
     content: public VirtualMachineScaleSetNetworkProfile networkProfile()
@@ -545,7 +545,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 169
+    startLine: 180
   package: com.microsoft.azure.management.compute
   syntax:
     content: public CachingTypes osDiskCachingType()
@@ -566,7 +566,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 174
+    startLine: 185
   package: com.microsoft.azure.management.compute
   syntax:
     content: public String osDiskName()
@@ -587,7 +587,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 164
+    startLine: 175
   package: com.microsoft.azure.management.compute
   syntax:
     content: public OperatingSystemTypes osType()
@@ -608,7 +608,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 184
+    startLine: 195
   package: com.microsoft.azure.management.compute
   syntax:
     content: public boolean overProvisionEnabled()
@@ -629,7 +629,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 77
+    startLine: 80
   package: com.microsoft.azure.management.compute
   summary: <p>Powers off (stops) the virtual machines in the scale set. </p>
   syntax:
@@ -648,7 +648,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 83
+    startLine: 87
   package: com.microsoft.azure.management.compute
   summary: <p>Powers off (stops) the virtual machines in the scale set asynchronously. </p>
   syntax:
@@ -670,7 +670,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 91
+    startLine: 96
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Powers off (stops) the virtual machines in the scale set asynchronously.</p>
@@ -699,7 +699,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 260
+    startLine: 271
   package: com.microsoft.azure.management.compute
   syntax:
     content: public List<String> primaryPublicIPAddressIds()
@@ -723,7 +723,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 136
+    startLine: 145
   package: com.microsoft.azure.management.compute
   summary: <p>Re-images (updates the version of the installed operating system) the virtual machines in the scale set. </p>
   syntax:
@@ -742,7 +742,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 143
+    startLine: 153
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Re-images (updates the version of the installed operating system) the virtual machines in the scale set asynchronously.</p>
@@ -767,7 +767,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 151
+    startLine: 162
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Re-images (updates the version of the installed operating system) the virtual machines in the scale set asynchronously.</p>
@@ -796,7 +796,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 96
+    startLine: 101
   package: com.microsoft.azure.management.compute
   summary: <p>Restarts the virtual machines in the scale set. </p>
   syntax:
@@ -815,7 +815,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 103
+    startLine: 109
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Restarts the virtual machines in the scale set asynchronously.</p>
@@ -840,7 +840,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 111
+    startLine: 118
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Restarts the virtual machines in the scale set asynchronously.</p>
@@ -869,7 +869,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 189
+    startLine: 200
   package: com.microsoft.azure.management.compute
   syntax:
     content: public VirtualMachineScaleSetSkuTypes sku()
@@ -890,7 +890,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 116
+    startLine: 123
   package: com.microsoft.azure.management.compute
   summary: <p>Starts the virtual machines in the scale set. </p>
   syntax:
@@ -909,7 +909,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 123
+    startLine: 131
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Starts the virtual machines in the scale set asynchronously.</p>
@@ -934,7 +934,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 131
+    startLine: 140
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Starts the virtual machines in the scale set asynchronously.</p>
@@ -963,7 +963,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 270
+    startLine: 281
   package: com.microsoft.azure.management.compute
   syntax:
     content: public VirtualMachineScaleSetStorageProfile storageProfile()
@@ -984,7 +984,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 179
+    startLine: 190
   package: com.microsoft.azure.management.compute
   syntax:
     content: public UpgradeMode upgradeModel()
@@ -1005,7 +1005,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 265
+    startLine: 276
   package: com.microsoft.azure.management.compute
   syntax:
     content: public List<String> vhdContainers()
@@ -1026,7 +1026,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineScaleSet.java
-    startLine: 46
+    startLine: 47
   package: com.microsoft.azure.management.compute
   syntax:
     content: public VirtualMachineScaleSetVMs virtualMachines()

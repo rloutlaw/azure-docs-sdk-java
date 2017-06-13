@@ -12,10 +12,10 @@ items:
   source:
     remote:
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayListener.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayListener.java
-    startLine: 124
+    startLine: 126
   package: com.microsoft.azure.management.network
   summary: <p>The stage of an application gateway frontend listener definition allowing to specify the SSL certificate to associate with the listener. </p>
   syntax:

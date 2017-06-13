@@ -15,10 +15,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayListener.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayListener.java
-    startLine: 138
+    startLine: 140
   package: com.microsoft.azure.management.network
   summary: <p>The stage of an application gateway frontend listener definition allowing to specify the protocol. </p>
   syntax:
@@ -40,7 +40,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayListener.java
-    startLine: 144
+    startLine: 146
   package: com.microsoft.azure.management.network
   summary: <p>Specifies that the listener is for the HTTP protocol. </p>
   syntax:
@@ -62,7 +62,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGatewayListener.java
-    startLine: 151
+    startLine: 153
   package: com.microsoft.azure.management.network
   summary: <p>Specifies that the listener is for the HTTPS protocol. </p>
   syntax:
@@ -111,7 +111,7 @@ references:
   summary: >-
     <p>The final stage of an application gateway HTTP listener. </p>
 
-    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition. </p>
+    <p>At this stage, any remaining optional settings can be specified, or the definition can be attached to the parent application gateway definition using <xref href="com.microsoft.azure.management.resources.fluentcore.model._attachable._in_definition.attach()" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public interface WithAttach<ParentT> extends Attachable<ParentT>.InDefinition,ApplicationGatewayListener.DefinitionStages.WithProtocol<ParentT>,ApplicationGatewayListener.DefinitionStages.WithHostName<ParentT>,ApplicationGatewayListener.DefinitionStages.WithServerNameIndication<ParentT>
     typeParameters:

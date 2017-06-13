@@ -18,7 +18,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-servicebus/src/main/java/com/microsoft/azure/management/servicebus/AuthorizationRule.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-servicebus/src/main/java/com/microsoft/azure/management/servicebus/AuthorizationRule.java
     startLine: 25
@@ -54,7 +54,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-servicebus/src/main/java/com/microsoft/azure/management/servicebus/AuthorizationRule.java
-    startLine: 42
+    startLine: 43
   package: com.microsoft.azure.management.servicebus
   syntax:
     content: public AuthorizationKeys getKeys()
@@ -75,13 +75,13 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-servicebus/src/main/java/com/microsoft/azure/management/servicebus/AuthorizationRule.java
-    startLine: 37
+    startLine: 38
   package: com.microsoft.azure.management.servicebus
   syntax:
     content: public Observable<AuthorizationKeys> getKeysAsync()
     return:
       type: c2d0e8c6com.microsoft.azure.management.servicebus._authorization_keysa08ddfce
-      description: <p>a representation of the deferred computation of this call, returning the primary, secondary keys and the connection strings </p>
+      description: <p>stream that emits primary, secondary keys and connection strings </p>
 - uid: com.microsoft.azure.management.servicebus._authorization_rule.regenerateKey(Policykey)
   id: regenerateKey(Policykey)
   parent: com.microsoft.azure.management.servicebus._authorization_rule
@@ -96,7 +96,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-servicebus/src/main/java/com/microsoft/azure/management/servicebus/AuthorizationRule.java
-    startLine: 58
+    startLine: 60
   package: com.microsoft.azure.management.servicebus
   summary: >-
     <p>Regenerates primary or secondary keys.</p>
@@ -125,7 +125,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-servicebus/src/main/java/com/microsoft/azure/management/servicebus/AuthorizationRule.java
-    startLine: 50
+    startLine: 52
   package: com.microsoft.azure.management.servicebus
   summary: >-
     <p>Regenerates primary or secondary keys.</p>
@@ -139,7 +139,7 @@ items:
       description: <p>the key to regenerate </p>
     return:
       type: c2d0e8c6com.microsoft.azure.management.servicebus._authorization_keysa08ddfce
-      description: <p>a representation of the deferred computation of this call, returning the primary, secondary keys and the connection strings </p>
+      description: <p>stream that emits primary, secondary keys and connection strings </p>
 - uid: com.microsoft.azure.management.servicebus._authorization_rule.rights()
   id: rights()
   parent: com.microsoft.azure.management.servicebus._authorization_rule

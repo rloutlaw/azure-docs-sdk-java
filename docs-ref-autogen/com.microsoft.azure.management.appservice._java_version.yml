@@ -3,7 +3,8 @@ items:
   id: _java_version
   parent: com.microsoft.azure.management.appservice
   children:
-  - com.microsoft.azure.management.appservice._java_version.fromString(String)
+  - com.microsoft.azure.management.appservice._java_version.equals(Object)
+  - com.microsoft.azure.management.appservice._java_version.hashCode()
   - com.microsoft.azure.management.appservice._java_version.JAVA_1_7_0_51()
   - com.microsoft.azure.management.appservice._java_version.JAVA_1_7_0_71()
   - com.microsoft.azure.management.appservice._java_version.JAVA_1_8_0_111()
@@ -14,8 +15,9 @@ items:
   - com.microsoft.azure.management.appservice._java_version.JAVA_8_NEWEST()
   - com.microsoft.azure.management.appservice._java_version.JAVA_ZULU_1_8_0_102()
   - com.microsoft.azure.management.appservice._java_version.JAVA_ZULU_1_8_0_92()
+  - com.microsoft.azure.management.appservice._java_version.JavaVersion(String)
   - com.microsoft.azure.management.appservice._java_version.OFF()
-  - com.microsoft.azure.management.appservice._java_version.values()
+  - com.microsoft.azure.management.appservice._java_version.toString()
   href: com.microsoft.azure.management.appservice._java_version.yml
   langs:
   - java
@@ -26,50 +28,59 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 15
+    startLine: 13
   package: com.microsoft.azure.management.appservice
   summary: <p>Defines values for Java versions. </p>
   syntax: &o1
-    content: public class JavaVersion extends ExpandableStringEnum<JavaVersion>
+    content: public class JavaVersion
   inheritance:
   - java.lang.Object
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  inheritedMembers:
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.equals(Object)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.fromString(String,Class<T>)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.hashCode()
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.toString()
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.values(Class<T>)
-  - com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.withNameValue(String,T,Class<T>)
-- uid: com.microsoft.azure.management.appservice._java_version.fromString(String)
-  id: fromString(String)
+- uid: com.microsoft.azure.management.appservice._java_version.equals(Object)
+  id: equals(Object)
   parent: com.microsoft.azure.management.appservice._java_version
   href: com.microsoft.azure.management.appservice._java_version.yml
   langs:
   - java
-  name: fromString(String name)
-  nameWithType: JavaVersion.fromString(String name)
-  fullName: static JavaVersion com.microsoft.azure.management.appservice.JavaVersion.fromString(String name)
-  overload: com.microsoft.azure.management.appservice._java_version.fromString*
+  name: equals(Object obj)
+  nameWithType: JavaVersion.equals(Object obj)
+  fullName: boolean com.microsoft.azure.management.appservice.JavaVersion.equals(Object obj)
+  overload: com.microsoft.azure.management.appservice._java_version.equals*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 54
+    startLine: 69
   package: com.microsoft.azure.management.appservice
-  summary: <p>Finds or creates a Java version value based on the provided name. </p>
-  syntax: &o2
-    content: public static JavaVersion fromString(String name)
+  syntax:
+    content: public boolean equals(Object obj)
     parameters:
-    - id: name
-      type: "26831127"
-      description: <p>a name </p>
+    - id: obj
+      type: "79317049"
     return:
-      type: com.microsoft.azure.management.appservice._java_version
-      description: <p>a <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref> instance </p>
+      type: 4fc6e284
+- uid: com.microsoft.azure.management.appservice._java_version.hashCode()
+  id: hashCode()
+  parent: com.microsoft.azure.management.appservice._java_version
+  href: com.microsoft.azure.management.appservice._java_version.yml
+  langs:
+  - java
+  name: hashCode()
+  nameWithType: JavaVersion.hashCode()
+  fullName: int com.microsoft.azure.management.appservice.JavaVersion.hashCode()
+  overload: com.microsoft.azure.management.appservice._java_version.hashCode*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
+    startLine: 64
+  package: com.microsoft.azure.management.appservice
+  syntax:
+    content: public int hashCode()
+    return:
+      type: f75371fa
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_1_7_0_51()
   id: JAVA_1_7_0_51()
   parent: com.microsoft.azure.management.appservice._java_version
@@ -83,11 +94,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 23
+    startLine: 21
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value 1.7.0_51 for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_1_7_0_51= fromString("1.7.0_51")
+    content: public static final JavaVersion JAVA_1_7_0_51= new JavaVersion("1.7.0_51")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_1_7_0_71()
@@ -103,11 +114,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 26
+    startLine: 24
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value 1.7.0_71 for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_1_7_0_71= fromString("1.7.0_71")
+    content: public static final JavaVersion JAVA_1_7_0_71= new JavaVersion("1.7.0_71")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_1_8_0_111()
@@ -123,11 +134,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 41
+    startLine: 39
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value 1.8.0_111 for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_1_8_0_111= fromString("1.8.0_111")
+    content: public static final JavaVersion JAVA_1_8_0_111= new JavaVersion("1.8.0_111")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_1_8_0_25()
@@ -143,11 +154,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 32
+    startLine: 30
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value 1.8.0_25 for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_1_8_0_25= fromString("1.8.0_25")
+    content: public static final JavaVersion JAVA_1_8_0_25= new JavaVersion("1.8.0_25")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_1_8_0_60()
@@ -163,11 +174,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 35
+    startLine: 33
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value 1.8.0_60 for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_1_8_0_60= fromString("1.8.0_60")
+    content: public static final JavaVersion JAVA_1_8_0_60= new JavaVersion("1.8.0_60")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_1_8_0_73()
@@ -183,11 +194,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 38
+    startLine: 36
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value 1.8.0_73 for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_1_8_0_73= fromString("1.8.0_73")
+    content: public static final JavaVersion JAVA_1_8_0_73= new JavaVersion("1.8.0_73")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_7_NEWEST()
@@ -203,11 +214,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 20
+    startLine: 18
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value Java 7 newest for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_7_NEWEST= fromString("1.7")
+    content: public static final JavaVersion JAVA_7_NEWEST= new JavaVersion("1.7")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_8_NEWEST()
@@ -223,11 +234,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 29
+    startLine: 27
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value Java 8 newest for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_8_NEWEST= fromString("1.8")
+    content: public static final JavaVersion JAVA_8_NEWEST= new JavaVersion("1.8")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_ZULU_1_8_0_102()
@@ -243,11 +254,11 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 47
+    startLine: 45
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value Zulu 1.8.0_102 for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_ZULU_1_8_0_102= fromString("1.8.0_102")
+    content: public static final JavaVersion JAVA_ZULU_1_8_0_102= new JavaVersion("1.8.0_102")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
 - uid: com.microsoft.azure.management.appservice._java_version.JAVA_ZULU_1_8_0_92()
@@ -263,13 +274,36 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 44
+    startLine: 42
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value Zulu 1.8.0_92 for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion JAVA_ZULU_1_8_0_92= fromString("1.8.0_92")
+    content: public static final JavaVersion JAVA_ZULU_1_8_0_92= new JavaVersion("1.8.0_92")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
+- uid: com.microsoft.azure.management.appservice._java_version.JavaVersion(String)
+  id: JavaVersion(String)
+  parent: com.microsoft.azure.management.appservice._java_version
+  href: com.microsoft.azure.management.appservice._java_version.yml
+  langs:
+  - java
+  name: JavaVersion(String value)
+  nameWithType: JavaVersion.JavaVersion(String value)
+  fullName: com.microsoft.azure.management.appservice.JavaVersion.JavaVersion(String value)
+  overload: com.microsoft.azure.management.appservice._java_version.JavaVersion*
+  type: Constructor
+  source:
+    remote: *o0
+    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
+    startLine: 53
+  package: com.microsoft.azure.management.appservice
+  summary: <p>Creates a custom value for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
+  syntax:
+    content: public JavaVersion(String value)
+    parameters:
+    - id: value
+      type: "26831127"
+      description: <p>the custom value </p>
 - uid: com.microsoft.azure.management.appservice._java_version.OFF()
   id: OFF()
   parent: com.microsoft.azure.management.appservice._java_version
@@ -283,34 +317,33 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 17
+    startLine: 15
   package: com.microsoft.azure.management.appservice
   summary: <p>Static value 'Off' for <xref href="com.microsoft.azure.management.appservice._java_version" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
-    content: public static final JavaVersion OFF= fromString("null")
+    content: public static final JavaVersion OFF= new JavaVersion("null")
     return:
       type: 93de0ef9com.microsoft.azure.management.appservice._java_version
-- uid: com.microsoft.azure.management.appservice._java_version.values()
-  id: values()
+- uid: com.microsoft.azure.management.appservice._java_version.toString()
+  id: toString()
   parent: com.microsoft.azure.management.appservice._java_version
   href: com.microsoft.azure.management.appservice._java_version.yml
   langs:
   - java
-  name: values()
-  nameWithType: JavaVersion.values()
-  fullName: static Collection<JavaVersion> com.microsoft.azure.management.appservice.JavaVersion.values()
-  overload: com.microsoft.azure.management.appservice._java_version.values*
+  name: toString()
+  nameWithType: JavaVersion.toString()
+  fullName: String com.microsoft.azure.management.appservice.JavaVersion.toString()
+  overload: com.microsoft.azure.management.appservice._java_version.toString*
   type: Method
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/JavaVersion.java
-    startLine: 61
+    startLine: 59
   package: com.microsoft.azure.management.appservice
   syntax:
-    content: public static Collection<JavaVersion> values()
+    content: public String toString()
     return:
-      type: 12ebb11acom.microsoft.azure.management.appservice._java_versiona08ddfce
-      description: <p>known Java versions </p>
+      type: "26831127"
 references:
 - uid: 93de0ef9com.microsoft.azure.management.appservice._java_version
   spec.java:
@@ -324,123 +357,38 @@ references:
   spec.java:
   - name: String
     fullName: String
-- uid: com.microsoft.azure.management.appservice._java_version.fromString*
-  name: fromString
-  nameWithType: JavaVersion.fromString
-  fullName: static JavaVersion com.microsoft.azure.management.appservice.JavaVersion.fromString
+- uid: com.microsoft.azure.management.appservice._java_version.JavaVersion*
+  name: JavaVersion
+  nameWithType: JavaVersion.JavaVersion
+  fullName: com.microsoft.azure.management.appservice.JavaVersion.JavaVersion
   package: com.microsoft.azure.management.appservice
-- uid: 12ebb11acom.microsoft.azure.management.appservice._java_versiona08ddfce
+- uid: com.microsoft.azure.management.appservice._java_version.toString*
+  name: toString
+  nameWithType: JavaVersion.toString
+  fullName: String com.microsoft.azure.management.appservice.JavaVersion.toString
+  package: com.microsoft.azure.management.appservice
+- uid: f75371fa
   spec.java:
-  - name: Collection<
-    fullName: Collection<
-  - uid: com.microsoft.azure.management.appservice._java_version
-    name: JavaVersion
-    fullName: com.microsoft.azure.management.appservice.JavaVersion
-    href: com.microsoft.azure.management.appservice._java_version.yml
-  - name: '>'
-    fullName: '>'
-- uid: com.microsoft.azure.management.appservice._java_version.values*
-  name: values
-  nameWithType: JavaVersion.values
-  fullName: static Collection<JavaVersion> com.microsoft.azure.management.appservice.JavaVersion.values
+  - name: int
+    fullName: int
+- uid: com.microsoft.azure.management.appservice._java_version.hashCode*
+  name: hashCode
+  nameWithType: JavaVersion.hashCode
+  fullName: int com.microsoft.azure.management.appservice.JavaVersion.hashCode
   package: com.microsoft.azure.management.appservice
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.equals(Object)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: equals(Object obj)
-  nameWithType: ExpandableStringEnum<T>.equals(Object obj)
-  fullName: boolean com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.equals(Object obj)
-  type: Method
-  syntax:
-    content: public boolean equals(Object obj)
-    parameters:
-    - id: obj
-      type: "79317049"
-    return:
-      type: 4fc6e284
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.fromString(String,Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: fromString(String name, Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.fromString(String name, Class<T> clazz)
-  fullName: static <T extends ExpandableStringEnum<T> T com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.fromString(String name, Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected static static<T extends ExpandableStringEnum<T> T fromString(String name, Class<T> clazz)
-    parameters:
-    - id: name
-      type: "26831127"
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 1e2c6103com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum34698212
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.hashCode()
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: hashCode()
-  nameWithType: ExpandableStringEnum<T>.hashCode()
-  fullName: int com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.hashCode()
-  type: Method
-  syntax:
-    content: public int hashCode()
-    return:
-      type: f75371fa
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.toString()
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: toString()
-  nameWithType: ExpandableStringEnum<T>.toString()
-  fullName: String com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.toString()
-  type: Method
-  syntax:
-    content: public String toString()
-    return:
-      type: "26831127"
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.values(Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: values(Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.values(Class<T> clazz)
-  fullName: static <T extends ExpandableStringEnum<T> Collection<T> com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.values(Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected static static<T extends ExpandableStringEnum<T> Collection<T> values(Class<T> clazz)
-    parameters:
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 1e2c6103com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum20a2b48e
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.withNameValue(String,T,Class<T>)
-  parent: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: withNameValue(String name, T value, Class<T> clazz)
-  nameWithType: ExpandableStringEnum<T>.withNameValue(String name, T value, Class<T> clazz)
-  fullName: T com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T extends ExpandableStringEnum<T>.withNameValue(String name, T value, Class<T> clazz)
-  type: Method
-  syntax:
-    content: protected T withNameValue(String name, T value, Class<T> clazz)
-    parameters:
-    - id: name
-      type: "26831127"
-    - id: value
-      type: 8ce1ecb9
-    - id: clazz
-      type: ffb09d2d
-    return:
-      type: 8ce1ecb9
-- uid: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum
-  parent: com.microsoft.azure.management.resources.fluentcore.arm
-  href: com.microsoft.azure.management.resources.fluentcore.arm._expandable_string_enum.yml
-  name: ExpandableStringEnum<T>
-  nameWithType: ExpandableStringEnum<T>
-  fullName: com.microsoft.azure.management.resources.fluentcore.arm.ExpandableStringEnum<T>
-  type: Class
-  summary: <p>Base implementation for expandable, single string enums. </p>
-  syntax:
-    content: public class ExpandableStringEnum<T extends ExpandableStringEnum<T>>
-    typeParameters:
-    - type: 8ce1ecb9
-      description: <p>a specific expandable enum type </p>
+- uid: "79317049"
+  spec.java:
+  - name: Object
+    fullName: Object
+- uid: 4fc6e284
+  spec.java:
+  - name: boolean
+    fullName: boolean
+- uid: com.microsoft.azure.management.appservice._java_version.equals*
+  name: equals
+  nameWithType: JavaVersion.equals
+  fullName: boolean com.microsoft.azure.management.appservice.JavaVersion.equals
+  package: com.microsoft.azure.management.appservice
 - uid: com.microsoft.azure.management.appservice._java_version
   parent: com.microsoft.azure.management.appservice
   href: com.microsoft.azure.management.appservice._java_version.yml
@@ -450,12 +398,3 @@ references:
   type: Class
   summary: <p>Defines values for Java versions. </p>
   syntax: *o1
-- uid: com.microsoft.azure.management.appservice._java_version.fromString(String)
-  parent: com.microsoft.azure.management.appservice._java_version
-  href: com.microsoft.azure.management.appservice._java_version.yml
-  name: fromString(String name)
-  nameWithType: JavaVersion.fromString(String name)
-  fullName: static JavaVersion com.microsoft.azure.management.appservice.JavaVersion.fromString(String name)
-  type: Method
-  summary: <p>Finds or creates a Java version value based on the provided name. </p>
-  syntax: *o2

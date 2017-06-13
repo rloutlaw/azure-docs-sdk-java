@@ -11,7 +11,6 @@ items:
   - com.microsoft.azure.management.appservice._connection_string_type.fromString(String)
   - com.microsoft.azure.management.appservice._connection_string_type.MY_SQL()
   - com.microsoft.azure.management.appservice._connection_string_type.NOTIFICATION_HUB()
-  - com.microsoft.azure.management.appservice._connection_string_type.POSTGRE_SQL()
   - com.microsoft.azure.management.appservice._connection_string_type.REDIS_CACHE()
   - com.microsoft.azure.management.appservice._connection_string_type.SERVICE_BUS()
   - com.microsoft.azure.management.appservice._connection_string_type.SQLAZURE()
@@ -27,7 +26,7 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/ConnectionStringType.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/ConnectionStringType.java
     startLine: 16
@@ -70,7 +69,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/ConnectionStringType.java
-    startLine: 53
+    startLine: 50
   package: com.microsoft.azure.management.appservice
   syntax:
     content: public ConnectionStringType(String value)
@@ -145,7 +144,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/ConnectionStringType.java
-    startLine: 64
+    startLine: 61
   package: com.microsoft.azure.management.appservice
   summary: >-
     <p>Parses a serialized value to a <xref href="com.microsoft.azure.management.appservice._connection_string_type" data-throw-if-not-resolved="false"></xref> instance.</p>
@@ -196,24 +195,6 @@ items:
   summary: <p>Enum value NotificationHub. </p>
   syntax:
     content: public NOTIFICATION_HUB=("NotificationHub")
-- uid: com.microsoft.azure.management.appservice._connection_string_type.POSTGRE_SQL()
-  id: POSTGRE_SQL()
-  parent: com.microsoft.azure.management.appservice._connection_string_type
-  href: com.microsoft.azure.management.appservice._connection_string_type.yml
-  langs:
-  - java
-  name: POSTGRE_SQL
-  nameWithType: ConnectionStringType.POSTGRE_SQL
-  fullName: com.microsoft.azure.management.appservice.ConnectionStringType.POSTGRE_SQL
-  type: Field
-  source:
-    remote: *o0
-    path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/ConnectionStringType.java
-    startLine: 48
-  package: com.microsoft.azure.management.appservice
-  summary: <p>Enum value PostgreSQL. </p>
-  syntax:
-    content: public POSTGRE_SQL=("PostgreSQL")
 - uid: com.microsoft.azure.management.appservice._connection_string_type.REDIS_CACHE()
   id: REDIS_CACHE()
   parent: com.microsoft.azure.management.appservice._connection_string_type
@@ -300,7 +281,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-appservice/src/main/java/com/microsoft/azure/management/appservice/ConnectionStringType.java
-    startLine: 76
+    startLine: 73
   package: com.microsoft.azure.management.appservice
   syntax:
     content: public String toString()

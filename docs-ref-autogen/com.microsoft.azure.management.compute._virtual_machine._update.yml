@@ -20,10 +20,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1713
+    startLine: 1726
   package: com.microsoft.azure.management.compute
   summary: <p>The template for an update operation, containing all the settings that can be modified. </p>
   syntax: &o1
@@ -71,7 +71,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1734
+    startLine: 1747
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the default caching type for the managed data disks.</p>
@@ -100,7 +100,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1742
+    startLine: 1755
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies a storage account type.</p>
@@ -129,7 +129,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1750
+    startLine: 1763
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the caching type for the OS disk.</p>
@@ -158,7 +158,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1726
+    startLine: 1739
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the encryption settings for the OS <xref href="com.microsoft.azure.management.compute._disk" data-throw-if-not-resolved="false"></xref>.</p>
@@ -187,7 +187,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1760
+    startLine: 1773
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies the size of the OS disk in GB. </p>
@@ -218,7 +218,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1768
+    startLine: 1781
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies a new size for the virtual machine.</p>
@@ -247,7 +247,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachine.java
-    startLine: 1776
+    startLine: 1789
   package: com.microsoft.azure.management.compute
   summary: >-
     <p>Specifies a new size for the virtual machine.</p>

@@ -12,10 +12,10 @@ items:
   source:
     remote:
       path: azure-mgmt-servicebus/src/main/java/com/microsoft/azure/management/servicebus/AuthorizationRule.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-servicebus/src/main/java/com/microsoft/azure/management/servicebus/AuthorizationRule.java
-    startLine: 114
+    startLine: 116
   package: com.microsoft.azure.management.servicebus
   summary: >-
     <p>The stage of the Service Bus authorization rule definition allowing to enable listen, send or manage policy.</p>

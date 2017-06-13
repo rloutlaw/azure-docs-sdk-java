@@ -49,10 +49,10 @@ items:
   source:
     remote: &o0
       path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 28
+    startLine: 27
   package: com.microsoft.azure.management.datalake.analytics
   summary: <p>An instance of this class provides access to all the operations defined in <xref href="com.microsoft.azure.management.datalake.analytics._jobs" data-throw-if-not-resolved="false"></xref>. </p>
   syntax: &o1
@@ -71,7 +71,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 125
+    startLine: 109
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Builds (compiles) the specified job in the specified Data Lake Analytics account for job correctness and validation.</p>
@@ -89,13 +89,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._job_information
       description: <p>the JobInformation object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.buildAsync(String,JobInformation)
   id: buildAsync(String,JobInformation)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -110,7 +103,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 146
+    startLine: 128
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Builds (compiles) the specified job in the specified Data Lake Analytics account for job correctness and validation.</p>
@@ -128,9 +121,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the observable to the JobInformation object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.buildAsync(String,JobInformation,final ServiceCallback<JobInformation>)
   id: buildAsync(String,JobInformation,final ServiceCallback<JobInformation>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -145,7 +135,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 136
+    startLine: 119
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Builds (compiles) the specified job in the specified Data Lake Analytics account for job correctness and validation.</p>
@@ -166,9 +156,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.buildWithServiceResponseAsync(String,JobInformation)
   id: buildWithServiceResponseAsync(String,JobInformation)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -183,7 +170,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 156
+    startLine: 137
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Builds (compiles) the specified job in the specified Data Lake Analytics account for job correctness and validation.</p>
@@ -201,9 +188,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the observable to the JobInformation object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.cancel(String,UUID)
   id: cancel(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -218,7 +202,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 167
+    startLine: 145
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Cancels the running job specified by the job ID.</p>
@@ -233,13 +217,6 @@ items:
     - id: jobIdentity
       type: add9545a
       description: <p>JobInfo ID to cancel. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.cancelAsync(String,UUID)
   id: cancelAsync(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -254,7 +231,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 188
+    startLine: 164
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Cancels the running job specified by the job ID.</p>
@@ -272,9 +249,6 @@ items:
     return:
       type: dcd884b2
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.cancelAsync(String,UUID,final ServiceCallback<Void>)
   id: cancelAsync(String,UUID,final ServiceCallback<Void>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -289,7 +263,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 178
+    startLine: 155
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Cancels the running job specified by the job ID.</p>
@@ -310,9 +284,6 @@ items:
     return:
       type: aa81d378
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.cancelWithServiceResponseAsync(String,UUID)
   id: cancelWithServiceResponseAsync(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -327,7 +298,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 198
+    startLine: 173
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Cancels the running job specified by the job ID.</p>
@@ -345,9 +316,6 @@ items:
     return:
       type: 27015fa1
       description: <p>the <ref refid="" kindref="compound">ServiceResponse</ref> object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.create(String,UUID,JobInformation)
   id: create(String,UUID,JobInformation)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -362,7 +330,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 254
+    startLine: 220
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Submits a job to the specified Data Lake Analytics account.</p>
@@ -383,13 +351,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._job_information
       description: <p>the JobInformation object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.createAsync(String,UUID,JobInformation)
   id: createAsync(String,UUID,JobInformation)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -404,7 +365,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 277
+    startLine: 241
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Submits a job to the specified Data Lake Analytics account.</p>
@@ -425,9 +386,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the observable to the JobInformation object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.createAsync(String,UUID,JobInformation,final ServiceCallback<JobInformation>)
   id: createAsync(String,UUID,JobInformation,final ServiceCallback<JobInformation>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -442,7 +400,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 266
+    startLine: 231
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Submits a job to the specified Data Lake Analytics account.</p>
@@ -466,9 +424,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.createWithServiceResponseAsync(String,UUID,JobInformation)
   id: createWithServiceResponseAsync(String,UUID,JobInformation)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -483,7 +438,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 288
+    startLine: 251
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Submits a job to the specified Data Lake Analytics account.</p>
@@ -504,9 +459,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the observable to the JobInformation object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.get(String,UUID)
   id: get(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -521,7 +473,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 210
+    startLine: 182
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the job information for the specified job ID.</p>
@@ -539,13 +491,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._job_information
       description: <p>the JobInformation object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getAsync(String,UUID)
   id: getAsync(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -560,7 +505,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 231
+    startLine: 201
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the job information for the specified job ID.</p>
@@ -578,9 +523,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the observable to the JobInformation object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getAsync(String,UUID,final ServiceCallback<JobInformation>)
   id: getAsync(String,UUID,final ServiceCallback<JobInformation>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -595,7 +537,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 221
+    startLine: 192
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the job information for the specified job ID.</p>
@@ -616,9 +558,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getDebugDataPath(String,UUID)
   id: getDebugDataPath(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -633,7 +572,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 82
+    startLine: 72
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the job debug data information specified by the job ID.</p>
@@ -651,13 +590,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._job_data_path
       description: <p>the JobDataPath object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getDebugDataPathAsync(String,UUID)
   id: getDebugDataPathAsync(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -672,7 +604,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 103
+    startLine: 91
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the job debug data information specified by the job ID.</p>
@@ -690,9 +622,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._job_data_patha08ddfce
       description: <p>the observable to the JobDataPath object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getDebugDataPathAsync(String,UUID,final ServiceCallback<JobDataPath>)
   id: getDebugDataPathAsync(String,UUID,final ServiceCallback<JobDataPath>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -707,7 +636,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 93
+    startLine: 82
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the job debug data information specified by the job ID.</p>
@@ -728,9 +657,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._job_data_patha08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getDebugDataPathWithServiceResponseAsync(String,UUID)
   id: getDebugDataPathWithServiceResponseAsync(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -745,7 +671,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 113
+    startLine: 100
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the job debug data information specified by the job ID.</p>
@@ -763,9 +689,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._job_data_pathe7daa122
       description: <p>the observable to the JobDataPath object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getStatistics(String,UUID)
   id: getStatistics(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -780,7 +703,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 39
+    startLine: 35
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets statistics of the specified job.</p>
@@ -798,13 +721,6 @@ items:
     return:
       type: com.microsoft.azure.management.datalake.analytics.models._job_statistics
       description: <p>the JobStatistics object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getStatisticsAsync(String,UUID)
   id: getStatisticsAsync(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -819,7 +735,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 60
+    startLine: 54
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets statistics of the specified job.</p>
@@ -837,9 +753,6 @@ items:
     return:
       type: c2d0e8c6com.microsoft.azure.management.datalake.analytics.models._job_statisticsa08ddfce
       description: <p>the observable to the JobStatistics object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getStatisticsAsync(String,UUID,final ServiceCallback<JobStatistics>)
   id: getStatisticsAsync(String,UUID,final ServiceCallback<JobStatistics>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -854,7 +767,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 50
+    startLine: 45
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets statistics of the specified job.</p>
@@ -875,9 +788,6 @@ items:
     return:
       type: c522ce07com.microsoft.azure.management.datalake.analytics.models._job_statisticsa08ddfce
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getStatisticsWithServiceResponseAsync(String,UUID)
   id: getStatisticsWithServiceResponseAsync(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -892,7 +802,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 70
+    startLine: 63
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets statistics of the specified job.</p>
@@ -910,9 +820,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._job_statisticse7daa122
       description: <p>the observable to the JobStatistics object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.getWithServiceResponseAsync(String,UUID)
   id: getWithServiceResponseAsync(String,UUID)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -927,7 +834,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 241
+    startLine: 210
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Gets the job information for the specified job ID.</p>
@@ -945,9 +852,6 @@ items:
     return:
       type: fc480ba2com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the observable to the JobInformation object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.list(final String)
   id: list(final String)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -962,7 +866,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 299
+    startLine: 259
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -977,13 +881,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the PagedList&lt;JobInformation&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.list(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: list(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -998,7 +895,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 343
+    startLine: 297
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1031,13 +928,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the PagedList&lt;JobInformation&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listAsync(final String)
   id: listAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1052,7 +942,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 318
+    startLine: 276
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1067,9 +957,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the observable to the PagedList&lt;JobInformation&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listAsync(final String,final ListOperationCallback<JobInformation>)
   id: listAsync(final String,final ListOperationCallback<JobInformation>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1084,7 +971,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 309
+    startLine: 268
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1102,9 +989,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1119,7 +1003,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 374
+    startLine: 326
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1152,9 +1036,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the observable to the PagedList&lt;JobInformation&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<JobInformation>)
   id: listAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean,final ListOperationCallback<JobInformation>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1169,7 +1050,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 359
+    startLine: 312
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1205,9 +1086,6 @@ items:
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listNext(final String)
   id: listNext(final String)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1222,7 +1100,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 400
+    startLine: 348
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1237,13 +1115,6 @@ items:
     return:
       type: 36b27be0com.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the PagedList&lt;JobInformation&gt; object if successful. </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
-  - type: dc385fd4
-    description: <p>thrown if the request is rejected by server </p>
-  - type: 9b2a4515
-    description: <p>all other wrapped checked exceptions if the request fails to be sent </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listNextAsync(final String)
   id: listNextAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1258,7 +1129,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 420
+    startLine: 366
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1273,9 +1144,6 @@ items:
     return:
       type: 32da0907com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the observable to the PagedList&lt;JobInformation&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listNextAsync(final String,final ServiceFuture<List<JobInformation>>,final ListOperationCallback<JobInformation>)
   id: listNextAsync(final String,final ServiceFuture<List<JobInformation>>,final ListOperationCallback<JobInformation>)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1290,7 +1158,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 411
+    startLine: 358
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1304,16 +1172,13 @@ items:
       description: <p>The NextLink from the previous successful call to List operation. </p>
     - id: serviceFuture
       type: bd82102acom.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
-      description: <p>the ServiceFuture object tracking the Retrofit calls </p>
+      description: <p>the ServiceCall object tracking the Retrofit calls </p>
     - id: serviceCallback
       type: 3c4303efcom.microsoft.azure.management.datalake.analytics.models._job_informationa08ddfce
       description: <p>the async ServiceCallback to handle successful and failed responses. </p>
     return:
       type: b7698b59com.microsoft.azure.management.datalake.analytics.models._job_informatione7daa122
       description: <p>the <ref refid="" kindref="compound">ServiceFuture</ref> object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listNextWithServiceResponseAsync(final String)
   id: listNextWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1328,7 +1193,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 429
+    startLine: 374
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1343,9 +1208,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._job_information2646ccb0
       description: <p>the observable to the PagedList&lt;JobInformation&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listWithServiceResponseAsync(final String)
   id: listWithServiceResponseAsync(final String)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1360,7 +1222,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 327
+    startLine: 284
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1375,9 +1237,6 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._job_information2646ccb0
       description: <p>the observable to the PagedList&lt;JobInformation&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 - uid: com.microsoft.azure.management.datalake.analytics._jobs.listWithServiceResponseAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   id: listWithServiceResponseAsync(final String,final String,final Integer,final Integer,final String,final String,final Boolean)
   parent: com.microsoft.azure.management.datalake.analytics._jobs
@@ -1392,7 +1251,7 @@ items:
   source:
     remote: *o0
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/Jobs.java
-    startLine: 389
+    startLine: 340
   package: com.microsoft.azure.management.datalake.analytics
   summary: >-
     <p>Lists the jobs, if any, associated with the specified Data Lake Analytics account. The response includes a link to the next page of results, if any.</p>
@@ -1425,22 +1284,7 @@ items:
     return:
       type: f9d74917com.microsoft.azure.management.datalake.analytics.models._job_information2646ccb0
       description: <p>the observable to the PagedList&lt;JobInformation&gt; object </p>
-  exceptions:
-  - type: 3c87bd19
-    description: <p>thrown if parameters fail the validation </p>
 references:
-- uid: 3c87bd19
-  spec.java:
-  - name: IllegalArgumentException
-    fullName: IllegalArgumentException
-- uid: dc385fd4
-  spec.java:
-  - name: CloudException
-    fullName: CloudException
-- uid: 9b2a4515
-  spec.java:
-  - name: RuntimeException
-    fullName: RuntimeException
 - uid: "26831127"
   spec.java:
   - name: String

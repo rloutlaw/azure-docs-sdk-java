@@ -12,7 +12,6 @@ items:
   - com.microsoft.azure.management.datalake.store.models._encryption_provisioning_state
   - com.microsoft.azure.management.datalake.store.models._encryption_state
   - com.microsoft.azure.management.datalake.store.models._error_details
-  - com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state
   - com.microsoft.azure.management.datalake.store.models._firewall_rule
   - com.microsoft.azure.management.datalake.store.models._firewall_state
   - com.microsoft.azure.management.datalake.store.models._key_vault_meta_info
@@ -21,10 +20,6 @@ items:
   - com.microsoft.azure.management.datalake.store.models._tier_type
   - com.microsoft.azure.management.datalake.store.models._trusted_id_provider
   - com.microsoft.azure.management.datalake.store.models._trusted_id_provider_state
-  - com.microsoft.azure.management.datalake.store.models._update_encryption_config
-  - com.microsoft.azure.management.datalake.store.models._update_firewall_rule_parameters
-  - com.microsoft.azure.management.datalake.store.models._update_key_vault_meta_info
-  - com.microsoft.azure.management.datalake.store.models._update_trusted_id_provider_parameters
   href: com.microsoft.azure.management.datalake.store.models.yml
   langs:
   - java
@@ -35,7 +30,7 @@ items:
   source:
     remote:
       path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccount.java
-      branch: master
+      branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure-mgmt-datalake-store/src/main/java/com/microsoft/azure/management/datalake/store/models/DataLakeStoreAccount.java
     startLine: 8
@@ -163,16 +158,6 @@ references:
   summary: <p>Data Lake Store error details information. </p>
   syntax:
     content: public class ErrorDetails
-- uid: com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state
-  parent: com.microsoft.azure.management.datalake.store.models
-  href: com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state.yml
-  name: FirewallAllowAzureIpsState
-  nameWithType: FirewallAllowAzureIpsState
-  fullName: com.microsoft.azure.management.datalake.store.models.FirewallAllowAzureIpsState
-  type: Enum
-  summary: <p>Defines values for <xref href="com.microsoft.azure.management.datalake.store.models._firewall_allow_azure_ips_state" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public enum FirewallAllowAzureIpsState
 - uid: com.microsoft.azure.management.datalake.store.models._firewall_rule
   parent: com.microsoft.azure.management.datalake.store.models
   href: com.microsoft.azure.management.datalake.store.models._firewall_rule.yml
@@ -246,7 +231,7 @@ references:
   nameWithType: TrustedIdProvider
   fullName: com.microsoft.azure.management.datalake.store.models.TrustedIdProvider
   type: Class
-  summary: <p>Data Lake Store Trusted Identity Provider information. </p>
+  summary: <p>Data Lake Store firewall rule information. </p>
   syntax:
     content: public class TrustedIdProvider extends SubResource
 - uid: com.microsoft.azure.management.datalake.store.models._trusted_id_provider_state
@@ -259,43 +244,3 @@ references:
   summary: <p>Defines values for <xref href="com.microsoft.azure.management.datalake.store.models._trusted_id_provider_state" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public enum TrustedIdProviderState
-- uid: com.microsoft.azure.management.datalake.store.models._update_encryption_config
-  parent: com.microsoft.azure.management.datalake.store.models
-  href: com.microsoft.azure.management.datalake.store.models._update_encryption_config.yml
-  name: UpdateEncryptionConfig
-  nameWithType: UpdateEncryptionConfig
-  fullName: com.microsoft.azure.management.datalake.store.models.UpdateEncryptionConfig
-  type: Class
-  summary: <p>The encryption configuration used to update a user managed Key Vault key. </p>
-  syntax:
-    content: public class UpdateEncryptionConfig
-- uid: com.microsoft.azure.management.datalake.store.models._update_firewall_rule_parameters
-  parent: com.microsoft.azure.management.datalake.store.models
-  href: com.microsoft.azure.management.datalake.store.models._update_firewall_rule_parameters.yml
-  name: UpdateFirewallRuleParameters
-  nameWithType: UpdateFirewallRuleParameters
-  fullName: com.microsoft.azure.management.datalake.store.models.UpdateFirewallRuleParameters
-  type: Class
-  summary: <p>Data Lake Analytics firewall rule update parameters. </p>
-  syntax:
-    content: public class UpdateFirewallRuleParameters
-- uid: com.microsoft.azure.management.datalake.store.models._update_key_vault_meta_info
-  parent: com.microsoft.azure.management.datalake.store.models
-  href: com.microsoft.azure.management.datalake.store.models._update_key_vault_meta_info.yml
-  name: UpdateKeyVaultMetaInfo
-  nameWithType: UpdateKeyVaultMetaInfo
-  fullName: com.microsoft.azure.management.datalake.store.models.UpdateKeyVaultMetaInfo
-  type: Class
-  summary: <p>The Key Vault update information used for user managed key rotation. </p>
-  syntax:
-    content: public class UpdateKeyVaultMetaInfo
-- uid: com.microsoft.azure.management.datalake.store.models._update_trusted_id_provider_parameters
-  parent: com.microsoft.azure.management.datalake.store.models
-  href: com.microsoft.azure.management.datalake.store.models._update_trusted_id_provider_parameters.yml
-  name: UpdateTrustedIdProviderParameters
-  nameWithType: UpdateTrustedIdProviderParameters
-  fullName: com.microsoft.azure.management.datalake.store.models.UpdateTrustedIdProviderParameters
-  type: Class
-  summary: <p>Data Lake Store Trusted Identity Provider update parameters. </p>
-  syntax:
-    content: public class UpdateTrustedIdProviderParameters
