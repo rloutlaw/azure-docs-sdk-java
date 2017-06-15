@@ -23,7 +23,7 @@ items:
     remote: &o0
       path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CustomHttpsProvisioningState.java
       branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
-      repo: https://github.com/Azure/azure-sdk-for-java
+      repo: https://github.com/ansyral/azure-sdk-for-java
     path: azure-mgmt-cdn/src/main/java/com/microsoft/azure/management/cdn/CustomHttpsProvisioningState.java
     startLine: 15
   package: com.microsoft.azure.management.cdn

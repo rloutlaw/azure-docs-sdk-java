@@ -9952,12 +9952,21 @@
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._file_upload_status_parser
     name: FileUploadStatusParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._file_upload_status_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._jobs_parser
+    name: JobsParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._jobs_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._jobs_type
+    name: JobsType
+    href: com.microsoft.azure.sdk.iot.deps.serializer._jobs_type.yml
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._method_parser
     name: MethodParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._method_parser.yml
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._method_parser._operation
     name: MethodParser.Operation
     href: com.microsoft.azure.sdk.iot.deps.serializer._method_parser._operation.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._parser_utility
+    name: ParserUtility
+    href: com.microsoft.azure.sdk.iot.deps.serializer._parser_utility.yml
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._register_manager_parser
     name: RegisterManagerParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._register_manager_parser.yml
@@ -10025,6 +10034,9 @@
   - uid: com.microsoft.azure.sdk.iot.device._iot_hub_message_result
     name: IotHubMessageResult
     href: com.microsoft.azure.sdk.iot.device._iot_hub_message_result.yml
+  - uid: com.microsoft.azure.sdk.iot.device._iot_hub_method
+    name: IotHubMethod
+    href: com.microsoft.azure.sdk.iot.device._iot_hub_method.yml
   - uid: com.microsoft.azure.sdk.iot.device._iot_hub_response_callback
     name: IotHubResponseCallback
     href: com.microsoft.azure.sdk.iot.device._iot_hub_response_callback.yml
@@ -10105,6 +10117,19 @@
   - uid: com.microsoft.azure.sdk.iot.device._device_twin._property_call_back
     name: PropertyCallBack
     href: com.microsoft.azure.sdk.iot.device._device_twin._property_call_back.yml
+- uid: com.microsoft.azure.sdk.iot.device.fileupload
+  name: com.microsoft.azure.sdk.iot.device.fileupload
+  href: com.microsoft.azure.sdk.iot.device.fileupload.yml
+  items:
+  - uid: com.microsoft.azure.sdk.iot.device.fileupload._file_upload
+    name: FileUpload
+    href: com.microsoft.azure.sdk.iot.device.fileupload._file_upload.yml
+  - uid: com.microsoft.azure.sdk.iot.device.fileupload._file_upload_in_progress
+    name: FileUploadInProgress
+    href: com.microsoft.azure.sdk.iot.device.fileupload._file_upload_in_progress.yml
+  - uid: com.microsoft.azure.sdk.iot.device.fileupload._file_upload_task
+    name: FileUploadTask
+    href: com.microsoft.azure.sdk.iot.device.fileupload._file_upload_task.yml
 - uid: com.microsoft.azure.sdk.iot.device.net
   name: com.microsoft.azure.sdk.iot.device.net
   href: com.microsoft.azure.sdk.iot.device.net.yml
@@ -10146,6 +10171,12 @@
   - uid: com.microsoft.azure.sdk.iot.device.transport._iot_hub_transport
     name: IotHubTransport
     href: com.microsoft.azure.sdk.iot.device.transport._iot_hub_transport.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport._iot_hub_transport_manager
+    name: IotHubTransportManager
+    href: com.microsoft.azure.sdk.iot.device.transport._iot_hub_transport_manager.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport._iot_hub_transport_message
+    name: IotHubTransportMessage
+    href: com.microsoft.azure.sdk.iot.device.transport._iot_hub_transport_message.yml
   - uid: com.microsoft.azure.sdk.iot.device.transport._state
     name: State
     href: com.microsoft.azure.sdk.iot.device.transport._state.yml
@@ -10208,6 +10239,9 @@
   - uid: com.microsoft.azure.sdk.iot.device.transport.https._https_transport._https_transport_state
     name: HttpsTransport.HttpsTransportState
     href: com.microsoft.azure.sdk.iot.device.transport.https._https_transport._https_transport_state.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport.https._https_transport_manager
+    name: HttpsTransportManager
+    href: com.microsoft.azure.sdk.iot.device.transport.https._https_transport_manager.yml
 - uid: com.microsoft.azure.sdk.iot.device.transport.mqtt
   name: com.microsoft.azure.sdk.iot.device.transport.mqtt
   href: com.microsoft.azure.sdk.iot.device.transport.mqtt.yml

@@ -13,7 +13,7 @@ items:
     remote:
       path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
       branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
-      repo: https://github.com/Azure/azure-sdk-for-java
+      repo: https://github.com/ansyral/azure-sdk-for-java
     path: azure-mgmt-network/src/main/java/com/microsoft/azure/management/network/ApplicationGateway.java
     startLine: 218
   package: com.microsoft.azure.management.network
@@ -37,7 +37,7 @@ references:
 
     <p></p>
   syntax:
-    content: public interface WithGroup<T>
+    content: public interface WithGroup<T> extends GroupableResource<T>.DefinitionStages.WithExistingResourceGroup,GroupableResource<T>.DefinitionStages.WithNewResourceGroup
     typeParameters:
     - type: 8ce1ecb9
       description: <p>the next stage of the definition </p>

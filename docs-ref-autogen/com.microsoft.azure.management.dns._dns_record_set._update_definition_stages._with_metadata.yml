@@ -15,7 +15,7 @@ items:
     remote: &o0
       path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsRecordSet.java
       branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
-      repo: https://github.com/Azure/azure-sdk-for-java
+      repo: https://github.com/ansyral/azure-sdk-for-java
     path: azure-mgmt-dns/src/main/java/com/microsoft/azure/management/dns/DnsRecordSet.java
     startLine: 641
   package: com.microsoft.azure.management.dns

@@ -78,7 +78,7 @@ items:
     remote:
       path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/AddDataLakeStoreParameters.java
       branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
-      repo: https://github.com/Azure/azure-sdk-for-java
+      repo: https://github.com/ansyral/azure-sdk-for-java
     path: azure-mgmt-datalake-analytics/src/main/java/com/microsoft/azure/management/datalake/analytics/models/AddDataLakeStoreParameters.java
     startLine: 8
   summary: <p>This package contains the models classes for <xref href="com.microsoft.azure.management.datalake.analytics._data_lake_analytics_catalog_management_client" data-throw-if-not-resolved="false"></xref>. Creates an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> Data Lake Analytics catalog client. </p>

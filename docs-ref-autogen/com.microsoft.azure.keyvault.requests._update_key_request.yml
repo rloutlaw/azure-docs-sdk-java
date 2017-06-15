@@ -20,7 +20,7 @@ items:
     remote: &o0
       path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateKeyRequest.java
       branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
-      repo: https://github.com/Azure/azure-sdk-for-java
+      repo: https://github.com/ansyral/azure-sdk-for-java
     path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateKeyRequest.java
     startLine: 15
   package: com.microsoft.azure.keyvault.requests

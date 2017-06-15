@@ -53,7 +53,7 @@ items:
     remote:
       path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/implementation/DeploymentExportResultImpl.java
       branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
-      repo: https://github.com/Azure/azure-sdk-for-java
+      repo: https://github.com/ansyral/azure-sdk-for-java
     path: azure-mgmt-resources/src/main/java/com/microsoft/azure/management/resources/implementation/DeploymentExportResultImpl.java
     startLine: 6
   summary: <p>This package contains the implementation classes for ResourceManagementClient. Provides operations for working with resources and resource groups. </p>

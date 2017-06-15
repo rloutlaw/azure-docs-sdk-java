@@ -13,7 +13,7 @@ items:
     remote:
       path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineCustomImage.java
       branch: 6458fcfe945045ae3dd7dd417d400ab8cbd89f82
-      repo: https://github.com/Azure/azure-sdk-for-java
+      repo: https://github.com/ansyral/azure-sdk-for-java
     path: azure-mgmt-compute/src/main/java/com/microsoft/azure/management/compute/VirtualMachineCustomImage.java
     startLine: 274
   package: com.microsoft.azure.management.compute

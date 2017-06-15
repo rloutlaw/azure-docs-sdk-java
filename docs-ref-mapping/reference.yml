@@ -1,35 +1,36 @@
-- name: Reference 
+- name: Reference
   uid: azure.java.sdk.landingpage.reference
   landingPageType: Root
   items:
-  - name: "Active Directory"
+  - name: Active Directory
+    uid: azure.java.sdk.landingpage.services.Active Directory
     href: ~/docs-ref-services/activedirectory.md
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.activedirectory.management
-      landingPageType: Service
-      children: 
-      - com.microsoft.azure.management.graphrbac
-    - name: Client
-      uid: azure.java.sdk.landingPage.services.activedirectory.client
-      href: http://javadoc.io/doc/com.microsoft.azure/adal4j/1.2.0
+      uid: azure.java.sdk.landingpage.services.activedirectory.Management
       landingPageType: Service
       children:
-      - com.microsoft.aad.adal4j
-  - name: "App Service"
-    href: ~/docs-ref-services/appservice.md
-    items: 
-    - name: Management
-      uid: azure.java.sdk.landingPage.services.appservice.management
-      landingPageType: Service
-      children: 
-      - com.microsoft.azure.management.appservice
-  - name: "AppInsights"
-    uid: azure.java.sdk.landingPage.services.appinsights
-    landingPageType: Service
-    items: 
+      - com.microsoft.azure.management.graphrbac
     - name: Client
-      uid: azure.java.sdk.landingPage.services.appinsights.client
+      uid: azure.java.sdk.landingpage.services.activedirectory.Client
+      href: http://javadoc.io/doc/com.microsoft.azure/adal4j/1.2.0
+      children:
+      - com.microsoft.aad.adal4j
+  - name: App Service
+    uid: azure.java.sdk.landingpage.services.App Service
+    href: ~/docs-ref-services/appservice.md
+    items:
+    - name: Management
+      uid: azure.java.sdk.landingpage.services.appservice.Management
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.management.appservice
+  - name: AppInsights
+    uid: azure.java.sdk.landingpage.services.AppInsights
+    landingPageType: Service
+    items:
+    - name: Client
+      uid: azure.java.sdk.landingpage.services.appinsights.Client
       landingPageType: Service
       children:
       - com.microsoft.applicationinsights
@@ -176,88 +177,52 @@
       - org.objectweb.asm.tree
       - org.objectweb.asm.tree.analysis
       - org.objectweb.asm.util
-      - org.objectweb.asm.xml  
-  - name: "Batch"
-    uid: azure.java.sdk.landingPage.services.batch
+      - org.objectweb.asm.xml
+  - name: Batch
+    uid: azure.java.sdk.landingpage.services.Batch
     landingPageType: Service
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.batch.Management
+      uid: azure.java.sdk.landingpage.services.batch.Management
       landingPageType: Service
-      children: 
+      children:
       - com.microsoft.azure.management.batch
       - com.microsoft.azure.management.batch.implementation
     - name: Client
-      uid: azure.java.sdk.landingPage.services.batch.Client
+      uid: azure.java.sdk.landingpage.services.batch.Client
       landingPageType: Service
-      children: 
+      children:
       - com.microsoft.azure.batch
       - com.microsoft.azure.batch.auth
       - com.microsoft.azure.batch.interceptor
       - com.microsoft.azure.batch.protocol
       - com.microsoft.azure.batch.protocol.implementation
-      - com.microsoft.azure.batch.protocol.models    
-  - name: "CDN"
-    uid: azure.java.sdk.landingPage.services.cdn
+      - com.microsoft.azure.batch.protocol.models
+  - name: CDN
+    uid: azure.java.sdk.landingpage.services.CDN
     landingPageType: Service
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.cdn.Management
+      uid: azure.java.sdk.landingpage.services.cdn.Management
       landingPageType: Service
-      children: 
+      children:
       - com.microsoft.azure.management.cdn
       - com.microsoft.azure.management.cdn.implementation
-  - name: "Container Registry"
-    uid: azure.java.sdk.landingPage.services.containerregistry
+  - name: Container Registry
+    uid: azure.java.sdk.landingpage.services.Container Registry
     landingPageType: Service
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.containerregistry.Management
-      landingPageType: Service
-      children: 
-      - 'com.microsoft.azure.management.containerregistry*'
-  - name: "Data Lake Analytics"
-    uid: azure.java.sdk.landingpage.services.datalakeanalytics
-    landingPageType: Service
-    items: 
-    - name: Management 
-      uid: azure.java.sdk.landingpage.services.datalakeanalytics.Management
+      uid: azure.java.sdk.landingpage.services.containerregistry.Management
       landingPageType: Service
       children:
-      - 'com.microsoft.azure.management.datalake.analytics*'
-  - name: "Data Lake Store"
-    uid: azure.java.sdk.landingPage.services.datalakestore
+      - com.microsoft.azure.management.containerregistry*
+  - name: CosmosDB
+    uid: azure.java.sdk.landingpage.services.CosmosDB
     landingPageType: Service
-    items: 
-    - name: Management
-      uid: azure.java.sdk.landingPage.services.datalakestore.Management
-      landingPageType: Service
-      children: 
-      - 'com.microsoft.azure.management.datalake.store*'
+    items:
     - name: Client
-      uid: azure.java.sdk.landingPage.services.datalakestore.Client
-      landingPageType: Service
-      children: 
-      - com.microsoft.azure.datalake.store
-      - com.microsoft.azure.datalake.store.acl
-      - com.microsoft.azure.datalake.store.oauth2
-      - com.microsoft.azure.datalake.store.retrypolicies
-  - name: "DNS"
-    uid: azure.java.sdk.landingPage.services.dns
-    landingPageType: Service
-    items: 
-    - name: Management
-      uid: azure.java.sdk.landingPage.services.dns.Managment
-      landingPageType: Service
-      children:
-      - com.microsoft.azure.management.dns
-      - com.microsoft.azure.management.dns.implementation    
-  - name: "CosmosDB"
-    uid: azure.java.sdk.landingPage.services.documentdb
-    landingPageType: Service
-    items: 
-    - name: Client
-      uid: azure.java.sdk.landingPage.services.documentdb.Client
+      uid: azure.java.sdk.landingpage.services.cosmosdb.Client
       landingPageType: Service
       children:
       - com.microsoft.azure.documentdb
@@ -268,30 +233,67 @@
       - com.microsoft.azure.documentdb.internal.query.executioncomponent
       - com.microsoft.azure.documentdb.internal.query.orderbyquery
       - com.microsoft.azure.documentdb.internal.routing
-  - name: "Event Hub"
-    uid: azure.java.sdk.landingPage.services.eventhub
+  - name: Data Lake Analytics
+    uid: azure.java.sdk.landingpage.services.Data Lake Analytics
     landingPageType: Service
-    items: 
+    items:
+    - name: Management
+      uid: azure.java.sdk.landingpage.services.datalakeanalytics.Management
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.management.datalake.analytics*
+  - name: Data Lake Store
+    uid: azure.java.sdk.landingpage.services.Data Lake Store
+    landingPageType: Service
+    items:
+    - name: Management
+      uid: azure.java.sdk.landingpage.services.datalakestore.Management
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.management.datalake.store*
     - name: Client
-      uid: azure.java.sdk.landingPage.services.eventhub.Client
+      uid: azure.java.sdk.landingpage.services.datalakestore.Client
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.datalake.store
+      - com.microsoft.azure.datalake.store.acl
+      - com.microsoft.azure.datalake.store.oauth2
+      - com.microsoft.azure.datalake.store.retrypolicies
+  - name: DNS
+    uid: azure.java.sdk.landingpage.services.DNS
+    landingPageType: Service
+    items:
+    - name: Management
+      uid: azure.java.sdk.landingpage.services.dns.Management
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.management.dns
+      - com.microsoft.azure.management.dns.implementation
+  - name: Event Hub
+    uid: azure.java.sdk.landingpage.services.Event Hub
+    landingPageType: Service
+    items:
+    - name: Client
+      uid: azure.java.sdk.landingpage.services.eventhub.Client
       landingPageType: Service
       children:
       - com.microsoft.azure.eventhubs
+      - com.microsoft.azure.eventhubs.*
+      - com.microsoft.azure.eventprocessorhost
       - com.microsoft.azure.servicebus
       - com.microsoft.azure.servicebus.amqp
-      - 'com.microsoft.azure.eventhubs.*'
-      - 'com.microsoft.azure.eventprocessorhost'     
-  - name: "IoT"
-    uid: azure.java.sdk.landingPage.services.iot
+  - name: IoT
+    uid: azure.java.sdk.landingpage.services.IoT
     landingPageType: Service
-    items: 
+    items:
     - name: Client
-      uid: azure.java.sdk.landingPage.services.iot.Client
+      uid: azure.java.sdk.landingpage.services.iot.Client
       landingPageType: Service
       children:
+      - com.microsoft.azure.sdk.iot.deps*
       - com.microsoft.azure.sdk.iot.device
-      - com.microsoft.azure.sdk.iot.device.DeviceTwin
       - com.microsoft.azure.sdk.iot.device.auth
+      - com.microsoft.azure.sdk.iot.device.DeviceTwin
       - com.microsoft.azure.sdk.iot.device.net
       - com.microsoft.azure.sdk.iot.device.transport
       - com.microsoft.azure.sdk.iot.device.transport.amqps
@@ -304,87 +306,88 @@
       - com.microsoft.azure.sdk.iot.service.transport
       - com.microsoft.azure.sdk.iot.service.transport.amqps
       - com.microsoft.azure.sdk.iot.service.transport.http
-      - 'com.microsoft.azure.sdk.iot.deps*'  
-  - name: "Key Vault"
-    uid: azure.java.sdk.landingPage.services.keyvault
+  - name: Key Vault
+    uid: azure.java.sdk.landingpage.services.Key Vault
     landingPageType: Service
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.keyvault.Management
+      uid: azure.java.sdk.landingpage.services.keyvault.Management
       landingPageType: Service
-      children: 
+      children:
       - com.microsoft.azure.management.keyvault
       - com.microsoft.azure.management.keyvault.implementation
     - name: Client
-      uid: azure.java.sdk.landingPage.services.keyvault.Client
+      uid: azure.java.sdk.landingpage.services.keyvault.Client
       landingPageType: Service
-      children: 
+      children:
       - com.microsoft.azure.keyvault
+      - com.microsoft.azure.keyvault.*
       - com.microsoft.azure.keyvault.authentication
       - com.microsoft.azure.keyvault.models
       - com.microsoft.azure.keyvault.requests
       - com.microsoft.azure.keyvault.webkey
-      - 'com.microsoft.azure.keyvault.*'   
-  - name: "Management"
-    uid: azure.java.sdk.landingPage.services.management
-    landingPageType: Service
-    items: 
-    - name: Management
-      uid: azure.java.sdk.landingPage.services.management.Management
-      landingPageType: Service
-      children: 
-      - com.microsoft.azure.management    
-  - name: "MySQL"
-    href: ~/docs-ref-services/mysql.md
+  - name: Management
+    uid: azure.java.sdk.landingpage.services.Management
     landingPageType: Service
     items:
+    - name: Management
+      uid: azure.java.sdk.landingpage.services.management.Management
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.management
+  - name: MySQL
+    uid: azure.java.sdk.landingpage.services.MySQL
+    href: ~/docs-ref-services/mysql.md
+    items:
     - name: Client
-      uid: azure.java.sdk.landingPage.services.mysql.Client
+      uid: azure.java.sdk.landingpage.services.mysql.Client
       href: https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-reference.html
-  - name: "Networking"
-    uid: azure.java.sdk.landingPage.services.networking
+      children: []
+  - name: Networking
+    uid: azure.java.sdk.landingpage.services.Networking
     landingPageType: Service
-    items: 
+    items:
     - name: Managment
-      uid: azure.java.sdk.landingPage.services.networking.Management
+      uid: azure.java.sdk.landingpage.services.networking.Managment
       landingPageType: Service
       children:
       - com.microsoft.azure.management.network
       - com.microsoft.azure.management.network.implementation
       - com.microsoft.azure.management.network.model
-  - name: "PostgreSQL"  
+  - name: PostgreSQL
+    uid: azure.java.sdk.landingpage.services.PostgreSQL
     href: ~/docs-ref-services/postgresql.md
-    landingPageType: Service
     items:
     - name: Client
-      uid: azure.java.sdk.landingPage.services.postgresql.Client
+      uid: azure.java.sdk.landingpage.services.postgresql.Client
       href: https://jdbc.postgresql.org/documentation/publicapi/index.html
-  - name: "Redis Cache"
-    uid: azure.java.sdk.landingPage.services.rediscache
+      children: []
+  - name: Redis Cache
+    uid: azure.java.sdk.landingpage.services.Redis Cache
     landingPageType: Service
     items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.rediscache.Management
+      uid: azure.java.sdk.landingpage.services.rediscache.Management
       landingPageType: Service
-      children: 
+      children:
       - com.microsoft.azure.management.redis
       - com.microsoft.azure.management.redis.implementation
     - name: Client
-      uid: azure.java.sdk.landingPage.services.rediscache.Client
+      uid: azure.java.sdk.landingpage.services.rediscache.Client
       href: http://xetorthio.github.io/jedis/
-      children: 
+      children:
       - redis.clients.jedis
       - redis.clients.jedis.exceptions
       - redis.clients.jedis.params
       - redis.clients.jedis.params.geo
       - redis.clients.jedis.params.sortedset
-      - redis.clients.util    
-  - name: "Resources"
-    uid: azure.java.sdk.landingPage.services.resources
+      - redis.clients.util
+  - name: Resources
+    uid: azure.java.sdk.landingpage.services.Resources
     landingPageType: Service
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.resources.Management
+      uid: azure.java.sdk.landingpage.services.resources.Management
       landingPageType: Service
       children:
       - com.microsoft.azure.management.resources
@@ -400,65 +403,67 @@
       - com.microsoft.azure.management.resources.fluentcore.model.implementation
       - com.microsoft.azure.management.resources.fluentcore.utils
       - com.microsoft.azure.management.resources.implementation
-  - name: "SQL"
-    href: ~/docs-ref-services/sql.md
-    items: 
-    - name: Management
-      uid: azure.java.sdk.landingPage.services.sql.Management
-      landingPageType: Service
-      children: 
-      - com.microsoft.azure.management.sql
-      - com.microsoft.azure.management.sql.implementation
-    - name: Client
-      uid: azure.java.sdk.landingPage.services.sql.Client
-      href: https://docs.microsoft.com/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server
-      children: 
-      - com.microsoft.sqlserver.jdbc
-      - microsoft.sql
-  - name: "Service Bus"
-    uid: azure.java.sdk.landingPage.services.servicebus
+  - name: Service Bus
+    uid: azure.java.sdk.landingpage.services.Service Bus
     landingPageType: Service
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.servicebus.Management
+      uid: azure.java.sdk.landingpage.services.servicebus.Management
       landingPageType: Service
-      children: 
+      children:
       - com.microsoft.azure.management.servicebus
       - com.microsoft.azure.management.servicebus.implementation
     - name: Client
-      uid: azure.java.sdk.landingPage.services.servicebus.Client
+      uid: azure.java.sdk.landingpage.services.servicebus.Client
       href: https://qpid.apache.org/components/jms/index.html
-      children:   
+      children:
       - com.microsoft.azure.servicebus
       - com.microsoft.azure.servicebus.amqp
       - com.microsoft.azure.servicebus.primitives
       - com.microsoft.azure.servicebus.rules
-  - name: "Service Fabric"
-    uid: azure.java.sdk.landingPage.services.servicefabric
+  - name: Service Fabric
+    uid: azure.java.sdk.landingpage.services.Service Fabric
     landingPageType: Service
     items:
     - name: Client
-      uid: azure.java.sdk.landingPage.services.servicefabric.Client
+      uid: azure.java.sdk.landingpage.services.servicefabric.Client
       landingPageType: Service
-      children: 
-      - 'customplugin*'
-      - 'microsoft.servicefabric*'
-      - 'org.jenkinsci.plugins.serviceFabric*'
-      - 'servicefabric*'
-      - 'system.fabric*'
-  - name: "Storage"
-    href: ~/docs-ref-services/storage.md
-    items: 
+      children:
+      - customplugin*
+      - microsoft.servicefabric*
+      - org.jenkinsci.plugins.serviceFabric*
+      - servicefabric*
+      - system.fabric*
+  - name: SQL
+    uid: azure.java.sdk.landingpage.services.SQL
+    href: ~/docs-ref-services/sql.md
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.storage.Management
+      uid: azure.java.sdk.landingpage.services.sql.Management
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.management.sql
+      - com.microsoft.azure.management.sql.implementation
+    - name: Client
+      uid: azure.java.sdk.landingpage.services.sql.Client
+      href: https://docs.microsoft.com/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server
+      children:
+      - com.microsoft.sqlserver.jdbc
+      - microsoft.sql
+  - name: Storage
+    uid: azure.java.sdk.landingpage.services.Storage
+    href: ~/docs-ref-services/storage.md
+    items:
+    - name: Management
+      uid: azure.java.sdk.landingpage.services.storage.Management
       landingPageType: Service
       children:
       - com.microsoft.azure.management.storage
       - com.microsoft.azure.management.storage.implementation
     - name: Client
-      uid: azure.java.sdk.landingPage.services.storage.Client
+      uid: azure.java.sdk.landingpage.services.storage.Client
       landingPageType: Service
-      children:   
+      children:
       - com.microsoft.azure.storage
       - com.microsoft.azure.storage.analytics
       - com.microsoft.azure.storage.blob
@@ -466,26 +471,27 @@
       - com.microsoft.azure.storage.file
       - com.microsoft.azure.storage.queue
       - com.microsoft.azure.storage.table
-  - name: "Traffic Manager"
-    uid: azure.java.sdk.landingPage.services.trafficmanager
+  - name: Traffic Manager
+    uid: azure.java.sdk.landingpage.services.Traffic Manager
     landingPageType: Service
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.trafficmanager.Management
+      uid: azure.java.sdk.landingpage.services.trafficmanager.Management
       landingPageType: Service
-      children: 
+      children:
       - com.microsoft.azure.management.trafficmanager
       - com.microsoft.azure.management.trafficmanager.implementation
-  - name: "Virtual Machines"
+  - name: Virtual Machines
+    uid: azure.java.sdk.landingpage.services.Virtual Machines
     href: ~/docs-ref-services/virtualmachines.md
-    items: 
+    items:
     - name: Management
-      uid: azure.java.sdk.landingPage.services.virtualmachines.Management
+      uid: azure.java.sdk.landingpage.services.virtualmachines.Management
       landingPageType: Service
       children:
       - com.microsoft.azure.management.compute
       - com.microsoft.azure.management.compute.implementation
-  - name: "Other"
+  - name: Other
     uid: azure.java.sdk.landingPage.services.other
     landingPageType: Service
     children:
