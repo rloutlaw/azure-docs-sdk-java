@@ -4,7 +4,40 @@
     - name: Overview
       href: java-sdk-azure-overview.md
     - name: Tools
-      href: java-azure-tools.md 
+      href: java-azure-tools.md
+      items: 
+        - name: Azure Toolkit for Eclipse
+          href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse
+          maintainContext: true
+          items: 
+            - name: Get started
+              href: https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-eclipse-create-hello-world-web-app
+              maintainContext: true
+            - name: Install
+              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-installation
+              maintainContext: true
+            - name: Connect to Azure
+              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-sign-in-instructions
+              maintainContext: true
+            - name: Release notes
+              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-whats-new
+              maintainContext: true
+        - name: Azure Toolkit for IntelliJ
+          href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij
+          maintainContext: true
+          items:
+            - name: Get started
+              href: https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-intellij-create-hello-world-web-app
+              maintainContext: true
+            - name: Install 
+              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-installation
+              maintainContext: true
+            - name: Connect to Azure
+              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-sign-in-instructions
+              maintainContext: true
+            - name: Release notes
+              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-whats-new
+              maintainContext: true
     - name: Get started with Azure libraries
       href: java-sdk-azure-get-started.md
     - name: Authentication
