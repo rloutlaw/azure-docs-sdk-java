@@ -7,36 +7,36 @@
       href: java-azure-tools.md
       items: 
         - name: Azure Toolkit for Eclipse
-          href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse
+          href: /azure/azure-toolkit-for-eclipse
           maintainContext: true
           items: 
             - name: Get started
-              href: https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-eclipse-create-hello-world-web-app
+              href: /azure/app-service-web/app-service-web-eclipse-create-hello-world-web-app
               maintainContext: true
             - name: Install
-              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-installation
+              href: /azure/azure-toolkit-for-eclipse-installation
               maintainContext: true
             - name: Connect to Azure
-              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-sign-in-instructions
+              href: /azure/azure-toolkit-for-eclipse-sign-in-instructions
               maintainContext: true
             - name: Release notes
-              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-whats-new
+              href: /azure/azure-toolkit-for-eclipse-whats-new
               maintainContext: true
         - name: Azure Toolkit for IntelliJ
-          href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij
+          href: /azure/azure-toolkit-for-intellij
           maintainContext: true
           items:
             - name: Get started
-              href: https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-intellij-create-hello-world-web-app
+              href: /azure/app-service-web/app-service-web-intellij-create-hello-world-web-app
               maintainContext: true
             - name: Install 
-              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-installation
+              href: /azure/azure-toolkit-for-intellij-installation
               maintainContext: true
             - name: Connect to Azure
-              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-sign-in-instructions
+              href: /azure/azure-toolkit-for-intellij-sign-in-instructions
               maintainContext: true
             - name: Release notes
-              href: https://docs.microsoft.com/en-us/azure/azure-toolkit-for-intellij-whats-new
+              href: /azure/azure-toolkit-for-intellij-whats-new
               maintainContext: true
     - name: Get started with Azure libraries
       href: java-sdk-azure-get-started.md
@@ -45,19 +45,19 @@
     - name: Quickstarts
       items: 
         - name: Web Apps
-          href: https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-java
+          href: /azure/app-service-web/app-service-web-get-started-java
         - name: SQL Database
-          href: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-java
+          href: /azure/sql-database/sql-database-connect-query-java
         - name: MySQL
           href: /azure/mysql/connect-java
         - name: PostgreSQL
           href: /azure/postgresql/connect-java
         - name: CosmosDB
-          href: https://docs.microsoft.com/azure/cosmos-db/create-documentdb-java
+          href: /azure/cosmos-db/create-documentdb-java
     - name: Tutorials 
       items:
         - name: "Spring Boot + MySQL"
-          href: https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-java-mysql
+          href: /azure/app-service-web/app-service-web-tutorial-java-mysql
     - name: How-To
       items:
         - name: Spring Boot
